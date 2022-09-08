@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     fileInputs();
     introSlider();
     roundText();
-    featuresSlider()
+    featuresSlider();
+    alignHeights('.lines__list', '.lines__item-title');
 });
 
 document.addEventListener('lazyloaded', () => {
