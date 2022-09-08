@@ -1,0 +1,204 @@
+.container {
+    width: 100%;
+    max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+    @supports (width: max(20vw, 100px)) {
+        padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
+        padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
+    }
+}
+
+.narrow-container {
+    width: 100%;
+    max-width: calc(var(--max-narrow-container-width) + 2 * var(--content-padding));
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+    @supports (width: max(20vw, 100px)) {
+        padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
+        padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
+    }
+}
+
+.text-container {
+    width: 100%;
+    max-width: calc(var(--max-narrow-container-width) + 2 * var(--content-padding));
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+
+    @supports (width: max(20vw, 100px)) {
+        padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
+        padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    height: 3.6rem;
+    padding: 0 1.6rem;
+
+    border: 1px solid var(--black-color);
+    border-radius: 7.6rem;
+    cursor: pointer;
+
+    font: var(--text-t2);
+
+    transition: 0.3s;
+
+    &--large {
+        height: 5.2rem;
+        padding: 0 3.6rem;
+    }
+
+    &--white {
+        color: var(--black-color);
+
+        &:hover {
+            background-color: var(--black-color);
+            color: #fff;
+        }
+    }
+
+    &--black {
+        background-color: var(--black-color);
+        color: #fff;
+
+        &:hover {
+            background-color: #353535;
+        }
+    }
+
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.link {
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.4;
+    }
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 3.6rem;
+    padding: 0 1.6rem;
+
+    border-radius: 6.5rem;
+
+    font: var(--text-t2);
+    color: var(--black-color);
+
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.input {
+    display: flex;
+    align-content: center;
+    padding: 0 2.5rem;
+    height: 6rem;
+
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    font: var(--text-t2);
+    font-variant-numeric: lining-nums;
+    color: rgba(251, 251, 251, 1);
+}
+
+.input-wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.checkbox {
+    @extend .visually-hidden;
+
+    & + label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        cursor: pointer;
+
+        font: var(--text-t5);
+        opacity: 0.8;
+
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 1;
+            
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        &::before {
+            content: '';
+
+            width: 2rem;
+            height: 2rem;
+
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 0.4rem;
+            
+            transition: 0.3s;
+        }
+    }
+
+    &:checked + label::before {
+        background: url("../img/check-icon.svg") no-repeat center;
+        background-size: 1.5rem 1.5rem;
+    }
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.page-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font: var(--title-h4);
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.main-title {
+    font: var(--title-h1);
+    text-transform: uppercase;
+}

@@ -1,0 +1,49 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="intro">
+            <div class="container">
+                <div class="intro__slider swiper">
+                    <div class="swiper-wrapper">
+                        {{#each intro }}
+                            <div class="intro__slide swiper-slide">
+                                <div class="intro__img">
+                                    <picture>
+                                        <source srcset="{{this.imgWebp}}" type="image/webp">
+                                        <img class="lazyload" data-src="{{this.img}}" alt="Фото">
+                                    </picture>
+                                    <div class="intro__img-desc-block">
+                                        <div class="intro__img-desc-img">
+                                            <picture>
+                                                <source srcset="{{this.imgWebp}}" type="image/webp">
+                                                <img class="lazyload" data-src="{{this.img}}" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="intro__img-desc-content">
+                                            <div class="intro__img-desc-top">
+                                                <h3 class="intro__img-desc-title">BioPit</h3>
+                                                <span class="intro__img-desc-price">3 990 ₽</span>
+                                            </div>
+                                            <span class="intro__img-desc">природный коллаген</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="intro__content">
+                                    <img class="intro__round-img lazyload" data-src="img/round-text.png">
+                                    <h2 class="intro__title">Кремниевый комплекс в подарок при покупке 2-х штук Biopit</h2>
+                                    <div class="intro__text">
+                                        <p>Только на нашем официальном сайте  3 — 26 января</p>
+                                    </div>
+                                    <a class="intro__link button button--white" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                    {{> slider-navigation }}
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,56 @@
+.header {
+  padding: 1.6rem 0;
+
+  font: var(--text-t2);
+  color: var(--black-color);
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__logo {
+    grid-column: span 2;
+
+    svg {
+      width: 9.3rem;
+      height: 3.4rem;
+    }
+  }
+
+  &__catalog-links {
+    grid-column: span 3;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__menu {
+    grid-column: span 4;
+
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__phone {
+    grid-column: span 2;
+    margin-left: 5rem;
+  }
+
+  &__user-navigation {
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.4rem;
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}

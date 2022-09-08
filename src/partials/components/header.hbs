@@ -1,0 +1,40 @@
+<div class="header">
+    <div class="container">
+        <nav class="header__nav">
+            <a class="header__logo link" href="index.html">
+                <svg>
+                    <use xlink:href="#logo"></use>
+                </svg>
+            </a>
+            <div class="header__catalog-links">
+                <a class="header__catalog-link button button--white" href="catalog.html">
+                    <svg>
+                        <use xlink:href="#button-icon"></use>
+                        <span>Каталог</span>
+                    </svg>
+                </a>
+                <a class="header__promotion-link link" href="catalog.html">Акции</a>
+            </div>
+            <ul class="header__menu">
+                {{#each menu }}
+                    <li class="header__menu-item">
+                        <a class="header__menu-link link" href="{{this.link}}">{{this.text}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+            <a class="header__phone link" href="tel:8800999348000">8 800 999 348 000</a>
+            <div class="header__user-navigation">
+                <button class="header__user-search link">
+                    <svg>
+                        <use xlink:href="#search-icon"></use>
+                    </svg>
+                </button>
+                <a class="header__user-basket link" href="backet.html">
+                    <svg>
+                        <use xlink:href="#backet-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>

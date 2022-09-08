@@ -1,0 +1,39 @@
+@import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/choices.js/public/assets/styles/choices';
+@import '../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone';
+@import "../../node_modules/@fancyapps/ui/dist/fancybox";
+
+.swiper-slide {
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-button-lock {
+    display: none !important;
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+
+    font: var(--text-t3);
+    color: var(--black-color);
+}
+
+.parsley-errors-list {
+    font-size: 1.4rem;
+    color: rgba(221, 198, 186, 1);
+}

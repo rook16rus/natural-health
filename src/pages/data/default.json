@@ -1,0 +1,24 @@
+{
+  "menu": [
+    {
+      "link": "delivery.html",
+      "text": "Доставка"
+    },
+    {
+      "link": "about.html",
+      "text": "О компании"
+    },
+    {
+      "link": "dealer.html",
+      "text": "Станьте дилером"
+    },
+    {
+      "link": "press-center.html",
+      "text": "Пресс-центр"
+    },
+    {
+      "link": "contacts.html",
+      "text": "Контакты"
+    }
+  ]
+}
