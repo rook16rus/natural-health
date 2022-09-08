@@ -35,5 +35,51 @@
     {
       "text": "Бесплатная доставка"
     }
+  ],
+  "categories": [
+    {
+      "img": "img/category-1.svg",
+      "text": "Сон и комфорт"
+    },
+    {
+      "img": "img/category-2.svg",
+      "text": "Иммунитет"
+    },
+    {
+      "img": "img/category-3.svg",
+      "text": "Сердце и сосуды"
+    },
+    {
+      "img": "img/category-4.svg",
+      "text": "Кости и суставы"
+    },
+    {
+      "img": "img/category-5.svg",
+      "text": "Мужское здоровье"
+    },
+    {
+      "img": "img/category-6.svg",
+      "text": "Женское здоровье"
+    },
+    {
+      "img": "img/category-7.svg",
+      "text": "Желудок и кишечник"
+    },
+    {
+      "img": "img/category-8.svg",
+      "text": "Легкое дыхание"
+    },
+    {
+      "img": "img/category-9.svg",
+      "text": "Для глаз"
+    },
+    {
+      "img": "img/category-3.svg",
+      "text": "Для носа"
+    },
+    {
+      "img": "img/category-3.svg",
+      "text": "Сердце и сосуды"
+    }
   ]
 }

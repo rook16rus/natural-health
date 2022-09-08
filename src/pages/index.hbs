@@ -55,6 +55,24 @@
                 </div>
             </div>
         </section>
+        <section class="categories">
+            <div class="container">
+                <h2 class="categories__title">Категории</h2>
+                <ul class="categories__list">
+                    {{#each categories }}
+                        <li class="categories__item">
+                            <a class="categories__item-link tag" href="catalog.html">
+                                <img class="lazyload" data-src="{{this.img}}" alt="Иконка категории">
+                                <span>{{this.text}}</span>
+                            </a>
+                        </li>
+                    {{/each}}
+                    <li class="categories__more-button-block">
+                        <button class="categories__more-button button button--white">Смотреть все</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
     {{/content}}
 {{/extend}}
