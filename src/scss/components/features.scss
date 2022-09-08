@@ -1,0 +1,37 @@
+.features {
+  padding-bottom: 11rem;
+
+  &__slider {
+    padding: 3.6rem 0;
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 2rem;
+
+    .swiper-wrapper {
+      transition: linear;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4.4rem;
+    width: auto;
+    
+    font: var(--other);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-right: 4.4rem;
+
+      background: url("../img/star-icon.svg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}

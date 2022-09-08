@@ -18,6 +18,7 @@ import fileInputs from "./build-in/fileInputs";
 import alignHeights from "./custom/alignHeights";
 import roundText from "./build-in/roundText";
 import introSlider from "./build-in/introSlider";
+import featuresSlider from "./build-in/featuresSlider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fileInputs();
     introSlider();
     roundText();
+    featuresSlider()
 });
 
 document.addEventListener('lazyloaded', () => {

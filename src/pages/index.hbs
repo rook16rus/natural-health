@@ -44,6 +44,17 @@
                 </div>
             </div>
         </section>
+        <section class="features">
+            <div class="container">
+                <div class="features__slider swiper">
+                    <div class="swiper-wrapper">
+                        {{#each features }}
+                            <div class="features__slide swiper-slide">{{this.text}}</div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </section>
 
     {{/content}}
 {{/extend}}
