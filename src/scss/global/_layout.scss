@@ -53,6 +53,17 @@
     }
 
     &--white {
+        color: #fff;
+        border-color: #fff;
+
+        &:hover {
+            border-color: var(--black-color);
+            background-color: var(--black-color);
+            color: #fff;
+        }
+    }
+
+    &--bordered {
         color: var(--black-color);
 
         &:hover {

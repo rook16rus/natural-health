@@ -1,0 +1,140 @@
+.about-section {
+  padding-bottom: 14rem;
+
+  &__inner {
+    padding: 11rem 4rem 4rem;
+
+    border-radius: 2rem;
+    overflow: hidden;
+
+    color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+
+    font: var(--regular) 14rem/90% var(--main-ff);
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  &__video-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    max-width: 14.2rem;
+    margin: 0 auto;
+  }
+
+  &__video-img {
+    width: 14.2rem;
+    height: 14.2rem;
+
+    background: url("../img/video-link-bg.png") no-repeat center;
+    background-size: cover;
+  }
+
+  &__video-desc {
+    max-width: 9.6rem;
+    
+    font: var(--text-t3);
+    text-align: center;
+  }
+
+  &__content {
+    max-width: 32.4rem;
+    margin-left: auto;
+    margin-top: -2.8rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-bottom: 4rem;
+
+    font: var(--text-t2);
+  }
+
+  &__link {
+    display: inline-flex;
+  }
+
+  &__director {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 75.2rem;
+    min-height: 32.5rem;
+    margin-top: -13.5rem;
+    padding: 4rem;
+
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: var(--gray-color);
+
+    color: var(--black-color);
+  }
+
+  &__director-img {
+    position: absolute;
+    top: 1.6rem;
+    right: -8.2rem;
+  }
+
+  &__director-name {
+    display: block;
+    max-width: 32.6rem;
+    margin-bottom: 2rem;
+
+    font: var(--title-h3);
+  }
+
+  &__director-position {
+    max-width: 27rem;
+    margin-bottom: 2rem;
+
+    font: var(--other-2);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.3;
+  }
+
+  &__director-text {
+    position: relative;
+
+    margin-top: auto;
+    padding-top: 0.8rem;
+    padding-left: 2.4rem;
+    max-width: 32.5rem;
+
+    font: var(--text-t2);
+
+    &::before {
+      content: '“';
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      font: var(--title-h3);
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: -5.4rem;
+      right: -9.4rem;
+
+      width: 22.3rem;
+      height: 20.3rem;
+
+      background: url("../img/director-signature.svg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
