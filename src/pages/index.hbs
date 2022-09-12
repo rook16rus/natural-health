@@ -106,6 +106,12 @@
                 {{> catalog-list data=popular }}
             </div>
         </section>
+        <section class="invitation">
+            <div class="container">
+                {{> lead-slider data=invitation1 dataNavigation=invitationNavigation1 }}
+                {{> lead-slider data=invitation2 dataNavigation=invitationNavigation2 mod='lead-slider--reverse' }}
+            </div>
+        </section>
 
     {{/content}}
 {{/extend}}

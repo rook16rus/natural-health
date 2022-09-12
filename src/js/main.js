@@ -19,6 +19,7 @@ import alignHeights from "./custom/alignHeights";
 import roundText from "./build-in/roundText";
 import introSlider from "./build-in/introSlider";
 import featuresSlider from "./build-in/featuresSlider";
+import leadSlider from "./build-in/leadSlider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     introSlider();
     roundText();
     featuresSlider();
+    leadSlider();
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
 });
