@@ -53,12 +53,17 @@
 
     img {
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
 
       width: 100%;
+      max-width: 90%;
       height: 100%;
+      max-height: 85%;
       object-fit: contain;
+
+      filter: drop-shadow(-34.9054px -8.80987px 22px rgba(0, 0, 0, 0.08)) drop-shadow(-23.6541px -5.97012px 13.61px rgba(0, 0, 0, 0.0957407)) drop-shadow(-16.7417px -4.22548px 8.5963px rgba(0, 0, 0, 0.0839259)) drop-shadow(-12.5441px -3.16605px 5.84375px rgba(0, 0, 0, 0.0715)) drop-shadow(-9.43738px -2.38193px 4.23704px rgba(0, 0, 0, 0.0554074)) drop-shadow(-5.79736px -1.46321px 2.66088px rgba(0, 0, 0, 0.0325926));
     }
   }
 
