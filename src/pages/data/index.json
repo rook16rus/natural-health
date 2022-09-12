@@ -113,5 +113,36 @@
       "title": "Анатомическая продукция",
       "text": "Минеральные комплексы содержат в своем составе все минералы, требующиеся человеческому организму"
     }
+  ],
+  "popular": [
+    {
+      "img": "img/catalog-1.jpg",
+      "imgWebp": "img/catalog-1.webp",
+      "title": "Aurum",
+      "price": "3 990 ₽",
+      "text": "Нормализует структурно-функциональные процессы в соединительной ткани, способствует регенерации.",
+      "hit": true
+    },
+    {
+      "img": "img/catalog-2.jpg",
+      "imgWebp": "img/catalog-2.webp",
+      "title": "Antiparazit 2",
+      "price": "2 990 ₽",
+      "text": "Для поджелудочной железы"
+    },
+    {
+      "img": "img/catalog-1.jpg",
+      "imgWebp": "img/catalog-1.webp",
+      "title": "Aurum",
+      "price": "3 990 ₽",
+      "text": "Нормализует структурно-функциональные процессы в соединительной ткани, способствует регенерации."
+    },
+    {
+      "img": "img/catalog-2.jpg",
+      "imgWebp": "img/catalog-2.webp",
+      "title": "Antiparazit 2",
+      "price": "2 990 ₽",
+      "text": "Для поджелудочной железы"
+    }
   ]
 }

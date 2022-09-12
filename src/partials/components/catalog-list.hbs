@@ -1,0 +1,49 @@
+<ul class="catalog-list">
+    {{#each data }}
+        <li class="catalog-list__item">
+            <a class="catalog-list__link" href="product.html">
+                <div class="catalog-list__img">
+                    <picture>
+                        <source srcset="{{this.imgWebp}}" type="image/webp">
+                        <img class="lazyload" data-src="{{this.img}}" alt="Фото товара">
+                    </picture>
+                    {{#if hit }}
+                        <span class="catalog-list__hit">
+                            <svg>
+                                <use xlink:href="#hit-icon"></use>
+                            </svg>
+                            <span>Хит продаж</span>
+                        </span>
+                    {{/if}}
+                    <div class="catalog-list__basket">
+                        <svg>
+                            <use xlink:href="#backet-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="catalog-list__price-block">
+                    <h3 class="catalog-list__title">{{this.title}}</h3>
+                    <span class="catalog-list__price">{{this.price}}</span>
+                </div>
+                <p class="catalog-list__text">{{this.text}}</p>
+                <ul class="catalog-list__advantages">
+                    <li>
+                        <svg>
+                            <use xlink:href="#shield-icon"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use xlink:href="#moon-icon"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use xlink:href="#bone-icon"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </a>
+        </li>
+    {{/each}}
+</ul>
