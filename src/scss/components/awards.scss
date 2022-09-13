@@ -1,0 +1,88 @@
+.awards {
+  padding-bottom: 4rem;
+
+  &__inner {
+    padding: 8rem 0 0;
+
+    background-color: var(--gray-color);
+    border-radius: 2rem;
+  }
+
+  &__title {
+    margin: 0 auto 2.8rem;
+
+    font: var(--other-2);
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    max-width: 102rem;
+    margin: 0 auto 7.2rem;
+
+    font: var(--title-h1);
+    text-align: center;
+
+    span {
+      opacity: 0.1;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #E6E6E6;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.6rem 2rem 4.2rem;
+
+    &:not(:last-child) {
+      border-right: 1px solid #E6E6E6;
+    }
+  }
+
+  &__item-img-block {
+    width: 100%;
+    max-width: 18rem;
+    margin-bottom: 2rem;
+  }
+
+  &__item-img {
+    position: relative;
+
+    display: block;
+    padding-top: 70%;
+
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-title {
+    max-width: 26rem;
+    margin-bottom: 0.4rem;
+
+    font: var(--text-t3);
+    text-align: center;
+  }
+
+  &__item-date {
+    font: var(--text-t3);
+    opacity: 0.3;
+  }
+}
