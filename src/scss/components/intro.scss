@@ -1,11 +1,31 @@
 .intro {
   padding-bottom: 1.6rem;
 
+  @include breakpoint(small-tablet) {
+    padding-bottom: 1.2rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 0.8rem;
+  }
+
   &__slide {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     min-height: 70rem;
+
+    @include breakpoint(tablet) {
+      gap: 1.6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      gap: 1.2rem;
+    }
+
+    @include breakpoint(mobile) {
+      gap: 0.8rem;
+    }
   }
 
   &__img {
@@ -13,6 +33,10 @@
 
     border-radius: 2rem;
     overflow: hidden;
+
+    @include breakpoint(mobile) {
+      border-radius: 1rem;
+    }
 
     img {
       width: 100%;
@@ -33,6 +57,19 @@
     
     border-radius: 9.2rem;
     background-color: #fff;
+
+    @include breakpoint(tablet) {
+      gap: 1.2rem;
+
+    }
+
+    @include breakpoint(small-tablet) {
+      display: none;
+    }
+
+    @include breakpoint(mobile) {
+
+    }
   }
 
   &__img-desc-img {
