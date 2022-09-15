@@ -20,5 +20,110 @@
       "link": "contacts.html",
       "text": "Контакты"
     }
+  ],
+  "footerMenu": [
+    {
+      "title": "Интернет-магазин",
+      "footerList": [
+        {
+          "link": "#",
+          "text": "Все продукты"
+        },
+        {
+          "link": "#",
+          "text": "ЭИП"
+        },
+        {
+          "link": "#",
+          "text": "Сон и комфорт"
+        },
+        {
+          "link": "#",
+          "text": "Косметика"
+        },
+        {
+          "link": "#",
+          "text": "Добавки"
+        }
+      ]
+    },
+    {
+      "title": "Компания",
+      "footerList": [
+        {
+          "link": "#",
+          "text": "О компании"
+        },
+        {
+          "link": "#",
+          "text": "Как стать диллером?"
+        },
+        {
+          "link": "#",
+          "text": "Сертификаты"
+        },
+        {
+          "link": "#",
+          "text": "Новости"
+        }
+      ]
+    },
+    {
+      "title": "Покупателям",
+      "footerList": [
+        {
+          "link": "#",
+          "text": "Доставка и оплата"
+        },
+        {
+          "link": "#",
+          "text": "Контакты"
+        }
+      ]
+    },
+    {
+      "title": "Контакты",
+      "footerList": [
+        {
+          "address": "Казань, ул. Восстания 100 <br> к5050"
+        },
+        {
+          "link": "#",
+          "text": "8 800 101–59–23",
+          "mod": true
+        },
+        {
+          "link": "#",
+          "text": "info@nhstar.ru",
+          "mod": true
+        }
+      ]
+    },
+    {
+      "title": "Часы работы",
+      "mod": true,
+      "footerList": [
+        {
+          "scheduleTerm": "Понедельник - Четверг",
+          "scheduleValue": "09:00 -18:00"
+        },
+        {
+          "scheduleTerm": "Пятница",
+          "scheduleValue": "09:00 -17:00"
+        },
+        {
+          "scheduleTerm": "Суббота - Воскресение",
+          "scheduleValue": "выходной"
+        }
+      ]
+    }
+  ],
+  "socials": [
+    {
+      "svg": "social-1"
+    },
+    {
+      "svg": "social-2"
+    }
   ]
 }
