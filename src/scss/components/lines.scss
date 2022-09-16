@@ -1,6 +1,18 @@
 .lines {
   padding-bottom: 12rem;
 
+  @include breakpoint(tablet) {
+    padding-bottom: 10rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding-bottom: 8rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 6rem;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -11,6 +23,20 @@
     border-radius: 2rem;
 
     color: #fff;
+
+    @include breakpoint(tablet) {
+      padding: 7.5rem 3.5rem 6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      padding: 7rem 3rem 5.5rem;
+    }
+
+    @include breakpoint(mobile) {
+      padding: 6rem 2rem 5rem;
+
+      border-radius: 1rem;
+    }
   }
 
   &__desc {
@@ -19,6 +45,18 @@
     font: var(--other-2);
     letter-spacing: 0.2em;
     text-transform: uppercase;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2.4rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__title {
@@ -27,6 +65,18 @@
 
     font: var(--title-h1);
     text-align: center;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 5.5rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 5rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 4.5rem;
+    }
 
     span {
       opacity: 0.2;
@@ -39,6 +89,21 @@
     gap: 4rem 10rem;
     max-width: 110rem;
     margin: 0 auto;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4rem 7rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+    }
+
+    @include breakpoint(mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem 2rem;
+    }
   }
 
   &__item-link {
@@ -51,6 +116,10 @@
 
     padding-top: 160.2%;
     margin-bottom: 3.7rem;
+
+    @include breakpoint(mobile) {
+      padding-top: 120%;
+    }
 
     img {
       position: absolute;
@@ -76,5 +145,9 @@
   &__item-text {
     font: var(--text-t4);
     opacity: 0.3;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
   }
 }
