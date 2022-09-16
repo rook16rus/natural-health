@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     fileInputs();
     introSlider();
     roundText();
-    featuresSlider();
     leadSlider();
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
@@ -51,7 +50,7 @@ document.addEventListener('lazyloaded', () => {
 });
 
 document.fonts.ready.then((res) => {
-
+    featuresSlider();
 })
 
 window.addEventListener('load', function () {

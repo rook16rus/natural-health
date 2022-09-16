@@ -7,12 +7,5 @@ export default function featuresSlider() {
     const swiper = new Swiper('.features__slider', {
         slidesPerView: "auto",
         loop: true,
-        speed: 6000,
-        allowTouchMove: false
-    })
-
-    swiper.slideNext();
-    swiper.on('slideNextTransitionEnd', () => {
-        swiper.slideNext();
     })
 }
