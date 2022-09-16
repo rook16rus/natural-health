@@ -3,6 +3,23 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem 2rem;
 
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(small-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.6rem 1.6rem;
+  }
+
+  @include breakpoint(mobile) {
+    gap: 3.4rem 1.2rem;
+  }
+
+  @media (max-width: 350px) {
+    grid-template-columns: 1fr;
+  }
+
   &__link {
     display: block;
     height: 100%;
@@ -17,6 +34,13 @@
     border-radius: 2rem 2rem 3.2rem 0.8rem;
     background-color: var(--gray-color);
     overflow: hidden;
+
+    @include breakpoint(mobile) {
+      padding-top: 128.91%;
+      margin-bottom: 1.2rem;
+
+      border-radius: 1rem 1rem 2.2rem 0.4rem;
+    }
 
     img {
       position: absolute;
@@ -41,6 +65,22 @@
     font: var(--other-2);
     text-transform: uppercase;
 
+    @include breakpoint(tablet) {
+      top: 2.2rem;
+      left: 2.2rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      top: 1.8rem;
+      left: 1.8rem;
+    }
+
+    @include breakpoint(mobile) {
+      top: 1.1rem;
+      left: 1.4rem;
+    }
+
+
     svg {
       width: 1rem;
       height: 1.4rem;
@@ -61,6 +101,22 @@
     border-radius: 50%;
     background-color: #fff;
 
+    @include breakpoint(small-tablet) {
+      right: 1rem;
+      bottom: 1rem;
+
+      width: 4.6rem;
+      height: 4.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      right: 0.6rem;
+      bottom: 0.6rem;
+
+      width: 4rem;
+      height: 4rem;
+    }
+
     svg {
       width: 2rem;
       height: 2rem;
@@ -70,19 +126,32 @@
   &__price-block {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 1.2rem;
 
     font: var(--text-t1);
+
+    @include breakpoint(mobile) {
+      margin-bottom: 0.8rem;
+    }
   }
 
   &__title {
     margin-right: 1.5rem;
     font-weight: 400;
+
+    @include breakpoint(mobile) {
+      margin-right: 0.8rem;
+    }
   }
 
   &__price {
     position: relative;
     padding-left: 1.5rem;
+
+    @include breakpoint(mobile) {
+      padding-left: 0.8rem;
+    }
 
     &::before {
       content: '';
@@ -97,6 +166,11 @@
 
       border-radius: 50%;
       background-color: var(--black-color);
+
+      @include breakpoint(mobile) {
+        width: 0.2rem;
+        height: 0.2rem;
+      }
     }
   }
 
@@ -107,6 +181,10 @@
     opacity: 0.5;
 
     font: var(--text-t3);
+
+    @include breakpoint(mobile) {
+      margin-bottom: 0.8rem;
+    }
   }
 
   &__advantages {

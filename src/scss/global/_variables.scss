@@ -59,7 +59,7 @@
 @include breakpoint(mobile) {
   :root {
     /* Layout containers */
-    --content-padding: 2rem;
+    --content-padding: 1.6rem;
 
     /* Text */
     --text-t1: var(--regular) 1.6rem/110% var(--main-ff);

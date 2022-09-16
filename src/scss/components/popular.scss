@@ -1,6 +1,19 @@
 .popular {
   padding-bottom: 12rem;
 
+  @include breakpoint(tablet) {
+    padding-bottom: 10rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding-bottom: 8rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 6rem;
+  }
+
+
   &__company-name {
     display: block;
     margin-bottom: 2.7rem;
@@ -9,6 +22,19 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-align: center;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2.4rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.6rem;
+    }
+
   }
 
   &__title {
@@ -16,5 +42,17 @@
     
     font: var(--title-h1);
     text-align: center;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 5rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 4rem;
+    }
   }
 }
