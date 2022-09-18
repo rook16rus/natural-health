@@ -167,7 +167,7 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="reviews__title">Отзывы наших покупателей</h2>
-                <div class="reviews__slider swiper js-init-slider" data-slides-breakpoints="100:1,641:2,769:3" data-space="22">
+                <div class="reviews__slider swiper js-init-slider" data-slides-breakpoints="100:1,641:2,1025:3" data-space="22" data-auto-height="true">
                     <div class="swiper-wrapper">
                         {{#each reviews }}
                             <blockquote class="reviews__item swiper-slide">
@@ -190,6 +190,7 @@
                         {{/each}}
                     </div>
                 </div>
+                <a class="reviews__link button button--bordered" href="#">Смотреть все</a>
             </div>
         </section>
         <section class="news-section">

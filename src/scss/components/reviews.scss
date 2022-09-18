@@ -4,6 +4,18 @@
   &__title {
     margin-bottom: 7.2rem;
     font: var(--title-h1);
+
+    @include breakpoint(tablet) {
+      margin-bottom: 5.5rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 4.5rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__item-top {
@@ -11,6 +23,21 @@
     align-items: center;
     gap: 2.4rem;
     margin-bottom: 3.2rem;
+
+    @include breakpoint(tablet) {
+      gap: 1.8rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      gap: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint(mobile) {
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__item-img {
@@ -20,6 +47,23 @@
 
     border-radius: 50%;
     border: 1px solid rgba(28, 28, 28, .1);
+
+    @include breakpoint(tablet) {
+      width: 9rem;
+      height: 9rem;
+      padding: 1.6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+
+    @include breakpoint(mobile) {
+      width: 6rem;
+      height: 6rem;
+      padding: 1.3rem;
+    }
 
     img {
       width: 100%;
@@ -36,6 +80,10 @@
     gap: 0.4rem;
 
     font: var(--text-t1);
+
+    @include breakpoint(mobile) {
+      gap: 0;
+    }
   }
 
   &__item-author {
@@ -54,5 +102,18 @@
     max-width: 46rem;
 
     font: var(--text-t1);
+
+    @include breakpoint(mobile) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__link {
+    display: none;
+
+    @include breakpoint(mobile) {
+      display: inline-flex;
+      margin-top: 3rem;
+    }
   }
 }
