@@ -6,5 +6,32 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 7rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 4.5rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__link {
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
+
+  &__tablet-link {
+    display: none;
+
+    @include breakpoint(tablet) {
+      display: inline-flex;
+      margin-top: 3rem;
+    }
   }
 }

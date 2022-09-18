@@ -199,7 +199,7 @@
                     {{> press-filter data=pressFilter }}
                     <a class="news-section__link button button--bordered" href="news.html">Смотреть все</a>
                 </header>
-                <div class="news-section__slider swiper js-init-slider" data-slides-breakpoints="100:1,641:2,769:3,1025:4" data-space="20">
+                <div class="news-section__slider swiper js-init-slider" data-slides-breakpoints="100:1,400:2,769:3,1025:4" data-space="20" data-auto-height="true">
                     <div class="swiper-wrapper">
                         {{#each news }}
                             <div class="swiper-slide">
@@ -208,6 +208,7 @@
                         {{/each}}
                     </div>
                 </div>
+                <a class="news-section__tablet-link button button--bordered" href="news.html">Смотреть все</a>
             </div>
         </section>
         <section class="awards">

@@ -41,6 +41,18 @@
     margin-bottom: 2rem;
 
     font: var(--title-h4);
+
+    @include breakpoint(tablet) {
+      margin-bottom: 1.8rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 1.4rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__text {
