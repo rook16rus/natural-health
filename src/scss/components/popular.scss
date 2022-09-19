@@ -37,22 +37,27 @@
 
   }
 
-  &__title {
-    margin-bottom: 7.2rem;
-    
-    font: var(--title-h1);
-    text-align: center;
+  &__title-wrapper {
+    margin-bottom: 6.6rem;
+    padding-bottom: 0.6rem;
+
+    overflow: hidden;
 
     @include breakpoint(tablet) {
-      margin-bottom: 6rem;
+      margin-bottom: 5.4rem;
     }
 
     @include breakpoint(small-tablet) {
-      margin-bottom: 5rem;
+      margin-bottom: 4.4rem;
     }
 
     @include breakpoint(mobile) {
-      margin-bottom: 4rem;
+      margin-bottom: 3.4rem;
     }
+  }
+
+  &__title {
+    font: var(--title-h1);
+    text-align: center;
   }
 }

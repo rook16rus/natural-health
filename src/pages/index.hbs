@@ -58,7 +58,9 @@
         </section>
         <section class="categories">
             <div class="container">
-                <h2 class="categories__title">Категории</h2>
+                <div class="categories__title-wrapper">
+                    <h2 class="categories__title js-title-animate">Категории</h2>
+                </div>
                 <ul class="categories__list js-section-animate">
                     {{#each categories }}
                         <li class="categories__item">
@@ -105,7 +107,9 @@
         <section class="popular">
             <div class="container">
                 <span class="popular__company-name">Natural Health Corporation</span>
-                <h2 class="popular__title">Популярные товары</h2>
+                <div class="popular__title-wrapper">
+                    <h2 class="popular__title js-title-animate">Популярные товары</h2>
+                </div>
                 {{> catalog-list data=popular }}
             </div>
         </section>
@@ -170,7 +174,9 @@
         </section>
         <section class="reviews">
             <div class="container">
-                <h2 class="reviews__title">Отзывы наших покупателей</h2>
+                <div class="reviews__title-wrapper">
+                    <h2 class="reviews__title js-title-animate">Отзывы наших покупателей</h2>
+                </div>
                 <div class="reviews__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,641:2,1025:3" data-space="22" data-auto-height="true">
                     <div class="swiper-wrapper">
                         {{#each reviews }}

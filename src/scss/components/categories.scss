@@ -13,19 +13,23 @@
     padding-bottom: 6rem;
   }
 
-  &__title {
-    margin-bottom: 3.6rem;
-    
-    font: var(--title-h2);
-    text-align: center;
+  &__title-wrapper {
+    overflow: hidden;
+    margin-bottom: 3rem;
+    padding-bottom: 0.6rem;
 
     @include breakpoint(small-tablet) {
-      margin-bottom: 3.2rem;
+      margin-bottom: 2.6rem;
     }
 
     @include breakpoint(mobile) {
-      margin-bottom: 2.8rem;
+      margin-bottom: 2.2rem;
     }
+  }
+
+  &__title {
+    font: var(--title-h2);
+    text-align: center;
   }
 
   &__list {

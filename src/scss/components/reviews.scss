@@ -5,21 +5,27 @@
     order: 2;
   }
 
-  &__title {
-    margin-bottom: 7.2rem;
-    font: var(--title-h1);
+  &__title-wrapper {
+    margin-bottom: 6.6rem;
+    padding-bottom: 0.6rem;
+
+    overflow: hidden;
 
     @include breakpoint(tablet) {
-      margin-bottom: 5.5rem;
+      margin-bottom: 4.9rem;
     }
 
     @include breakpoint(small-tablet) {
-      margin-bottom: 4.5rem;
+      margin-bottom: 3.9rem;
     }
 
     @include breakpoint(mobile) {
-      margin-bottom: 3rem;
+      margin-bottom: 2.4rem;
     }
+  }
+
+  &__title {
+    font: var(--title-h1);
   }
 
   &__item-top {

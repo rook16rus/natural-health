@@ -8,11 +8,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
-}
+  }
 
   &__radio-wrapper {
     display: flex;
     align-items: center;
+    padding-bottom: 0.9rem;
+
+    overflow: hidden;
 
     &:not(:last-of-type) {
       .press-filter__label::after {
