@@ -6,8 +6,6 @@ export default function introSlider() {
     const intro = document.querySelector('.intro');
     if (!intro) return;
 
-    console.log(1);
-
     const swiper = new Swiper('.intro__slider', {
         slidesPerView: 1,
         effect: "fade",

@@ -10,9 +10,14 @@
             </p>
             <a class="footer__top-link" href="#distributor">
                 <span>Хочу стать дистрибьютором</span>
-                <svg>
-                    <use xlink:href="#slider-arrow"></use>
-                </svg>
+                <div class="footer__top-link-icon">
+                    <svg>
+                        <use xlink:href="#slider-arrow"></use>
+                    </svg>
+                    <svg>
+                        <use xlink:href="#slider-arrow-mobile"></use>
+                    </svg>
+                </div>
             </a>
         </div>
         <div class="footer__body">
@@ -56,6 +61,17 @@
                             </div>
                         </li>
                     {{/each}}
+                    <li class="footer__socials">
+                    {{#each socials }}
+                        <div class="footer__social">
+                            <a class="footer__social-link link" href="#">
+                                <svg>
+                                    <use xlink:href="#{{this.svg}}"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    {{/each}}
+                    </li>
                 </ul>
                 <ul class="footer__socials">
                     {{#each socials }}
@@ -82,3 +98,20 @@
         </div>
     </div>
 </footer>
+
+
+<!--
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+
+    }
+
+-->
