@@ -1,6 +1,10 @@
 .reviews {
   padding-bottom: 12rem;
 
+  @include breakpoint(mobile) {
+    order: 2;
+  }
+
   &__title {
     margin-bottom: 7.2rem;
     font: var(--title-h1);

@@ -11,8 +11,6 @@ export default function aboutMoreButton() {
         return;
     }
 
-    console.log(moreButton);
-
     moreButton.addEventListener('click', () => {
         if (textContainer.classList.contains('active')) {
             moreButton.textContent = 'Читать полностью';

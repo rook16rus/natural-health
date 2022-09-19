@@ -1,6 +1,10 @@
 .awards {
   padding-bottom: 4rem;
 
+  @include breakpoint(mobile) {
+    order: 4;
+  }
+
   &__inner {
     padding: 8rem 0 0;
 

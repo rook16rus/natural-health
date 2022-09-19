@@ -10,7 +10,14 @@
   }
 
   @include breakpoint(mobile) {
+    display: contents;
     padding-bottom: 4rem;
+
+    .container {
+      &:last-child {
+        order: 1;
+      }
+    }
   }
 
   .lead-slider:first-child {

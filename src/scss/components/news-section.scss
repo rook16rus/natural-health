@@ -1,6 +1,10 @@
 .news-section {
   padding-bottom: 11rem;
 
+  @include breakpoint(mobile) {
+    order: 3;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
