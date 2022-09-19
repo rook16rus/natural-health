@@ -226,6 +226,8 @@
     top: 1.6rem;
     right: -8.2rem;
 
+    width: 52.7rem;
+
     @include breakpoint(mobile) {
       top: auto;
       right: -7rem;
