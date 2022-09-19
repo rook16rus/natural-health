@@ -34,6 +34,10 @@
 }
 
 .parsley-errors-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+
     font-size: 1.4rem;
-    color: rgba(221, 198, 186, 1);
+    color: var(--system-color);
 }

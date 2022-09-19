@@ -123,15 +123,16 @@
 .input {
     display: flex;
     align-content: center;
-    padding: 0 2.5rem;
-    height: 6rem;
+    padding: 0;
+    height: 6.2rem;
 
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(28, 28, 28, 0.15);
 
-    font: var(--text-t2);
-    font-variant-numeric: lining-nums;
-    color: rgba(251, 251, 251, 1);
+    font: var(--text-t1);
+
+    @include placeholder() {
+        font: var(--text-t1);
+    }
 }
 
 .input-wrapper {
@@ -140,6 +141,27 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+
+    label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+
+        cursor: text;
+
+        font: var(--text-t1);
+
+        transition: 0.3s;
+
+        &.active {
+            top: 0;
+            transform: none;
+
+            font-size: 1.5rem;
+            opacity: 0.5;
+        }
+    }
 }
 
 .checkbox {
@@ -152,35 +174,55 @@
 
         cursor: pointer;
 
-        font: var(--text-t5);
-        opacity: 0.8;
+        font: var(--regular) 1.3rem/100% var(--main-ff);
 
         transition: 0.3s;
 
-        &:hover {
+        span span {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+
+        a {
             opacity: 1;
-            
-            a {
-                text-decoration: underline;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            span span {
+                opacity: 1;
+            }
+
+            &::before {
+                opacity: 1;
             }
         }
 
         &::before {
             content: '';
 
-            width: 2rem;
-            height: 2rem;
+            width: 1.6rem;
+            height: 1.6rem;
 
-            border: 1px solid rgba(255, 255, 255, 0.6);
+            border: 1px solid var(--black-color);
             border-radius: 0.4rem;
+            opacity: 0.1;
+            background-size: 1.2rem 1.2rem;
             
             transition: 0.3s;
         }
     }
 
-    &:checked + label::before {
-        background: url("../img/check-icon.svg") no-repeat center;
-        background-size: 1.5rem 1.5rem;
+    &:checked {
+        & + label span span {
+            opacity: 1;
+        }
+
+        & + label::before {
+            background: url("../img/icons/check-icon.svg") no-repeat center;
+            background-size: 1.2rem 1.2rem;
+            opacity: 1;
+        }
     }
 }
 
