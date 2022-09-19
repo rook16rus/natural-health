@@ -63,7 +63,9 @@
                     {{#each categories }}
                         <li class="categories__item">
                             <a class="categories__item-link tag" href="catalog.html">
-                                <img class="lazyload" data-src="{{this.img}}" alt="Иконка категории">
+                                <svg>
+                                    <use xlink:href="#{{this.img}}"></use>
+                                </svg>
                                 <span>{{this.text}}</span>
                             </a>
                         </li>

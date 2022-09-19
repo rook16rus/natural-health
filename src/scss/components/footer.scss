@@ -128,6 +128,14 @@
 
     font: var(--title-h4);
 
+    transition: 0.3s;
+    
+    &:hover {
+      border-color: var(--black-color);
+      background-color: var(--black-color);
+      color: #fff;
+    }
+
     @include breakpoint(tablet) {
       grid-column: span 1;
       display: inline-flex;

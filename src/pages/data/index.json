@@ -38,47 +38,47 @@
   ],
   "categories": [
     {
-      "img": "img/category-1.svg",
+      "img": "category-1",
       "text": "Сон и комфорт"
     },
     {
-      "img": "img/category-2.svg",
+      "img": "category-2",
       "text": "Иммунитет"
     },
     {
-      "img": "img/category-3.svg",
+      "img": "category-3",
       "text": "Сердце и сосуды"
     },
     {
-      "img": "img/category-4.svg",
+      "img": "category-4",
       "text": "Кости и суставы"
     },
     {
-      "img": "img/category-5.svg",
+      "img": "category-5",
       "text": "Мужское здоровье"
     },
     {
-      "img": "img/category-6.svg",
+      "img": "category-6",
       "text": "Женское здоровье"
     },
     {
-      "img": "img/category-7.svg",
+      "img": "category-7",
       "text": "Желудок и кишечник"
     },
     {
-      "img": "img/category-8.svg",
+      "img": "category-8",
       "text": "Легкое дыхание"
     },
     {
-      "img": "img/category-9.svg",
+      "img": "category-9",
       "text": "Для глаз"
     },
     {
-      "img": "img/category-3.svg",
+      "img": "category-3",
       "text": "Для носа"
     },
     {
-      "img": "img/category-3.svg",
+      "img": "category-3",
       "text": "Сердце и сосуды"
     }
   ],
@@ -118,6 +118,8 @@
     {
       "img": "img/catalog-1.jpg",
       "imgWebp": "img/catalog-1.webp",
+      "img2": "img/catalog-2.jpg",
+      "imgWebp2": "img/catalog-2.webp",
       "title": "Aurum",
       "price": "3 990 ₽",
       "text": "Нормализует структурно-функциональные процессы в соединительной ткани, способствует регенерации.",
@@ -126,6 +128,8 @@
     {
       "img": "img/catalog-2.jpg",
       "imgWebp": "img/catalog-2.webp",
+      "img2": "img/catalog-1.jpg",
+      "imgWebp2": "img/catalog-1.webp",
       "title": "Antiparazit 2",
       "price": "2 990 ₽",
       "text": "Для поджелудочной железы"
@@ -133,6 +137,8 @@
     {
       "img": "img/catalog-1.jpg",
       "imgWebp": "img/catalog-1.webp",
+      "img2": "img/catalog-2.jpg",
+      "imgWebp2": "img/catalog-2.webp",
       "title": "Aurum",
       "price": "3 990 ₽",
       "text": "Нормализует структурно-функциональные процессы в соединительной ткани, способствует регенерации."
@@ -140,6 +146,8 @@
     {
       "img": "img/catalog-2.jpg",
       "imgWebp": "img/catalog-2.webp",
+      "img2": "img/catalog-1.jpg",
+      "imgWebp2": "img/catalog-1.webp",
       "title": "Antiparazit 2",
       "price": "2 990 ₽",
       "text": "Для поджелудочной железы"

@@ -23,6 +23,7 @@ import leadSlider from "./build-in/leadSlider";
 import alignWidths from "./custom/alignWidths";
 import footerSchedule from "./build-in/footerSchedule";
 import inputPlaceholder from "./build-in/inputPlaceholder";
+import aboutMoreButton from "./build-in/aboutMoreButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     leadSlider();
     footerSchedule();
     inputPlaceholder();
+    aboutMoreButton();
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
     alignWidths('.footer__menu', '.footer__menu-schedule-value');
