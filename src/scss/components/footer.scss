@@ -457,6 +457,12 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 
+    transition: 0.3s;
+
+    &:hover {
+      border-color: #fff;
+    }
+
     svg {
       width: 1.4rem;
       height: 1.4rem;

@@ -109,6 +109,12 @@
   &__item-link {
     height: 100%;
     text-align: center;
+
+    &:hover {
+      .lines__item-img {
+        transform: scale(1.1);
+      }
+    }
   }
 
   &__item-img {
@@ -116,6 +122,8 @@
 
     padding-top: 160.2%;
     margin-bottom: 3.7rem;
+
+    transition: 0.3s;
 
     @include breakpoint(mobile) {
       padding-top: 120%;

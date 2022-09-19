@@ -78,6 +78,12 @@
     max-width: 14.2rem;
     margin: 0 auto;
 
+    &:hover {
+      .about-section__video-img {
+        transform: scale(1.1);
+      }
+    }
+
     @include breakpoint(tablet) {
       justify-content: center;
       flex-direction: row-reverse;
@@ -97,6 +103,8 @@
 
     background: url("../img/video-link-bg.png") no-repeat center;
     background-size: cover;
+
+    transition: 0.3s;
 
     @include breakpoint(tablet) {
       width: 13rem;
