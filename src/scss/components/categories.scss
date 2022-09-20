@@ -40,6 +40,8 @@
     max-width: 113rem;
     margin: 0 auto;
 
+    opacity: 0;
+
     @include breakpoint(mobile) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

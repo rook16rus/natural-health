@@ -27,6 +27,7 @@ import aboutMoreButton from "./build-in/aboutMoreButton";
 import awardsSlider from "./build-in/awardsSlider";
 import sectionAnimation from "./build-in/sectionAnimation";
 import titleAnimation from "./build-in/titleAnimation";
+import introAnimation from "./build-in/introAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,15 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
     fancybox();
     yandexMap();
     fileInputs();
-    introSlider();
     roundText();
     leadSlider();
     footerSchedule();
     inputPlaceholder();
     aboutMoreButton();
     awardsSlider();
-    sectionAnimation();
     titleAnimation();
+    introAnimation();
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
     alignWidths('.footer__menu', '.footer__menu-schedule-value');

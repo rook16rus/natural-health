@@ -14,11 +14,17 @@ export default function sectionAnimation() {
             }
         })
 
-        tl.from(section, {
+        tl.fromTo(section, {
             y: "3rem",
             opacity: 0,
             duration: 1,
             delay: section.dataset.delay ? section.dataset.delay : 0
+        }, {
+            duration: 1,
+            opacity: 1,
+            y: "0rem"
         })
     })
 }
+
+window.initSectionAnimation = sectionAnimation;

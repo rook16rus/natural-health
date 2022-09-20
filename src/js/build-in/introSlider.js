@@ -8,7 +8,9 @@ export default function introSlider() {
 
     const swiper = new Swiper('.intro__slider', {
         slidesPerView: 1,
+        speed: 1500,
         effect: "fade",
+        autoHeight: true,
         fadeEffect: {
             crossFade: true
         },
@@ -22,3 +24,5 @@ export default function introSlider() {
         }
     })
 }
+
+window.initIntroSlider = introSlider;
