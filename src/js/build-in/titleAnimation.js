@@ -15,7 +15,7 @@ export default function titleAnimation() {
         })
 
         tl.from(title, {
-            y: "100%",
+            y: "110%",
             duration: 0.8,
             delay: title.dataset.delay ? title.dataset.delay : 0
         })
