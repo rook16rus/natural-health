@@ -1,6 +1,8 @@
 .features {
   padding-bottom: 11rem;
 
+  opacity: 0;
+
   @include breakpoint(tablet) {
     padding-bottom: 9rem;
   }

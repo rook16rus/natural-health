@@ -25,7 +25,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
 
-        transition: transform .8s ease, visibility 0s linear 1.2s;
+        transition: transform .6s ease, visibility 0s linear 1.2s;
     }
 
     @media (max-width: 640px) {
@@ -46,7 +46,7 @@
     .animatable .loader {
         opacity: 0;
         visibility: hidden;
-        transition: opacity .8s ease, visibility 0s linear 1.2s;
+        transition: opacity .6s ease, visibility 0s linear 1.2s;
     }
 
     .animatable .loader__img {
@@ -88,9 +88,10 @@
                 setTimeout(() => {
                     window.initIntroSlider();
                     window.initSectionAnimation();
+                    window.initTitleAnimation();
                     enableScroll();
                     loaderHided = true
-                }, 300);
+                }, 500);
 
             }
         });

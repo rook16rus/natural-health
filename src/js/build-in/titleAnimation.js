@@ -14,10 +14,16 @@ export default function titleAnimation() {
             }
         })
 
-        tl.from(title, {
+        tl.fromTo(title, {
             y: "110%",
             duration: 0.8,
+            opacity: 0,
             delay: title.dataset.delay ? title.dataset.delay : 0
+        }, {
+            y: 0,
+            opacity: 1
         })
     })
 }
+
+window.initTitleAnimation = titleAnimation;

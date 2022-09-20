@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     inputPlaceholder();
     aboutMoreButton();
     awardsSlider();
-    titleAnimation();
     introAnimation();
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');

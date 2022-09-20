@@ -10,6 +10,7 @@ export default function leadSlider() {
         const swiper = new Swiper(slider, {
             effect: "fade",
             allowTouchMove: false,
+            autoHeight: true,
             fadeEffect: {
                 crossFade: true
             }
@@ -33,6 +34,13 @@ export default function leadSlider() {
                     swiper.slideTo(index);
                 })
             }
+
+            const container = navItem.closest('.lead-slider__navigation');
+            const text = slider.querySelector(`.lead-slider__slide:nth-child(${index + 1}) .lead-slider__text`);
+
+            console.log(text);
+
+            text.style.setProperty('--navigation-height', container.clientHeight + 'px');
         })
     })
 }
