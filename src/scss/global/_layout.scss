@@ -34,6 +34,7 @@
 
 .button {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1.2rem;
     height: 3.6rem;
@@ -130,8 +131,17 @@
 
     font: var(--text-t1);
 
+    @include breakpoint(mobile) {
+        height: 5.2rem;
+        font-size: 1.6rem;
+    }
+
     @include placeholder() {
         font: var(--text-t1);
+
+        @include breakpoint(mobile) {
+            font-size: 1.6rem;
+        }
     }
 }
 
@@ -154,12 +164,20 @@
 
         transition: 0.3s;
 
+        @include breakpoint(mobile) {
+            font-size: 1.6rem;
+        }
+
         &.active {
             top: 0;
             transform: none;
 
             font-size: 1.5rem;
             opacity: 0.5;
+
+            @include breakpoint(mobile) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -177,6 +195,10 @@
         font: var(--regular) 1.3rem/100% var(--main-ff);
 
         transition: 0.3s;
+
+        @include breakpoint(mobile) {
+            font-size: 1.2rem;
+        }
 
         span span {
             opacity: 0.5;
@@ -219,9 +241,11 @@
         }
 
         & + label::before {
-            background: url("../img/icons/check-icon.svg") no-repeat center;
+            background: var(--primary-color) url("../img/icons/check-icon.svg") no-repeat center;
             background-size: 1.2rem 1.2rem;
             opacity: 1;
+
+            border-color: transparent;
         }
     }
 }
