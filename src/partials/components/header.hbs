@@ -40,4 +40,61 @@
             </div>
         </nav>
     </div>
+    <nav class="header__burger-nav">
+        <div class="header__burger-close">
+            <svg>
+                <use xlink:href="#burger-close-icon"></use>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="header__burger-nav-wrapper">
+                <a class="header__burger-logo link" href="index.html">
+                    <svg>
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                </a>
+                <ul class="header__burger-menu">
+                    {{#each burgerMenu }}
+                        <li class="header__burger-item">
+                            <a class="header__burger-link link" href="{{this.link}}">
+                                {{this.text}}
+                            </a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <a class="header__burger-mail link" href="mailto:info@nhstar.ru">info@nhstar.ru</a>
+                <div class="header__burger-bottom">
+                    <a class="header__burger-phone link" href="tel:8800999348000">8 800 999 348 000</a>
+                    <ul class="header__burger-socials">
+                        {{#each socials }}
+                            <li class="header__burger-social">
+                                <a class="header__burger-social-link" href="#">
+                                    <svg>
+                                        <use xlink:href="#{{this.svg}}"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 </div>
+
+
+<!--
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+
+    }
+
+-->

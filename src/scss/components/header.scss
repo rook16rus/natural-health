@@ -1,5 +1,15 @@
 .header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
   padding: 1.6rem 0;
+
+  background-color: #fff;
+
+  transition: 0.3s;
 
   font: var(--text-t2);
   color: var(--black-color);
@@ -12,16 +22,29 @@
     padding: 1.2rem 0;
   }
 
+  &.active {
+    .header__burger-nav {
+      transform: translateY(0);
+    }
+  }
+
+  &--fixed {
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.25);
+  }
+
   &__burger {
     display: none;
 
     @include breakpoint(tablet) {
       position: relative;
+      z-index: 101;
 
       display: block;
       flex-shrink: 0;
       width: 2rem;
       height: 1.4rem;
+
+      cursor: pointer;
 
       @include breakpoint(mobile) {
         width: 1.6rem;
@@ -159,6 +182,130 @@
     svg {
       width: 2.4rem;
       height: 2.4rem;
+    }
+  }
+  
+  &__burger-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    z-index: 100;
+
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    padding: 3rem 0;
+
+    background-color: #fff;
+
+    transition: 0.5s ease-in-out;
+
+    @include breakpoint(mobile) {
+      padding: 2rem 0;
+    }
+  }
+
+  &__burger-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__burger-close {
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+
+    cursor: pointer;
+
+    @include breakpoint(mobile) {
+      top: 2rem;
+      left: 2rem;
+    }
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+
+      @include breakpoint(mobile) {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  &__burger-logo {
+    align-self: center;
+    width: 22rem;
+    height: 10.7rem;
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+      width: 17.8rem;
+      height: 6.5rem;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__burger-menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__burger-link {
+    display: block;
+    padding: 1.6rem;
+
+    border-bottom: 1px solid var(--gray-color);
+
+    font: var(--regular) 3rem/90% var(--main-ff);
+
+    @include breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__burger-mail {
+    margin-top: auto;
+    margin-bottom: 1.2rem;
+
+    color: #BBBBBB;
+
+    font: var(--text-t2);
+  }
+
+  &__burger-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font: var(--text-t1);
+  }
+
+  &__burger-socials {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  &__burger-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+
+    border: 1px solid var(--black-color);
+    border-radius: 50%;
+
+    svg {
+      width: 1.4rem;
+      height: 1.4rem;
     }
   }
 }
