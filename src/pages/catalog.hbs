@@ -1,0 +1,67 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="catalog">
+            <div class="container">
+                <header class="catalog__header">
+                    {{> breadcrumbs data=breadcrumbs }}
+                    <div class="catalog__title-wrapper">
+                        <h1 class="catalog__title">Каталог</h1>
+                    </div>
+                    <div class="catalog__desc">
+                        <p>
+                            В нашем ассортименте более 300 полезных продуктов, приготовленных специально для вас
+                        </p>
+                    </div>
+                    <div class="catalog__categories">
+                        <ul class="catalog__categories-list">
+                            {{#each categories }}
+                                <li class="catalog__categories-item">
+                                    <a class="catalog__categories-link tag" href="catalog.html">
+                                        <svg>
+                                            <use xlink:href="#{{this.img}}"></use>
+                                        </svg>
+                                        <span>{{this.text}}</span>
+                                    </a>
+                                </li>
+                            {{/each}}
+                            <li class="categories__more-button-block">
+                                <a class="categories__more-button button button--bordered" href="catalog.html">
+                                    <svg>
+                                        <use xlink:href="#arrow-down-icon"></use>
+                                    </svg>
+                                    <span>Еще +<span id="categoriesCount">10</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="catalog__filter">
+                    <div class="catalog__filter-count-block">
+                        <span class="catalog__filter-count">310</span>
+                        <span class="catalog__filter-count-desc">Найдено товаров</span>
+                    </div>
+                    <form class="catalog__filter-form" action="#">
+                        <select class="catalog__filter-select js-custom-select" name="catalogSort" id="catalogSort">
+                            <option value="">Сортировать</option>
+                            <option value="Grow">По возрастанию</option>
+                            <option value="Shrink">По убыванию</option>
+                        </select>
+                        <select class="catalog__filter-select js-custom-select" name="catalogHave" id="catalogHave">
+                            <option value="">Наличие товара</option>
+                            <option value="Grow">Есть</option>
+                            <option value="Shrink">Нету</option>
+                        </select>
+                        <div class="catalog__filter-price">
+                            <span class="catalog__filter-desc">Цена:</span>
+                            <div class="catalog__filter-range">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}
