@@ -42,3 +42,97 @@
     font-size: 1.4rem;
     color: var(--system-color);
 }
+
+.choices {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0;
+
+    font: var(--text-t2);
+
+
+
+    &[data-type*=select-one] {
+        &::after {
+            position: static;
+
+            width: 1.35rem;
+            height: 1.75rem;
+            margin-top: 0;
+
+            border: 0;
+            background: url("../img/icons/arrow-down-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+
+        &.is-open::after {
+            margin-top: 0;
+        }
+
+        .choices__inner {
+            padding: 0;
+        }
+    }
+
+    &__inner {
+        min-height: auto;
+        padding: 0;
+
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+
+        font-size: var(--text-t2);
+    }
+
+    &__list {
+        &--single {
+            padding: 0;
+        }
+    }
+
+    &__placeholder {
+        opacity: 1;
+    }
+}
+
+.noUi-target {
+    border: 0;
+    border-radius: 4rem;
+    background-color: #E6E6E6;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.noUi-horizontal {
+    height: 0.4rem;
+}
+
+.noUi-connects {
+    border-radius: 4rem;
+}
+
+.noUi-connect {
+    background-color: var(--primary-color);
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 12px;
+    height: 12px;
+    right: -8px;
+    top: -4.5px;
+}
+
+.noUi-handle {
+    border: 0;
+    border-radius: 50%;
+    background: var(--primary-color) url("../img/icons/star-white-icon.svg") no-repeat center;
+    background-size: 8px 8px;
+    box-shadow: none;
+    cursor: pointer;
+
+    &::after, &::before {
+        display: none;
+    }
+}

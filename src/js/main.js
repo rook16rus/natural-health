@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     introAnimation();
     header();
     customSelects();
-    catalogPrice()
+    catalogPrice();
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');

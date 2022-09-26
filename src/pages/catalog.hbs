@@ -3,62 +3,108 @@
 
         <section class="catalog">
             <div class="container">
-                <header class="catalog__header">
-                    {{> breadcrumbs data=breadcrumbs }}
-                    <div class="catalog__title-wrapper">
-                        <h1 class="catalog__title">Каталог</h1>
-                    </div>
-                    <div class="catalog__desc">
-                        <p>
-                            В нашем ассортименте более 300 полезных продуктов, приготовленных специально для вас
-                        </p>
-                    </div>
-                    <div class="catalog__categories">
-                        <ul class="catalog__categories-list">
-                            {{#each categories }}
-                                <li class="catalog__categories-item">
-                                    <a class="catalog__categories-link tag" href="catalog.html">
+                <div class="catalog__wrapper">
+                    <header class="catalog__header">
+                        {{> breadcrumbs data=breadcrumbs }}
+                        <div class="catalog__title-wrapper">
+                            <h1 class="catalog__title">Каталог</h1>
+                        </div>
+                        <div class="catalog__desc">
+                            <p>
+                                В нашем ассортименте более 300 полезных продуктов, приготовленных специально для вас
+                            </p>
+                        </div>
+                        <div class="catalog__categories">
+                            <ul class="catalog__categories-list">
+                                {{#each categories }}
+                                    <li class="catalog__categories-item">
+                                        <a class="catalog__categories-link tag" href="catalog.html">
+                                            <svg>
+                                                <use xlink:href="#{{this.img}}"></use>
+                                            </svg>
+                                            <span>{{this.text}}</span>
+                                        </a>
+                                    </li>
+                                {{/each}}
+                                <li class="categories__more-button-block">
+                                    <a class="categories__more-button button button--bordered" href="catalog.html">
                                         <svg>
-                                            <use xlink:href="#{{this.img}}"></use>
+                                            <use xlink:href="#arrow-down-icon"></use>
                                         </svg>
-                                        <span>{{this.text}}</span>
+                                        <span>Еще +<span id="categoriesCount">10</span></span>
                                     </a>
                                 </li>
-                            {{/each}}
-                            <li class="categories__more-button-block">
-                                <a class="categories__more-button button button--bordered" href="catalog.html">
-                                    <svg>
-                                        <use xlink:href="#arrow-down-icon"></use>
-                                    </svg>
-                                    <span>Еще +<span id="categoriesCount">10</span></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </header>
-                <div class="catalog__filter">
-                    <div class="catalog__filter-count-block">
-                        <span class="catalog__filter-count">310</span>
-                        <span class="catalog__filter-count-desc">Найдено товаров</span>
-                    </div>
-                    <form class="catalog__filter-form" action="#">
-                        <select class="catalog__filter-select js-custom-select" name="catalogSort" id="catalogSort">
-                            <option value="">Сортировать</option>
-                            <option value="Grow">По возрастанию</option>
-                            <option value="Shrink">По убыванию</option>
-                        </select>
-                        <select class="catalog__filter-select js-custom-select" name="catalogHave" id="catalogHave">
-                            <option value="">Наличие товара</option>
-                            <option value="Grow">Есть</option>
-                            <option value="Shrink">Нету</option>
-                        </select>
-                        <div class="catalog__filter-price">
-                            <span class="catalog__filter-desc">Цена:</span>
-                            <div class="catalog__filter-range">
-
-                            </div>
+                            </ul>
                         </div>
-                    </form>
+                    </header>
+                    <div class="catalog__filter">
+                        <div class="catalog__filter-count-block">
+                            <span class="catalog__filter-count">310</span>
+                            <span class="catalog__filter-count-desc">Найдено товаров</span>
+                        </div>
+                        <form class="catalog__filter-form" action="#">
+                            <select class="catalog__filter-select js-custom-select" name="catalogSort" id="catalogSort">
+                                <option value="">Сортировать</option>
+                                <option value="Grow">По возрастанию</option>
+                                <option value="Shrink">По убыванию</option>
+                            </select>
+                            <select class="catalog__filter-select js-custom-select" name="catalogHave" id="catalogHave">
+                                <option value="">Наличие товара</option>
+                                <option value="Grow">Есть</option>
+                                <option value="Shrink">Нету</option>
+                            </select>
+                            <div class="catalog__filter-price">
+                                <span class="catalog__filter-price-desc">Цена:</span>
+                                <div class="catalog__filter-price-range-wrapper">
+                                    <input class="catalog__filter-price-input" min="2800" max="39999" type="number" readonly name="catalogPriceStart" id="price-0" value="2800">
+                                    <div class="catalog__filter-price-range js-price-range"></div>
+                                    <input class="catalog__filter-price-input" min="2800" max="39999" type="number" readonly name="catalogPriceEnd" id="price-1" value="39999">
+                                </div>
+                            </div>
+                            <div class="catalog__filter-switch">
+                                <input class="catalog__filter-checkbox visually-hidden" checked name="catalogPromotion" id="catalogPromotion" type="checkbox">
+                                <label class="catalog__filter-label" for="catalogPromotion">
+                                    <span>Товары по акции</span>
+                                    <span class="catalog__filter-label-switch"></span>
+                                </label>
+                            </div>
+                            <div class="catalog__filter-switch">
+                                <input class="catalog__filter-checkbox visually-hidden" checked name="catalogPresent" id="catalogPresent" type="checkbox">
+                                <label class="catalog__filter-label" for="catalogPresent">
+                                    <span>Товары с подарками</span>
+                                    <span class="catalog__filter-label-switch"></span>
+                                </label>
+                            </div>
+                            <button class="catalog__filter-button" type="reset">
+                                <svg>
+                                    <use xlink:href="#close-icon"></use>
+                                </svg>
+                                <span>Сбросить фильтр</span>
+                            </button>
+                        </form>
+                    </div>
+                    {{> catalog-list data=catalog }}
+                    <div class="catalog__pagination">
+                        <a class="catalog__pagination-prev" href="#">
+                            <svg>
+                                <use xlink:href="#slider-arrow"></use>
+                            </svg>
+                            <span>НАЗАД</span>
+                        </a>
+                        <div class="catalog__pagination-numbers">
+                            <a class="catalog__pagination-number active" href="#">1</a>
+                            <a class="catalog__pagination-number" href="#">2</a>
+                            <a class="catalog__pagination-number" href="#">3</a>
+                            <a class="catalog__pagination-number" href="#">4</a>
+                            <a class="catalog__pagination-number" href="#">5</a>
+                        </div>
+                        <a class="catalog__pagination-next" href="#">
+                            <span>ДАЛЕЕ</span>
+                            <svg>
+                                <use xlink:href="#slider-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

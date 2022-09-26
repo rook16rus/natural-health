@@ -1,0 +1,248 @@
+.catalog {
+  padding-bottom: 12rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2.8rem 7.2rem;
+    margin-bottom: 3.6rem;
+
+    border-radius: 2rem;
+    background-color: var(--gray-color);
+  }
+
+  .breadcrumbs {
+    align-self: flex-start;
+    margin-bottom: 5.4rem;
+  }
+
+  &__title-wrapper {
+    padding-bottom: 1.6rem;
+    margin-bottom: 2.6rem;
+
+    font: var(--title-h1);
+  }
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 50rem;
+    margin-bottom: 3.2rem;
+
+    opacity: 0.3;
+
+    font: var(--text-t2);
+    text-align: center;
+  }
+
+  &__categories-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__categories-link {
+    background-color: #fff;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__filter-count-block {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.8rem;
+  }
+
+  &__filter-count {
+    font: var(--title-h1);
+
+    margin-bottom: -0.7rem;
+  }
+
+  &__filter-count-desc {
+    max-width: 9rem;
+
+    font: var(--text-t2);
+    opacity: 0.3;
+  }
+
+  &__filter-form {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+  }
+
+  &__filter-price {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: 2.4rem;
+    padding: 0 1.6rem;
+
+    border-radius: 6rem;
+    background-color: var(--gray-color);
+
+    font: var(--text-t3);
+  }
+
+  &__filter-price-range-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__filter-price-range {
+    width: 17rem;
+    flex-shrink: 0;
+  }
+
+  &__filter-switch {
+    margin-left: 0.4rem;
+  }
+
+  &__filter-checkbox {
+    &:checked {
+      & + .catalog__filter-label .catalog__filter-label-switch {
+        background-color: var(--primary-color);
+      }
+
+      & + .catalog__filter-label .catalog__filter-label-switch::after {
+        left: 1.5rem;
+      }
+    }
+
+    &[disabled] + .catalog__filter-label .catalog__filter-label-switch {
+      background-color: #E5E5E5;
+    }
+  }
+
+  &__filter-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    cursor: pointer;
+
+    font: var(--text-t2);
+  }
+
+  &__filter-label-switch {
+    position: relative;
+
+    width: 2.6rem;
+    height: 1.2rem;
+
+    border-radius: 8rem;
+    background-color: #BBBBBB;
+
+    transition: 0.3s;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      bottom: 2px;
+
+      width: 0.8rem;
+      height: 0.8rem;
+
+      border-radius: 50%;
+      background-color: #fff;
+
+      transition: 0.3s;
+    }
+  }
+
+  &__filter-button {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-left: auto;
+
+    font: var(--other-2);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    svg {
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+  }
+
+  .catalog-list {
+    margin-bottom: 10rem;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    align-self: center;
+  }
+
+  &__pagination-numbers {
+    display: flex;
+  }
+
+  &__pagination-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+
+    border-radius: 50%;
+
+    &.active {
+      border: 1px solid var(--black-color);
+    }
+  }
+
+  &__pagination-prev, &__pagination-next {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font: var(--other-2);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    svg {
+      width: 2.8rem;
+      color: #BFBFBF;
+    }
+  }
+
+  &__pagination-next {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
