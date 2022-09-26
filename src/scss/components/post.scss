@@ -32,6 +32,8 @@
   &__img {
     position: relative;
 
+    min-height: 50rem;
+
     border-radius: 2rem;
     background-color: var(--gray-color);
     overflow: hidden;
