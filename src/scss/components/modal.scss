@@ -82,12 +82,20 @@
     color: var(--black-color);
 
     svg {
-      width: 1.8rem;
-      height: 1.8rem;
+      width: 1.2rem;
+      height: 1.2rem;
     }
 
     @include breakpoint(small-tablet) {
-      display: none;
+      top: 0.4rem;
+      right: 0.4rem;
+      left: auto;
+
+      width: 4rem;
+      height: 4rem;
+
+      border-radius: 0;
+      background-color: transparent;
     }
   }
 }
