@@ -70,8 +70,6 @@
     padding-bottom: 1.6rem;
     margin-bottom: 2.6rem;
 
-    font: var(--title-h1);
-
     @include breakpoint(tablet) {
       margin-bottom: 1rem;
     }
@@ -82,7 +80,7 @@
   }
 
   &__title {
-    font-weight: 400;
+    font: var(--title-h1);
   }
 
   &__desc {
@@ -322,14 +320,6 @@
     font: var(--text-t2);
     opacity: 0.3;
 
-    @include breakpoint(tablet) {
-
-    }
-
-    @include breakpoint(small-tablet) {
-
-    }
-
     @include breakpoint(mobile) {
       max-width: 7rem;
 
@@ -555,6 +545,10 @@
 
   .catalog-list {
     margin-bottom: 10rem;
+
+    @include breakpoint(mobile) {
+
+    }
   }
 
   &__pagination {
@@ -593,6 +587,7 @@
 
     svg {
       width: 2.8rem;
+      height: 1rem;
       color: #BFBFBF;
     }
   }
