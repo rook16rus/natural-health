@@ -2,17 +2,27 @@ export default function categoriesSelect() {
     const categoriesSection = document.querySelectorAll('.js-categories');
 
     categoriesSection.forEach(categories => {
-        const select = categories.querySelector('.js-categories-select');
-        const selectHeader = categories.querySelector('.js-categories-select-header');
-        const selectItems = categories.querySelectorAll('.js-categories-select-item');
+        const selects = categories.querySelectorAll('.js-categories-select');
 
-        selectHeader.addEventListener('click', () => {
-            select.classList.toggle('active');
-        });
+        selects.forEach(select => {
+            const selectHeader = select.querySelector('.js-categories-select-header');
+            const selectItems = select.querySelectorAll('.js-categories-select-item');
 
-        document.addEventListener('click', e => {
-            const targetSelect = e.target.closest('.js-categories-select');
-            if (!targetSelect || targetSelect !== select) select.classList.remove('active')
+            selectHeader.addEventListener('click', () => {
+                select.classList.toggle('active');
+            });
+
+            document.addEventListener('click', e => {
+                const targetSelect = e.target.closest('.js-categories-select');
+                if (!targetSelect || targetSelect !== select) select.classList.remove('active')
+            })
+
+            const selectCloseButton = select.querySelector('.js-categories-select-close');
+            if (!selectCloseButton) return;
+
+            selectCloseButton.addEventListener('click', () => {
+                select.classList.remove('active');
+            })
         })
     })
 }

@@ -45,6 +45,32 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="catalog__categories-more-button-block catalog__categories-more-button-block--mobile js-categories-select">
+                                <div class="catalog__categories-more-button button button--bordered js-categories-select-header">
+                                    <svg>
+                                        <use xlink:href="#arrow-down-icon"></use>
+                                    </svg>
+                                    <span>Категории</span>
+                                </div>
+                                <div class="catalog__categories-more-button-dropdown">
+                                    <div class="catalog__categories-more-button-dropdown-header">
+                                        <span>Категории</span>
+                                        <button class="catalog__categories-more-button-close js-categories-select-close">
+                                            <svg>
+                                                <use xlink:href="#close-icon"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    {{#each moreCategories }}
+                                        <a class="catalog__categories-more-button-dropdown-item tag{{#if active }} active{{/if}} js-categories-select-item" href="catalog.html">
+                                            <svg>
+                                                <use xlink:href="#{{this.img}}"></use>
+                                            </svg>
+                                            <span>{{this.text}}</span>
+                                        </a>
+                                    {{/each}}
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="catalog__filter">
@@ -153,6 +179,22 @@
                 {{> post }}
             </div>
         </section>
-
     {{/content}}
 {{/extend}}
+
+
+<!--
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+
+    }
+
+-->

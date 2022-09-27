@@ -1,6 +1,18 @@
 .catalog {
   padding-bottom: 12rem;
 
+  @include breakpoint(tablet) {
+    padding-bottom: 10rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding-bottom: 8rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 6.7rem;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -18,11 +30,40 @@
 
     border-radius: 2rem;
     background-color: var(--gray-color);
+
+    @include breakpoint(tablet) {
+      padding: 2rem 2.4rem 5rem;
+      margin-bottom: 3rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      padding: 1.6rem 2rem 3rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @include breakpoint(mobile) {
+      padding: 1.2rem 1.6rem 1.6rem;
+      margin-bottom: 2rem;
+
+      border-radius: 1.2rem;
+    }
   }
 
   .breadcrumbs {
     align-self: flex-start;
     margin-bottom: 5.4rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 4.6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 3.8rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 3.2rem;
+    }
   }
 
   &__title-wrapper {
@@ -30,6 +71,14 @@
     margin-bottom: 2.6rem;
 
     font: var(--title-h1);
+
+    @include breakpoint(tablet) {
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -47,6 +96,27 @@
 
     font: var(--text-t2);
     text-align: center;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2.6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(mobile) {
+      max-width: 28rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__categories {
+    width: 100%;
+
+    @include breakpoint(tablet) {
+      max-width: 40rem;
+    }
   }
 
   &__categories-list {
@@ -56,6 +126,10 @@
     gap: 0.8rem 1.2rem;
     max-width: 120rem;
     margin: 0 auto;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__categories-link {
@@ -76,10 +150,23 @@
   &__categories-more-button-block {
     position: relative;
 
+    &--mobile {
+      display: none;
+
+      @include breakpoint(tablet) {
+        display: block;
+      }
+    }
+
     &.active {
       .catalog__categories-more-button {
         background-color: var(--black-color);
         color: #fff;
+
+        @include breakpoint(tablet) {
+          background-color: #E8E8E8;
+          color: var(--black-color);
+        }
 
         svg {
           transform: rotate(0);
@@ -93,8 +180,31 @@
     }
   }
 
-  &__categories-more-button svg {
-    transform: rotate(180deg);
+  &__categories-more-button {
+    @include breakpoint(tablet) {
+      justify-content: center;
+      height: 5.2rem;
+      padding: 0 2rem;
+
+      border-radius: 6.5rem;
+      border-color: #E8E8E8;
+      background-color: #E8E8E8;
+
+      &:hover {
+        background-color: #E8E8E8;
+        color: var(--black-color);
+      }
+    }
+
+    svg {
+      transform: rotate(180deg);
+      transition: transform 0.3s;
+
+      @include breakpoint(tablet) {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
   }
 
   &__categories-more-button-dropdown {
@@ -113,6 +223,33 @@
     box-shadow: -0.3rem 0.4rem 3.2rem 0 rgba(0, 0, 0, 0.04), -0.3rem 0.4rem 0.7rem 0 rgba(0, 0, 0, 0.02);
     opacity: 0;
     visibility: hidden;
+
+    @include breakpoint(tablet) {
+      top: 0;
+
+      width: 100%;
+      padding-top: 7.2rem;
+    }
+  }
+
+  &__categories-more-button-dropdown-header {
+    position: absolute;
+    top: 2.4rem;
+    left: 1.6rem;
+    right: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 2.4rem;
+  }
+
+  &__categories-more-button-close {
+    svg {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
   }
 
   &__categories-more-button-dropdown-item {
