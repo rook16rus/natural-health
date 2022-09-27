@@ -14,11 +14,11 @@
                                 В нашем ассортименте более 300 полезных продуктов, приготовленных специально для вас
                             </p>
                         </div>
-                        <div class="catalog__categories">
+                        <div class="catalog__categories js-categories">
                             <ul class="catalog__categories-list">
                                 {{#each categories }}
                                     <li class="catalog__categories-item">
-                                        <a class="catalog__categories-link tag" href="catalog.html">
+                                        <a class="catalog__categories-link tag{{#if active }} active{{/if}}" href="catalog.html">
                                             <svg>
                                                 <use xlink:href="#{{this.img}}"></use>
                                             </svg>
@@ -26,13 +26,23 @@
                                         </a>
                                     </li>
                                 {{/each}}
-                                <li class="categories__more-button-block">
-                                    <a class="categories__more-button button button--bordered" href="catalog.html">
+                                <li class="catalog__categories-more-button-block js-categories-select">
+                                    <div class="catalog__categories-more-button button button--bordered js-categories-select-header">
                                         <svg>
                                             <use xlink:href="#arrow-down-icon"></use>
                                         </svg>
                                         <span>Еще +<span id="categoriesCount">10</span></span>
-                                    </a>
+                                    </div>
+                                    <div class="catalog__categories-more-button-dropdown">
+                                        {{#each moreCategories }}
+                                            <a class="catalog__categories-more-button-dropdown-item tag{{#if active }} active{{/if}} js-categories-select-item" href="catalog.html">
+                                                <svg>
+                                                    <use xlink:href="#{{this.img}}"></use>
+                                                </svg>
+                                                <span>{{this.text}}</span>
+                                            </a>
+                                        {{/each}}
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -62,7 +72,7 @@
                                             <use xlink:href="#arrow-down-icon"></use>
                                         </svg>
                                     </div>
-                                    <div class="catalog__filter-select-dropdown js-multi-select-dropdown">
+                                    <div class="catalog__filter-select-dropdown">
                                         <div class="catalog__filter-select-checkbox-wrapper">
                                             <input class="catalog__filter-select-checkbox visually-hidden checkbox" name="catalogSort1" id="catalogSort1" type="checkbox">
                                             <label class="catalog__filter-select-label" for="catalogSort1">Новинки</label>
@@ -81,16 +91,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--<select class="catalog__filter-select js-custom-select" name="catalogSort" id="catalogSort">
-                                    <option value="">Сортировать</option>
-                                    <option value="Grow">По возрастанию</option>
-                                    <option value="Shrink">По убыванию</option>
-                                </select>
-                                <select class="catalog__filter-select js-custom-select" name="catalogHave" id="catalogHave">
-                                    <option value="">Наличие товара</option>
-                                    <option value="Grow">Есть</option>
-                                    <option value="Shrink">Нету</option>
-                                </select>-->
                                 <div class="catalog__filter-price">
                                     <span class="catalog__filter-price-desc">Цена:</span>
                                     <div class="catalog__filter-price-range-wrapper">
@@ -98,6 +98,13 @@
                                         <div class="catalog__filter-price-range js-price-range"></div>
                                         <input class="catalog__filter-price-input" min="2800" max="39999" type="number" name="catalogPriceEnd" id="price-1" value="39999">
                                     </div>
+                                </div>
+                                <div class="catalog__filter-switch">
+                                    <input class="catalog__filter-checkbox visually-hidden" checked name="catalogHave" id="catalogHave" type="checkbox">
+                                    <label class="catalog__filter-label" for="catalogHave">
+                                        <span>Наличие товара</span>
+                                        <span class="catalog__filter-label-switch"></span>
+                                    </label>
                                 </div>
                                 <div class="catalog__filter-switch">
                                     <input class="catalog__filter-checkbox visually-hidden" checked name="catalogPromotion" id="catalogPromotion" type="checkbox">

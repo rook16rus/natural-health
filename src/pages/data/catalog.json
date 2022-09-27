@@ -24,7 +24,8 @@
     },
     {
       "img": "category-4",
-      "text": "Кости и суставы"
+      "text": "Кости и суставы",
+      "active": true
     },
     {
       "img": "category-5",
@@ -53,6 +54,37 @@
     {
       "img": "category-3",
       "text": "Сердце и сосуды"
+    }
+  ],
+  "moreCategories": [
+    {
+      "img": "category-1",
+      "text": "Сон и комфорт",
+      "active": true
+    },
+    {
+      "img": "category-2",
+      "text": "Иммунитет"
+    },
+    {
+      "img": "category-3",
+      "text": "Сердце и сосуды"
+    },
+    {
+      "img": "category-4",
+      "text": "Кости и суставы"
+    },
+    {
+      "img": "category-5",
+      "text": "Мужское здоровье"
+    },
+    {
+      "img": "category-6",
+      "text": "Женское здоровье"
+    },
+    {
+      "img": "category-7",
+      "text": "Желудок и кишечник"
     }
   ],
   "catalog": [
