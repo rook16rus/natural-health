@@ -65,10 +65,12 @@
   }
 
   &__filter {
+    position: relative;
+    z-index: 1;
+
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    gap: 2rem;
+    gap: 5.3rem;
     margin-bottom: 2.8rem;
   }
 
@@ -93,8 +95,98 @@
 
   &__filter-form {
     display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    flex-grow: 1;
+  }
+
+  &__filter-from-top {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__filter-form-bottom {
+    display: flex;
     align-items: center;
     gap: 2.8rem;
+  }
+
+  &__filter-select {
+    position: relative;
+
+    &.active {
+      .catalog__filter-select-dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .catalog__filter-select-header svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__filter-select-count-block {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 0.4rem);
+
+    opacity: 0;
+    visibility: hidden;
+
+    font: var(--text-t3);
+
+    &.active {
+      opacity: 0.3;
+      visibility: visible;
+    }
+  }
+
+  &__filter-select-header {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    cursor: pointer;
+
+    font: var(--text-t2);
+
+    transition: 0.3s;
+
+    &.active {
+      color: var(--primary-color);
+    }
+
+    svg {
+      transform: rotate(180deg);
+
+      width: 1.6rem;
+      height: 1.6rem;
+
+      transition: 0.3s;
+    }
+  }
+
+  &__filter-select-dropdown {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 1.2rem);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    border-radius: 1.6rem;
+    background-color: var(--gray-color);
+    box-shadow: -0.3rem 0.4rem 3.2rem 0 rgba(0, 0, 0, 0.04), -0.3rem 0.4rem 0.7rem 0 rgba(0, 0, 0, 0.02);
+  }
+
+  &__filter-select-label {
+    white-space: nowrap;
   }
 
   &__filter-price {

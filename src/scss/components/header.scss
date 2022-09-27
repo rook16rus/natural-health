@@ -184,6 +184,28 @@
       height: 2.4rem;
     }
   }
+
+  &__user-basket {
+    position: relative;
+  }
+
+  &__user-basket-count {
+    position: absolute;
+    left: 1.1rem;
+    top: 0.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.6rem;
+    padding: 0 0.5rem;
+
+    border-radius: 7rem;
+    background-color: var(--primary-color);
+
+    font: var(--text-t4);
+    color: #fff;
+  }
   
   &__burger-nav {
     position: fixed;

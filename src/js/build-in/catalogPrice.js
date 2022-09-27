@@ -21,4 +21,13 @@ export default function catalogPrice() {
     nous.on('update', (values, handle) => {
         prices[handle].value = Math.round(values[handle]);
     })
+
+    prices.forEach((el, index) => {
+        el.addEventListener('change', e => {
+            const arr = [];
+            arr[index] = e.currentTarget.value;
+
+            nous.set(arr);
+        })
+    })
 }
