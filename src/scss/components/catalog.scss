@@ -279,18 +279,41 @@
     align-items: flex-end;
     gap: 5.3rem;
     margin-bottom: 2.8rem;
+
+    @include breakpoint(tablet) {
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__filter-count-block {
     display: flex;
     align-items: flex-end;
     gap: 0.8rem;
+
+    @include breakpoint(mobile) {
+      gap: 0.4rem;
+    }
   }
 
   &__filter-count {
     font: var(--title-h1);
 
     margin-bottom: -0.7rem;
+
+    @include breakpoint(mobile) {
+      margin-bottom: -0.3rem;
+    }
   }
 
   &__filter-count-desc {
@@ -298,6 +321,20 @@
 
     font: var(--text-t2);
     opacity: 0.3;
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+      max-width: 7rem;
+
+      font-size: 1.2rem;
+    }
   }
 
   &__filter-form {
@@ -305,6 +342,10 @@
     flex-direction: column;
     gap: 2.4rem;
     flex-grow: 1;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__filter-from-top {
@@ -492,6 +533,23 @@
     svg {
       width: 1.2rem;
       height: 1.2rem;
+    }
+  }
+
+  &__filter-open-button {
+    display: none;
+    align-items: center;
+    gap: 0.8rem;
+
+    font: var(--text-t1);
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    @include breakpoint(tablet) {
+      display: flex;
     }
   }
 
