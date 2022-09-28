@@ -44,7 +44,7 @@
   &__desc {
     margin-bottom: 2.8rem;
 
-    font: var(--other-2);
+    font: var(--other);
     letter-spacing: 0.2em;
     text-transform: uppercase;
 
@@ -89,7 +89,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 4rem 10rem;
-    max-width: 110rem;
+    max-width: 122rem;
     margin: 0 auto;
 
     @include breakpoint(tablet) {
@@ -115,6 +115,10 @@
     &:hover {
       .lines__item-img {
         transform: scale(1.1);
+      }
+
+      .lines__item-title::before {
+        transform: translateX(-50%) scaleX(1);
       }
     }
   }
@@ -148,12 +152,31 @@
   }
 
   &__item-title {
+    position: relative;
+
     margin-bottom: 1.5rem;
-    font: var(--text-t2);
+    font: var(--text-t1);
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      bottom: calc(100% + 1.2rem);
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+
+      width: 3rem;
+      height: 1rem;
+
+      background: url("../img/icons/slider-arrow-white.svg") no-repeat center;
+      background-size: contain;
+
+      transition: 0.3s;
+    }
   }
 
   &__item-text {
-    font: var(--text-t4);
+    font: var(--text-t3);
     opacity: 0.3;
 
     @include breakpoint(tablet) {

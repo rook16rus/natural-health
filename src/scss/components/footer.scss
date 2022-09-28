@@ -476,7 +476,7 @@
     gap: 1rem ;
     margin-top: auto;
 
-    font: var(--text-t3);
+    font: var(--text-t2);
 
     @include breakpoint(small-tablet) {
       order: 5;
@@ -486,7 +486,9 @@
     }
   }
 
-  &__confidence-link {
+
+
+  &__confidence {
     margin-left: 5rem;
     margin-right: auto;
 
@@ -494,7 +496,9 @@
       margin-left: 0;
       margin-right: 0;
     }
+  }
 
+  &__confidence-link {
     @include breakpoint(small-tablet) {
       order: -1;
       margin-bottom: 0.8rem;
@@ -505,6 +509,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    span {
+      opacity: 0.3;
+    }
 
     @include breakpoint(small-tablet) {
       margin-top: 4rem;
@@ -517,8 +525,9 @@
     }
 
     svg {
-      width: 7.6rem;
-      height: 2rem;
+      width: 10rem;
+      height: 2.5rem;
+      margin-bottom: -0.8rem;
     }
   }
 }

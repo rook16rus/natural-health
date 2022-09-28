@@ -88,7 +88,7 @@
     align-items: center;
     gap: 0.8rem;
 
-    font: var(--other-2);
+    font: var(--other);
     text-transform: uppercase;
 
     @include breakpoint(tablet) {
@@ -206,7 +206,7 @@
 
     opacity: 0.5;
 
-    font: var(--text-t3);
+    font: var(--text-t2);
 
     @include breakpoint(mobile) {
       margin-bottom: 0.8rem;
