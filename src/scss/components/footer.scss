@@ -419,12 +419,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 27.4rem;
+    max-width: 30rem;
     flex-wrap: wrap;
     gap: 1rem;
 
     @include breakpoint(mobile) {
-      max-width: 15.5rem;
+      max-width: 18rem;
     }
   }
 

@@ -16,6 +16,16 @@ export default function showResetButton() {
     resetButton.addEventListener('click', () => {
         resetButton.classList.add('visually-hidden');
 
+        const selects = filterForm.querySelectorAll('.js-multi-select');
+
+        selects.forEach(select => {
+            const header = select.querySelector('.js-multi-select-header');
+            const countBlock = select.querySelector('.js-multi-select-count-block');
+
+            header.classList.remove('active')
+            countBlock.classList.remove('active')
+        })
+
         const arr = [...filterForm.elements]
             .filter(input => input.classList.contains('catalog__filter-price-input'))
             .map(input => input.dataset.startValue);

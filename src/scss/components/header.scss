@@ -113,7 +113,7 @@
   }
 
   &__catalog-links {
-    grid-column: span 3;
+    grid-column: span 2;
 
     display: flex;
     align-items: center;
@@ -135,7 +135,7 @@
   }
 
   &__menu {
-    grid-column: span 4;
+    grid-column: span 5;
 
     display: flex;
     align-items: center;
@@ -148,7 +148,6 @@
 
   &__phone {
     grid-column: span 2;
-    margin-left: 5rem;
 
     @include breakpoint(tablet) {
       margin-left: auto;
