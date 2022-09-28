@@ -1,6 +1,8 @@
 .catalog-post {
   padding-bottom: 10rem;
 
+  opacity: 0;
+
   @include breakpoint(tablet) {
     padding-bottom: 8rem;
   }
