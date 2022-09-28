@@ -333,7 +333,7 @@
   &__filter-form {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 2rem;
     flex-grow: 1;
 
     @include breakpoint(tablet) {

@@ -13,6 +13,7 @@ export default function catalogPrice() {
             'max': [39999]
         }
     });
+    window.priceRange = nous;
 
     const price0 = document.getElementById('price-0');
     const price1 = document.getElementById('price-1');
@@ -20,6 +21,13 @@ export default function catalogPrice() {
 
     nous.on('update', (values, handle) => {
         prices[handle].value = Math.round(values[handle]);
+    });
+
+    nous.on('change', (values, handle) => {
+        console.log(window.catalogResetButton, 2);
+        if (window.catalogResetButton.classList.contains('visually-hidden')) {
+            window.catalogResetButton.classList.remove('visually-hidden');
+        }
     })
 
     prices.forEach((el, index) => {

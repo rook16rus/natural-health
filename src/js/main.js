@@ -33,6 +33,7 @@ import customSelects from "./build-in/customSelects";
 import catalogPrice from "./build-in/catalogPrice";
 import multiselects from "./build-in/multiselects";
 import categoriesSelect from "./build-in/categoriesSelect";
+import showResetButton from "./build-in/showResetButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,9 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
     introAnimation();
     header();
     customSelects();
+    showResetButton();
     catalogPrice();
     multiselects();
-    categoriesSelect()
+    categoriesSelect();
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
