@@ -11,78 +11,94 @@
   ],
   "categories": [
     {
+      "id": 1,
       "img": "category-1",
       "text": "Сон и комфорт"
     },
     {
+      "id": 2,
       "img": "category-2",
       "text": "Иммунитет"
     },
     {
+      "id": 3,
       "img": "category-3",
       "text": "Сердце и сосуды"
     },
     {
+      "id": 4,
       "img": "category-4",
-      "text": "Кости и суставы",
-      "active": true
+      "text": "Кости и суставы"
     },
     {
+      "id": 5,
       "img": "category-5",
       "text": "Мужское здоровье"
     },
     {
+      "id": 6,
       "img": "category-6",
       "text": "Женское здоровье"
     },
     {
+      "id": 7,
       "img": "category-7",
       "text": "Желудок и кишечник"
     },
     {
+      "id": 8,
       "img": "category-8",
       "text": "Легкое дыхание"
     },
     {
+      "id": 9,
       "img": "category-9",
       "text": "Для глаз"
     },
     {
+      "id": 10,
       "img": "category-3",
       "text": "Для носа"
     },
     {
+      "id": 11,
       "img": "category-3",
       "text": "Сердце и сосуды"
     }
   ],
   "moreCategories": [
     {
+      "id": 12,
       "img": "category-1",
-      "text": "Сон и комфорт",
-      "active": true
+      "text": "Сон и комфорт"
     },
     {
+      "id": 13,
       "img": "category-2",
       "text": "Иммунитет"
     },
     {
+      "id": 14,
       "img": "category-3",
       "text": "Сердце и сосуды"
     },
     {
+      "id": 15,
       "img": "category-4",
       "text": "Кости и суставы"
     },
     {
+      "id": 16,
       "img": "category-5",
       "text": "Мужское здоровье"
     },
     {
+      "id": 17,
       "img": "category-6",
       "text": "Женское здоровье"
     },
     {
+      "id": 18,
       "img": "category-7",
       "text": "Желудок и кишечник"
     }

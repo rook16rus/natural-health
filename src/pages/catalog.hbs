@@ -15,15 +15,16 @@
                             </p>
                         </div>
                         <div class="catalog__categories js-categories">
-                            <ul class="catalog__categories-list">
+                            <ul class="catalog__categories-list js-categories-list">
                                 {{#each categories }}
                                     <li class="catalog__categories-item">
-                                        <a class="catalog__categories-link tag{{#if active }} active{{/if}}" href="catalog.html">
+                                        <input class="catalog__categories-radio visually-hidden js-categories-item" data-desc="testtesttesttest vtesttesttesttest test test testtest test test test test" type="radio" name="categories" id="categories{{this.id}}">
+                                        <label class="catalog__categories-label tag" for="categories{{this.id}}">
                                             <svg>
                                                 <use xlink:href="#{{this.img}}"></use>
                                             </svg>
                                             <span>{{this.text}}</span>
-                                        </a>
+                                        </label>
                                     </li>
                                 {{/each}}
                                 <li class="catalog__categories-more-button-block js-categories-select">
@@ -35,12 +36,15 @@
                                     </div>
                                     <div class="catalog__categories-more-button-dropdown">
                                         {{#each moreCategories }}
-                                            <a class="catalog__categories-more-button-dropdown-item tag{{#if active }} active{{/if}} js-categories-select-item" href="catalog.html">
-                                                <svg>
-                                                    <use xlink:href="#{{this.img}}"></use>
-                                                </svg>
-                                                <span>{{this.text}}</span>
-                                            </a>
+                                            <div class="catalog__categories-more-button-item">
+                                                <input class="catalog__categories-more-button-radio visually-hidden js-categories-item" data-desc="testtesttesttest vtesttesttesttest test test testtest test test test test" type="radio" name="categories" id="categories{{this.id}}">
+                                                <label class="catalog__categories-more-button-label tag" for="categories{{this.id}}">
+                                                    <svg>
+                                                        <use xlink:href="#{{this.img}}"></use>
+                                                    </svg>
+                                                    <span>{{this.text}}</span>
+                                                </label>
+                                            </div>
                                         {{/each}}
                                     </div>
                                 </li>
