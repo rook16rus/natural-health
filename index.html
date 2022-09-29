@@ -25,6 +25,9 @@
     <body class="no-touch" ontouchstart="">
         <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <symbol viewBox="0 0 16 16" fill="none" id="arrow-down-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.413 9.805L8 7.218l2.587 2.587a.664.664 0 10.94-.94l-3.06-3.06a.664.664 0 00-.94 0l-3.06 3.06c-.26.26-.26.68 0 .94.26.253.686.26.946 0z" fill="currentColor" />
+                </symbol>
                 <symbol viewBox="0 0 24 24" fill="none" id="backet-icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 5a2.5 2.5 0 012.5 2.5V8h-5v-.5A2.5 2.5 0 0112 5zm3.5 3v-.5a3.5 3.5 0 10-7 0V8H5v10a2 2 0 002 2h10a2 2 0 002-2V8h-3.5zM6 9h12v9a1 1 0 01-1 1H7a1 1 0 01-1-1V9z" fill="#1C1C1C" />
                 </symbol>
@@ -79,11 +82,20 @@
                 <symbol viewBox="0 0 15 14" fill="none" id="check-icon" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.476 3.484c.171.17.171.447 0 .618L6.06 10.52a.438.438 0 01-.62 0L2.525 7.602a.437.437 0 11.619-.618L5.75 9.59l6.107-6.107c.171-.171.448-.171.62 0z" fill="#fff" />
                 </symbol>
-                <symbol viewBox="0 0 18 18" fill="none" id="close-icon" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 1.5l15 15" stroke="#2E4156" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M1.5 1.5l15 15" stroke="#000" stroke-opacity=".2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M1.5 16.5L9 9m7.5-7.5l-3.75 3.75L11.5 6.5" stroke="#2E4156" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M1.5 16.5L9 9m7.5-7.5l-3.75 3.75L11.5 6.5" stroke="#000" stroke-opacity=".2" stroke-linecap="round" stroke-linejoin="round" />
+                <symbol viewBox="0 0 8 9" fill="none" id="close-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.969 1.469l6.3 6.3" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M.969 7.769l6.3-6.3" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
+                </symbol>
+                <symbol viewBox="0 0 20 20" fill="none" id="filter-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 4.167h2.5" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2.5 4.167h9.167" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.333 10H17.5" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2.5 10H5" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 15.833h2.5" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2.5 15.833h9.167" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.512 2.988a1.667 1.667 0 11-2.357 2.357 1.667 1.667 0 012.357-2.357" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.845 8.821a1.667 1.667 0 11-2.357 2.357 1.667 1.667 0 012.357-2.357" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.512 14.655a1.667 1.667 0 11-2.357 2.357 1.667 1.667 0 012.357-2.357" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </symbol>
                 <symbol viewBox="0 0 20 20" fill="none" id="hearth-icon" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.08 3.333c2.646 0 4.42 2.484 4.42 4.796 0 4.694-7.366 8.538-7.5 8.538-.134 0-7.5-3.844-7.5-8.538 0-2.312 1.774-4.795 4.42-4.795 1.512 0 2.506.754 3.08 1.425.574-.671 1.568-1.426 3.08-1.426z" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -176,6 +188,9 @@
                 <symbol viewBox="0 0 20 20" fill="none" id="moon-icon" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 10.002a5.36 5.36 0 00.975-6.096.417.417 0 01.5-.561 6.873 6.873 0 013.141 1.791 6.794 6.794 0 01.127 9.606 6.794 6.794 0 01-9.606-.126 6.864 6.864 0 01-1.792-3.14.417.417 0 01.562-.5A5.359 5.359 0 0010 10.001z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </symbol>
+                <symbol viewBox="0 0 31 36" fill="none" id="play-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 16.268c1.333.77 1.333 2.694 0 3.464L3 35.321c-1.333.77-3-.193-3-1.732V2.412C0 .872 1.667-.09 3 .679l27 15.589z" fill="#fff" />
+                </symbol>
                 <symbol viewBox="0 0 24 24" fill="none" id="search-icon" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.857 3.5a7.357 7.357 0 104.837 12.901l3.952 3.953a.5.5 0 00.708-.708L16.4 15.694A7.357 7.357 0 0010.857 3.5zM4.5 10.857a6.357 6.357 0 1112.714 0 6.357 6.357 0 01-12.714 0z" fill="#1C1C1C" />
                 </symbol>
@@ -187,6 +202,9 @@
                 </symbol>
                 <symbol viewBox="0 0 13 8" fill="none" id="slider-arrow-mobile" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.354 4.354a.5.5 0 000-.708L9.172.464a.5.5 0 10-.708.708L11.293 4 8.464 6.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h12v-1H0v1z" fill="#000" />
+                </symbol>
+                <symbol viewBox="0 0 29 8" fill="none" id="slider-arrow-white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.354 3.646a.5.5 0 010 .708l-3.182 3.182a.5.5 0 11-.707-.708L27.293 4l-2.828-2.828a.5.5 0 11.707-.708l3.182 3.182zM0 3.5h28v1H0v-1z" fill="#fff" />
                 </symbol>
                 <symbol viewBox="0 0 14 14" fill="none" id="social-1" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_647_28692)">
@@ -210,6 +228,9 @@
                 </symbol>
                 <symbol viewBox="0 0 8 8" id="star-icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 0a6.77 6.77 0 004 4 6.77 6.77 0 00-4 4 6.77 6.77 0 00-4-4 6.77 6.77 0 004-4z" />
+                </symbol>
+                <symbol viewBox="0 0 9 8" fill="none" id="star-white-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.333 0a6.77 6.77 0 004 4 6.77 6.77 0 00-4 4 6.77 6.77 0 00-4-4 6.77 6.77 0 004-4z" fill="#fff" />
                 </symbol>
             </svg>
         </div>
@@ -339,6 +360,9 @@
                                 <a class="header__menu-link link" href="about.html">О компании</a>
                             </li>
                             <li class="header__menu-item">
+                                <a class="header__menu-link link" href="reviews.html">Отзывы</a>
+                            </li>
+                            <li class="header__menu-item">
                                 <a class="header__menu-link link" href="dealer.html">Станьте дилером</a>
                             </li>
                             <li class="header__menu-item">
@@ -358,7 +382,7 @@
                             <a class="header__user-basket link" href="backet.html">
                                 <svg>
                                     <use xlink:href="#backet-icon"></use>
-                                </svg>
+                                </svg><span class="header__user-basket-count">1</span>
                             </a>
                         </div>
                     </nav>
@@ -885,7 +909,7 @@
                                     <div class="lead-slider__content">
                                         <h3 class="lead-slider__title">Повышайте качество жизни вместе с нами</h3>
                                         <div class="lead-slider__text">
-                                            <p>В составе нашей продукции только натуральные растительные ингредиенты,<span>&nbsp;которые стабилизируют процесс обмена веществ и общий метаболизм.</span>
+                                            <p>В составе нашей продукции только натуральные растительные ингредиенты,&nbsp;<span>которые стабилизируют процесс обмена веществ и общий метаболизм.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -900,7 +924,7 @@
                                     <div class="lead-slider__content">
                                         <h3 class="lead-slider__title">Повышайте качество жизни вместе с нами</h3>
                                         <div class="lead-slider__text">
-                                            <p>В составе нашей продукции только натуральные растительные ингредиенты,<span>&nbsp;которые стабилизируют процесс обмена веществ и общий метаболизм.</span>
+                                            <p>В составе нашей продукции только натуральные растительные ингредиенты,&nbsp;<span>которые стабилизируют процесс обмена веществ и общий метаболизм.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -915,7 +939,7 @@
                                     <div class="lead-slider__content">
                                         <h3 class="lead-slider__title">Повышайте качество жизни вместе с нами</h3>
                                         <div class="lead-slider__text">
-                                            <p>В составе нашей продукции только натуральные растительные ингредиенты,<span>&nbsp;которые стабилизируют процесс обмена веществ и общий метаболизм.</span>
+                                            <p>В составе нашей продукции только натуральные растительные ингредиенты,&nbsp;<span>которые стабилизируют процесс обмена веществ и общий метаболизм.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -1039,7 +1063,11 @@
                             <div class="about-section__top" style="background: url('img/about-section-mobile-bg.jpg') no-repeat center; background-size: cover;">
                                 <h2 class="about-section__title">Natural Health</h2>
                                 <a class="about-section__video-link" data-src="https://youtu.be/Fcc0VRy19VM" data-fancybox href="#">
-                                    <img class="about-section__video-img" src="img/video-link-bg.png" alt="Иконка видео"><span class="about-section__video-desc">Смотреть видео о компании</span>
+                                    <div class="about-section__video-img">
+                                        <svg>
+                                            <use xlink:href="#play-icon"></use>
+                                        </svg>
+                                    </div><span class="about-section__video-desc">Смотреть видео о компании</span>
                                 </a>
                             </div>
                             <div class="about-section__content">
@@ -1369,8 +1397,8 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="footer__bottom"><span class="footer__confidence">© 2017–2022 Все права защищены</span>
-                                <a class="footer__confidence-link link" href="#">Правовая информация</a>
+                            <div class="footer__bottom">
+                                <a class="footer__confidence-link link" href="#">Правовая информация</a><span class="footer__confidence">© 2017–2022 Все права защищены</span>
                                 <a class="footer__developer link" href="#"><span>Сайт разработан</span>
                                     <svg>
                                         <use xlink:href="#mark-weber"></use>
