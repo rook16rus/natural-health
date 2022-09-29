@@ -39,7 +39,7 @@ export default function categories() {
                     title.textContent = item.nextElementSibling.querySelector('span').textContent;
                     desc.textContent = item.dataset.desc;
 
-                    if (item.closest('.js-categories-select')) {
+                    if (item.closest('.js-categories-select') && !item.classList.contains('js-categories-item-mobile')) {
                         const select = item.closest('.js-categories-select');
                         const container = item.closest('.catalog__categories-more-button-item');
                         const itemSvg = container.querySelector('use').href;

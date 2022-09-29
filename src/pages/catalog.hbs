@@ -65,13 +65,16 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    {{#each moreCategories }}
-                                        <a class="catalog__categories-more-button-dropdown-item tag{{#if active }} active{{/if}} js-categories-select-item" href="catalog.html">
-                                            <svg>
-                                                <use xlink:href="#{{this.img}}"></use>
-                                            </svg>
-                                            <span>{{this.text}}</span>
-                                        </a>
+                                    {{#each moreCategoriesMobile }}
+                                        <div class="catalog__categories-more-button-item">
+                                            <input class="catalog__categories-more-button-radio visually-hidden js-categories-item js-categories-item-mobile" data-desc="testtesttesttest vtesttesttesttest test test testtest test test test test" type="radio" name="categories" id="categories{{this.id}}">
+                                            <label class="catalog__categories-more-button-label tag" for="categories{{this.id}}">
+                                                <svg>
+                                                    <use xlink:href="#{{this.img}}"></use>
+                                                </svg>
+                                                <span>{{this.text}}</span>
+                                            </label>
+                                        </div>
                                     {{/each}}
                                 </div>
                             </div>
