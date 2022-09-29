@@ -38,4 +38,12 @@
       margin-top: 3rem;
     }
   }
+
+  .swiper-slide {
+    @media (max-width: 500px) {
+      &:nth-child(n + 2) {
+        display: none;
+      }
+    }
+  }
 }

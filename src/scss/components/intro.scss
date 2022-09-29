@@ -39,7 +39,7 @@
       .intro__title, .intro__text, .intro__link {
         transform: translateY(0);
         opacity: 1;
-        transition: 1s 0.7s;
+        transition: transform 1s 0.7s, opacity 1s 0.7s;
       }
 
       .intro__text {
@@ -47,7 +47,7 @@
       }
 
       .intro__link {
-        transition: 1s 0.9s;
+        transition: 1s 0.9s, background-color 0.3s, color 0.3s, border-color 0.3s;
       }
     }
   }

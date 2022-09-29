@@ -34,6 +34,10 @@
     color: var(--black-color);
 }
 
+.swiper-button-disabled {
+    color: rgba(28, 28, 28, 0.7);
+}
+
 .parsley-errors-list {
     position: absolute;
     top: 0;

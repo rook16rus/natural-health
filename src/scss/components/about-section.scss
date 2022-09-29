@@ -165,12 +165,11 @@
     @include breakpoint(tablet) {
       text-align: left;
       max-width: 12rem;
+    }
 
-
-      @include breakpoint(mobile) {
-        text-align: left;
-        max-width: 11rem;
-      }
+    @include breakpoint(mobile) {
+      max-width: 11rem;
+    }
   }
 
   &__content {

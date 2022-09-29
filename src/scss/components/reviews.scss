@@ -28,6 +28,14 @@
     font: var(--title-h1);
   }
 
+  &__item {
+    @include breakpoint(mobile) {
+      &:nth-child(n + 2) {
+        display: none;
+      }
+    }
+  }
+
   &__item-top {
     display: flex;
     align-items: center;

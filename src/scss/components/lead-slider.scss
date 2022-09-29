@@ -125,7 +125,7 @@
     }
 
     @include breakpoint(mobile) {
-      padding: 0 2rem 5rem;
+      padding: 0.2rem 2rem 5rem;
 
       border-radius: 0 0 1rem 1rem;
     }
@@ -221,6 +221,8 @@
 
     @include breakpoint(mobile) {
       height: 20rem;
+      margin-right: 0.8rem;
+
       border-radius: 1.6rem;
     }
 

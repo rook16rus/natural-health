@@ -28,7 +28,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="intro__content">
+                                <div class="intro__content" style="background-color: {{this.bgc}}">
                                     <img class="intro__round-img lazyload" data-src="img/round-text.png">
                                     <h2 class="intro__title">Кремниевый комплекс в подарок при покупке 2-х штук
                                         Biopit</h2>
@@ -211,9 +211,9 @@
             <div class="container">
                 <header class="news-section__header">
                     {{> press-filter data=pressFilter }}
-                    <a class="news-section__link button button--bordered" href="news.html">Смотреть все</a>
+                    <a class="news-section__link button button--bordered js-section-animate" href="news.html">Смотреть все</a>
                 </header>
-                <div class="news-section__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,400:2,769:3,1025:4" data-space="20" data-auto-height="true">
+                <div class="news-section__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,500:2,769:3,1025:4" data-space="20" data-auto-height="true">
                     <div class="swiper-wrapper">
                         {{#each news }}
                             <div class="swiper-slide">
