@@ -70,6 +70,35 @@
                 </div>
             </div>
         </section>
+        <section class="product-property">
+            <div class="container">
+                <div class="product-property__wrapper">
+                    <div class="product-property__accordions">
+                        {{#each property }}
+                            <div class="product-property__accordion js-accordion" data-close-other="true">
+                                <div class="product-property__accordion-header js-accordion-btn">
+                                    <h3 class="product-property__accordion-title">{{this.title}}</h3>
+                                    <svg>
+                                        <use xlink:href="#arrow-down-icon"></use>
+                                    </svg>
+                                </div>
+                                <div class="product-property__accordion-content js-accordion-content">
+                                    <p>{{this.text}}</p>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                    <div class="product-property__img-block">
+                        <div class="product-property__img">
+                            <picture>
+                                <source srcset="img/property-1.webp" type="image/webp">
+                                <img class="lazyload" data-src="img/property-1.jpg" alt="Фото продукта">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     {{/content}}
 {{/extend}}
