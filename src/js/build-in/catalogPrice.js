@@ -1,41 +1,44 @@
 import nouislider from "nouislider";
 
 export default function catalogPrice() {
-    const range = document.querySelector('.js-price-range');
-    if (!range) return;
+    const ranges = document.querySelectorAll('.js-price-range');
 
-    const nous = nouislider.create(range, {
-        start: [2800, 39999],
-        connect: true,
-        step: 1,
-        range: {
-            'min': [500],
-            'max': [39999]
-        }
-    });
-    window.priceRange = nous;
+    ranges.forEach((range, index) => {
+        const nous = nouislider.create(range, {
+            start: [2800, 39999],
+            connect: true,
+            step: 1,
+            range: {
+                'min': [500],
+                'max': [39999]
+            }
+        });
+        window.priceRanges[index] = nous;
 
-    const price0 = document.getElementById('price-0');
-    const price1 = document.getElementById('price-1');
-    const prices = [price0, price1];
+        const priceContainer = range.closest('.js-price-container');
+        const price0 = priceContainer.querySelector('.price-0');
+        const price1 = priceContainer.querySelector('.price-1');
+        const prices = [price0, price1];
 
-    nous.on('update', (values, handle) => {
-        prices[handle].value = Math.round(values[handle]);
-    });
+        console.log(range);
 
-    nous.on('change', (values, handle) => {
-        console.log(window.catalogResetButton, 2);
-        if (window.catalogResetButton.classList.contains('visually-hidden')) {
-            window.catalogResetButton.classList.remove('visually-hidden');
-        }
-    })
+        nous.on('update', (values, handle) => {
+            prices[handle].value = Math.round(values[handle]);
+        });
 
-    prices.forEach((el, index) => {
-        el.addEventListener('change', e => {
-            const arr = [];
-            arr[index] = e.currentTarget.value;
+        nous.on('change', (values, handle) => {
+            if (window.catalogResetButtons[index].classList.contains('visually-hidden')) {
+                window.catalogResetButtons[index].classList.remove('visually-hidden');
+            }
+        })
 
-            nous.set(arr);
+        prices.forEach((el, index) => {
+            el.addEventListener('change', e => {
+                const arr = [];
+                arr[index] = e.currentTarget.value;
+
+                nous.set(arr);
+            })
         })
     })
 }

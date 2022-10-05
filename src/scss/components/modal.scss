@@ -170,3 +170,143 @@
     }
   }
 }
+
+.modal-filter {
+  background-color: transparent;
+
+  @include breakpoint(mobile) {
+    justify-content: flex-end;
+  }
+
+  .modal__container {
+    padding: 3rem 3.2rem;
+  }
+
+  .modal__inner {
+    padding: 2.4rem 4rem 3.2rem;
+
+    border-radius: 1.6rem;
+    box-shadow: -0.3rem 1.4rem 5rem 0 rgba(0, 0, 0, 0.13), -0.3rem 0.4rem 0.7rem 0 rgba(0, 0, 0, 0.07);
+
+    @include breakpoint(mobile) {
+      padding: 2.4rem 1.6rem 3.2rem;
+    }
+  }
+
+
+  .modal__close {
+    top: 2.4rem;
+    right: 2.4rem;
+    left: auto;
+
+    width: 2.4rem;
+    height: 2.4rem;
+
+    @include breakpoint(mobile) {
+      right: 1.2rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    font: var(--title-h4);
+    font-size: 2.4rem;
+  }
+
+  &__checkboxes-block {
+    margin-bottom: 2.8rem;
+  }
+
+  &__checkboxes-title {
+    margin-bottom: 1.6rem;
+
+    font: var(--text-t3);
+    color: #BBBBBB;
+  }
+
+  &__checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  & .modal-filter__checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    font: var(--text-t2);
+    font-size: 1.8rem;
+  }
+
+  &__price {
+    margin-bottom: 4rem;
+  }
+
+  &__price-desc {
+    display: inline-block;
+    margin-bottom: 2.4rem;
+
+    font: var(--text-t3);
+    color: #BBBBBB;
+  }
+
+  &__price-range {
+    margin-bottom: 1.8rem;
+
+    .noUi-handle {
+      background-size: 14px 14px;
+    }
+
+    & .noUi-handle {
+      width: 20px;
+      height: 20px;
+      top: -8px;
+      right: -6px;
+    }
+  }
+
+  &__price-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price-input-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__price-input {
+    width: auto;
+
+    font: var(--text-t2);
+    font-size: 1.8rem;
+  }
+
+  .switch:not(:last-of-type) {
+    margin-bottom: 2.4rem;
+  }
+
+  .switch__label {
+    align-items: flex-end;
+  }
+
+  &__reset {
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 4rem;
+
+    font: var(--other);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    svg {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}

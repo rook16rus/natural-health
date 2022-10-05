@@ -37,6 +37,9 @@ import showResetButton from "./build-in/showResetButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
+window.catalogResetButtons = [];
+window.priceRanges = [];
+
 document.addEventListener('DOMContentLoaded', function () {
     initSliders();
     editableTextContainer();

@@ -85,15 +85,15 @@
                             <span class="catalog__filter-count">310</span>
                             <span class="catalog__filter-count-desc">Найдено товаров</span>
                         </div>
-                        <button class="catalog__filter-open-button">
+                        <a class="catalog__filter-open-button" href="#filter">
                             <svg>
                                 <use xlink:href="#filter-icon"></use>
                             </svg>
                             <span>Фильтр</span>
-                        </button>
-                        <form class="catalog__filter-form" action="#">
+                        </a>
+                        <form class="catalog__filter-form js-filter-form" action="#">
                             <div class="catalog__filter-form-top">
-                                <button class="catalog__filter-button visually-hidden" type="reset">
+                                <button class="catalog__filter-button visually-hidden js-filter-reset" type="reset">
                                     <svg>
                                         <use xlink:href="#close-icon"></use>
                                     </svg>
@@ -159,26 +159,32 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="catalog__filter-price">
+                                <div class="catalog__filter-price js-price-container">
                                     <span class="catalog__filter-price-desc">Цена:</span>
                                     <div class="catalog__filter-price-range-wrapper">
-                                        <input class="catalog__filter-price-input" min="2800" max="39999" type="number" name="catalogPriceStart" id="price-0" value="2800" data-start-value="2800">
+                                        <div class="catalog__filter-price-input-wrapper">
+                                            <input class="catalog__filter-price-input js-filter-price price-0" min="2800" max="39999" type="number" name="catalogPriceStart" value="2800" data-start-value="2800">
+                                            <span>₽</span>
+                                        </div>
                                         <div class="catalog__filter-price-range js-price-range"></div>
-                                        <input class="catalog__filter-price-input" min="2800" max="39999" type="number" name="catalogPriceEnd" id="price-1" value="39999" data-start-value="39999">
+                                        <div class="catalog__filter-price-input-wrapper">
+                                            <input class="catalog__filter-price-input js-filter-price price-1" min="2800" max="39999" type="number" name="catalogPriceEnd" value="39999" data-start-value="39999">
+                                            <span>₽</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="catalog__filter-switch">
-                                    <input class="catalog__filter-checkbox visually-hidden" checked name="catalogPromotion" id="catalogPromotion" type="checkbox">
-                                    <label class="catalog__filter-label" for="catalogPromotion">
+                                <div class="switch">
+                                    <input class="switch__checkbox visually-hidden" checked name="catalogPromotion" id="catalogPromotion" type="checkbox">
+                                    <label class="switch__label" for="catalogPromotion">
                                         <span>Товары по акции</span>
-                                        <span class="catalog__filter-label-switch"></span>
+                                        <span class="switch__label-switch"></span>
                                     </label>
                                 </div>
-                                <div class="catalog__filter-switch">
-                                    <input class="catalog__filter-checkbox visually-hidden" checked name="catalogPresent" id="catalogPresent" type="checkbox">
-                                    <label class="catalog__filter-label" for="catalogPresent">
+                                <div class="switch">
+                                    <input class="switch__checkbox visually-hidden" checked name="catalogPresent" id="catalogPresent" type="checkbox">
+                                    <label class="switch__label" for="catalogPresent">
                                         <span>Товары с подарками</span>
-                                        <span class="catalog__filter-label-switch"></span>
+                                        <span class="switch__label-switch"></span>
                                     </label>
                                 </div>
                             </div>

@@ -102,6 +102,63 @@
     }
 }
 
+.switch {
+    &__checkbox {
+        &:checked {
+            & + .switch__label .switch__label-switch {
+                background-color: var(--primary-color);
+            }
+
+            & + .switch__label .switch__label-switch::after {
+                left: 1.5rem;
+            }
+        }
+
+        &[disabled] + .switch__label .switch__label-switch {
+            background-color: #E5E5E5;
+        }
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        cursor: pointer;
+
+        font: var(--text-t2);
+    }
+
+    &__label-switch {
+        position: relative;
+
+        width: 2.6rem;
+        height: 1.2rem;
+
+        border-radius: 8rem;
+        background-color: #BBBBBB;
+
+        transition: 0.3s;
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            bottom: 2px;
+
+            width: 0.8rem;
+            height: 0.8rem;
+
+            border-radius: 50%;
+            background-color: #fff;
+
+            transition: 0.3s;
+        }
+    }
+}
+
 .tag {
     display: flex;
     align-items: center;
