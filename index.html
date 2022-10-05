@@ -1487,6 +1487,86 @@
                     </div>
                 </div>
             </div>
+            <div class="modal modal-filter js-modal js-modal-filter">
+                <div class="modal__container">
+                    <div class="modal__inner">
+                        <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                            <svg>
+                                <use xlink:href="#close-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="modal__content">
+                            <h3 class="modal-filter__title">Все фильтры</h3>
+                            <form class="modal-filter__form js-filter-form" action="#">
+                                <div class="modal-filter__checkboxes-block">
+                                    <h4 class="modal-filter__checkboxes-title">Сортировка</h4>
+                                    <div class="modal-filter__checkboxes">
+                                        <div class="modal-filter__checkbox-wrapper">
+                                            <input class="checkbox visually-hidden" type="checkbox" name="mobileFilterSort1" id="mobileFilterSort1">
+                                            <label class="modal-filter__checkbox-label" for="mobileFilterSort1">Новинки</label>
+                                        </div>
+                                        <div class="modal-filter__checkbox-wrapper">
+                                            <input class="checkbox visually-hidden" type="checkbox" name="mobileFilterSort2" id="mobileFilterSort2">
+                                            <label class="modal-filter__checkbox-label" for="mobileFilterSort2">Всегда пригодиться</label>
+                                        </div>
+                                        <div class="modal-filter__checkbox-wrapper">
+                                            <input class="checkbox visually-hidden" type="checkbox" name="mobileFilterSort3" id="mobileFilterSort3">
+                                            <label class="modal-filter__checkbox-label" for="mobileFilterSort3">Хит продаж</label>
+                                        </div>
+                                        <div class="modal-filter__checkbox-wrapper">
+                                            <input class="checkbox visually-hidden" type="checkbox" name="mobileFilterSort4" id="mobileFilterSort4">
+                                            <label class="modal-filter__checkbox-label" for="mobileFilterSort4">Скидка месяца</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-filter__checkboxes-block">
+                                    <h4 class="modal-filter__checkboxes-title">Наличие товара</h4>
+                                    <div class="modal-filter__checkboxes">
+                                        <div class="modal-filter__checkbox-wrapper">
+                                            <input class="checkbox visually-hidden" type="checkbox" name="mobileFilterHave1" id="mobileFilterHave1">
+                                            <label class="modal-filter__checkbox-label" for="mobileFilterHave1">Есть в наличии</label>
+                                        </div>
+                                        <div class="modal-filter__checkbox-wrapper">
+                                            <input class="checkbox visually-hidden" type="checkbox" name="mobileFilterHave2" id="mobileFilterHave2">
+                                            <label class="modal-filter__checkbox-label" for="mobileFilterHave2">Нет в наличии</label>
+                                        </div>
+                                        <div class="modal-filter__checkbox-wrapper">
+                                            <input class="checkbox visually-hidden" type="checkbox" name="mobileFilterHave3" id="mobileFilterHave3">
+                                            <label class="modal-filter__checkbox-label" for="mobileFilterHave3">Под заказ</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-filter__price js-price-container"><span class="modal-filter__price-desc">Цена:</span>
+                                    <div class="modal-filter__price-range js-price-range"></div>
+                                    <div class="modal-filter__price-inputs">
+                                        <div class="modal-filter__price-input-wrapper">
+                                            <input class="modal-filter__price-input js-filter-price price-0" min="2800" max="39999" type="number" name="catalogPriceStart" value="2800" data-start-value="2800"><span>₽</span>
+                                        </div>
+                                        <div class="modal-filter__price-input-wrapper">
+                                            <input class="modal-filter__price-input js-filter-price price-1" min="2800" max="39999" type="number" name="catalogPriceEnd" value="39999" data-start-value="39999"><span>₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="switch">
+                                    <input class="switch__checkbox visually-hidden" checked="checked" name="mobileFilterPromotion" id="mobileFilterPromotion" type="checkbox">
+                                    <label class="switch__label" for="mobileFilterPromotion"><span>Товары по акции</span><span class="switch__label-switch"></span>
+                                    </label>
+                                </div>
+                                <div class="switch">
+                                    <input class="switch__checkbox visually-hidden" checked="checked" name="mobileFilterPresent" id="mobileFilterPresent" type="checkbox">
+                                    <label class="switch__label" for="mobileFilterPresent"><span>Товары с подарками</span><span class="switch__label-switch"></span>
+                                    </label>
+                                </div>
+                                <button class="modal-filter__reset js-filter-reset visually-hidden" type="reset">
+                                    <svg>
+                                        <use xlink:href="#close-icon"></use>
+                                    </svg><span>Сбросить</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
             <div class="js-map-url" data-api="ваш API-ключ"></div>
             <script src="js/app.js"></script>
