@@ -1,15 +1,16 @@
-.reviews {
+.reviews-section {
   padding-bottom: 12rem;
 
   @include breakpoint(mobile) {
     order: 2;
   }
 
-  &__title-wrapper {
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
     margin-bottom: 6.6rem;
-    padding-bottom: 0.6rem;
-
-    overflow: hidden;
 
     @include breakpoint(tablet) {
       margin-bottom: 4.9rem;
@@ -24,8 +25,23 @@
     }
   }
 
+  &__title-wrapper {
+    padding-bottom: 0.6rem;
+
+    overflow: hidden;
+  }
+
   &__title {
     font: var(--title-h1);
+  }
+
+  &__header-link {
+    margin-bottom: 0.8rem;
+    white-space: nowrap;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
 
   &__item {

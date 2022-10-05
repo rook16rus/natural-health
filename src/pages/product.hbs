@@ -192,6 +192,13 @@
                 </div>
             </div>
         </section>
+        {{> reviews-section }}
+        <section class="product-popular">
+            <div class="container">
+                <h2 class="product-popular__title">Популярные товары</h2>
+                {{> catalog-list data=popular }}
+            </div>
+        </section>
 
     {{/content}}
 {{/extend}}

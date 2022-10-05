@@ -176,37 +176,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
-            <div class="container">
-                <div class="reviews__title-wrapper">
-                    <h2 class="reviews__title js-title-animate">Отзывы наших покупателей</h2>
-                </div>
-                <div class="reviews__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,641:2,1025:3" data-space="22" data-auto-height="true">
-                    <div class="swiper-wrapper">
-                        {{#each reviews }}
-                            <blockquote class="reviews__item swiper-slide">
-                                <div class="reviews__item-top">
-                                    <div class="reviews__item-img">
-                                        <picture>
-                                            <source srcset="{{this.imgWebp}}" type="image/webp">
-                                            <img class="lazyload" data-src="{{this.img}}" alt="Фото автора">
-                                        </picture>
-                                    </div>
-                                    <div class="reviews__item-content">
-                                        <cite class="reviews__item-author">{{this.name}}</cite>
-                                        <span class="reviews__item-author-info">{{this.info}}</span>
-                                    </div>
-                                </div>
-                                <div class="reviews__item-text">
-                                    <p>{{this.text}}</p>
-                                </div>
-                            </blockquote>
-                        {{/each}}
-                    </div>
-                </div>
-                <a class="reviews__link button button--bordered" href="#">Смотреть все</a>
-            </div>
-        </section>
+        {{> reviews-section }}
         <section class="news-section">
             <div class="container">
                 <header class="news-section__header">
