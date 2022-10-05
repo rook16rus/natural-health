@@ -1,0 +1,11 @@
+.product-description {
+  padding-bottom: 14rem;
+
+  &__title {
+    margin-bottom: 2.8rem;
+
+    font: var(--other-2);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+}
