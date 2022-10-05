@@ -1,0 +1,265 @@
+.product-card {
+  padding-bottom: 10.4rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    min-height: 70rem;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  &__img-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img-slide {
+    img {
+      transform: scale(1);
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: 1.5s;
+
+      @include transitionfix();
+    }
+
+    &.swiper-slide-active {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__tag {
+    position: absolute;
+    top: 3.2rem;
+    left: 3.2rem;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    font: var(--other);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    svg {
+      width: 1.4rem;
+      height: 2rem;
+    }
+  }
+
+  .slider-navigation {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    width: 100%;
+    max-width: 26.8rem;
+    height: 3.2rem;
+
+    border-radius: 8.7rem;
+    background-color: #fff;
+
+    .js-prev-slide {
+      left: 1.6rem;
+    }
+
+    .js-next-slide {
+      right: 1.6rem;
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 3.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: auto;
+
+    font: var(--other-2);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.8rem 4.4rem;
+
+    background-color: var(--gray-color);
+    border-radius: 2rem;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 8.8rem;
+  }
+
+  &__categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    font: var(--other-2);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
+  &__category {
+    svg {
+      display: none;
+    }
+  }
+
+  &__category:not(:last-of-type) {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: '';
+
+      width: 0.4rem;
+      height: 0.4rem;
+      margin: 0 2.4rem;
+      
+      border-radius: 50%;
+      background-color: #000;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    
+    font: var(--title-h0);
+    text-align: center;
+  }
+
+  &__desc {
+    margin-bottom: 3rem;
+
+    font: var(--title-h4);
+    text-align: center;
+  }
+
+  &__content-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 64.6rem;
+    margin: auto auto 0;
+  }
+
+  &__features-title {
+    display: inline-block;
+    margin-bottom: 2.2rem;
+
+    font: var(--text-t2);
+    font-size: 1.6rem;
+  }
+
+  &__features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__features-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.8rem;
+    max-width: 34.5rem;
+
+    font: var(--text-t2);
+    font-size: 1.6rem;
+
+    &::before {
+      content: '';
+
+      width: 1rem;
+      height: 1rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+
+      background: url("../img/icons/star-icon.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__info {
+
+  }
+
+  &__info-property {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__volume {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__volume-desc {
+    font: var(--text-t2);
+    font-size: 1.6rem;
+  }
+
+  &__volume-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0 1rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3.6rem;
+
+    font: var(--other);
+  }
+
+  &__price {
+    font: var(--title-h2);
+  }
+
+  &__button {
+    width: 18.5rem;
+    height: 5.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__delivery {
+    display: block;
+    margin-bottom: 0.4rem;
+
+    font: var(--text-t2);
+    font-size: 1.6rem;
+  }
+
+  &__delivery-desc {
+    font: var(--text-t2);
+    font-size: 1.6rem;
+    color: rgba(28, 28, 28, 0.3);
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "breadcrumbs": [
+    {
+      "link": "index.html",
+      "text": "Главная"
+    },
+    {
+      "link": "catalog.html",
+      "text": "Каталог"
+    },
+    {
+      "link": "catalog.html",
+      "text": "Желудок и кишечник"
+    },
+    {
+      "link": "product.html",
+      "text": "BioPit"
+    }
+  ],
+  "products": [
+    {
+      "img": "img/product-1.jpg",
+      "imgWebp": "img/product-1.webp"
+    },
+    {
+      "img": "img/product-1.jpg",
+      "imgWebp": "img/product-1.webp"
+    },
+    {
+      "img": "img/product-1.jpg",
+      "imgWebp": "img/product-1.webp"
+    }
+
+  ],
+  "productFeatures": [
+    {
+      "text": "Снизьте риск остеопороза, артрита и остеохондроза"
+    },
+    {
+      "text": "Обеспечьте профилактику остеоартрита, растяжек и хронических болей в спине"
+    },
+    {
+      "text": "Улучшите приток крови к мышечной массе"
+    },
+    {
+      "text": "Укрепите соединительную ткань"
+    },
+    {
+      "text": "Понизьте холестерин, значительно увеличьте выносливость, скорость обмена веществ"
+    }
+  ]
+}

@@ -20,8 +20,6 @@ export default function catalogPrice() {
         const price1 = priceContainer.querySelector('.price-1');
         const prices = [price0, price1];
 
-        console.log(range);
-
         nous.on('update', (values, handle) => {
             prices[handle].value = Math.round(values[handle]);
         });
