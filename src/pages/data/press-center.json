@@ -1,0 +1,35 @@
+{
+  "breadcrumbs": [
+    {
+      "link": "index.html",
+      "text": "Главная"
+    },
+    {
+      "link": "press-center.html",
+      "text": "Пресс-центр"
+    }
+  ],
+  "pressFilter": [
+    {
+      "id": "pressNews",
+      "text": "Новости",
+      "checked": true
+    },
+    {
+      "id": "pressMedia",
+      "text": "СМИ о нас"
+    },
+    {
+      "id": "pressBlog",
+      "text": "Блог о здоровье"
+    }
+  ],
+  "mainNews": [
+    {
+      "img": "img/main-press-1.jpg",
+      "imgWebp": "img/main-press-1.webp",
+      "time": "20 июня",
+      "title": "22 июля состоялось открытие третьего завода Natural Health в Казани"
+    }
+  ]
+}

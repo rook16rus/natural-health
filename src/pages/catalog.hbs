@@ -191,30 +191,7 @@
                         </form>
                     </div>
                     {{> catalog-list data=catalog }}
-                    <div class="catalog__footer">
-                        <button class="catalog__more-button button button--bordered" type="submit">Показать еще</button>
-                        <div class="catalog__pagination">
-                            <a class="catalog__pagination-prev" href="#">
-                                <svg>
-                                    <use xlink:href="#arrow-down-icon"></use>
-                                </svg>
-                            </a>
-                            <div class="catalog__pagination-numbers">
-                                <a class="catalog__pagination-number active" href="#">1</a>
-                                <a class="catalog__pagination-number" href="#">2</a>
-                                <a class="catalog__pagination-number" href="#">3</a>
-                                <a class="catalog__pagination-number catalog__pagination-number--hide-on-mobile" href="#">4</a>
-                                <a class="catalog__pagination-number catalog__pagination-number--hide-on-mobile" href="#">5</a>
-                                <span class="catalog__pagination-number" href="#">...</span>
-                                <a class="catalog__pagination-number" href="#">10</a>
-                            </div>
-                            <a class="catalog__pagination-next" href="#">
-                                <svg>
-                                    <use xlink:href="#arrow-down-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    {{> cards-navigation }}
                 </div>
             </div>
         </section>
