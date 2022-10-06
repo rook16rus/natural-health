@@ -36,6 +36,7 @@ import categories from "./build-in/categories";
 import showResetButton from "./build-in/showResetButton";
 import productSlider from "./build-in/productSlider";
 import accordions from "./build-in/accordions";
+import readMoreButton from "./build-in/readMoreButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     categories();
     productSlider();
     accordions();
+    readMoreButton();
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
