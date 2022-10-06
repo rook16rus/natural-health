@@ -10,7 +10,6 @@ export default function productSlider() {
         slidesPerView: 1,
         speed: 1500,
         effect: "fade",
-        autoHeight: true,
         fadeEffect: {
             crossFade: true
         },

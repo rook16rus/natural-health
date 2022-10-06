@@ -1,7 +1,9 @@
-<ul class="breadcrumbs">
-    {{#each data }}
-        <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="{{this.link}}">{{this.text}}</a>
-        </li>
-    {{/each}}
-</ul>
+<div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+        {{#each data }}
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="{{this.link}}">{{this.text}}</a>
+            </li>
+        {{/each}}
+    </ul>
+</div>
