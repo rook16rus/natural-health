@@ -1,7 +1,7 @@
 {{#extend "layout"}}
     {{#content "main"}}
 
-        <section class="product-card">
+        <section class="product-card js-section-animate">
             <div class="container">
                 <div class="product-card__wrapper">
                     <div class="product-card__img">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="product-property">
+        <section class="product-property js-section-animate">
             <div class="container">
                 <div class="product-property__wrapper">
                     <div class="product-property__accordions">
@@ -100,7 +100,7 @@
                 </div>
             </div>
         </section>
-        <section class="product-description">
+        <section class="product-description ">
             <div class="wide-text-container">
                 <h2 class="product-description__title">Описание товара</h2>
                 <h3>Основная информация</h3>
@@ -195,7 +195,9 @@
         {{> reviews-section }}
         <section class="product-popular">
             <div class="container">
-                <h2 class="product-popular__title">Популярные товары</h2>
+                <div class="product-popular__title-wrapper">
+                    <h2 class="product-popular__title js-title-animate">Популярные товары</h2>
+                </div>
                 {{> catalog-list data=popular }}
             </div>
         </section>
