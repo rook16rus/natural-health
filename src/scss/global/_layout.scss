@@ -270,6 +270,19 @@
         }
     }
 
+    &--green {
+        border-color: var(--primary-color);;
+        background-color: var(--primary-color);
+        color: #fff;
+
+        &:hover {
+            &:hover {
+                border-color: #353535;
+                background-color: #353535;
+            }
+        }
+    }
+
     svg {
         width: 1.6rem;
         height: 1.6rem;
