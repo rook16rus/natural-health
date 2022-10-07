@@ -4,9 +4,11 @@
         <section class="press-center">
             <div class="container">
                 {{> breadcrumbs data=breadcrumbs }}
-                <h1 class="press-center__title">Пресс-центр</h1>
+                <div class="press-center__title-wrapper">
+                    <h1 class="press-center__title js-title-animate">Пресс-центр</h1>
+                </div>
                 {{> press-filter data=pressFilter }}
-                <ul class="press-center__main-news">
+                <ul class="press-center__main-news js-section-animate">
                     {{#each mainNews }}
                         <li class="press-center__main-new">
                             <a class="press-center__main-new-link" href="news-single.html">
@@ -44,7 +46,7 @@
                     {{/each}}
                 </ul>
                 {{> mailing }}
-                <ul class="press-center__list">
+                <ul class="press-center__list js-section-animate">
                     {{#each news }}
                         {{> news-card }}
                     {{/each}}

@@ -37,23 +37,30 @@
     }
   }
 
-  &__title {
-    margin-bottom: 4rem;
+  &__title-wrapper {
+    margin-bottom: 3.4rem;
+    padding-bottom: 0.6rem;
 
-    font: var(--title-h1);
-    text-align: center;
+    overflow: hidden;
 
     @include breakpoint(tablet) {
-      margin-bottom: 3.2rem;
+      margin-bottom: 2.6rem;
     }
 
     @include breakpoint(small-tablet) {
-      margin-bottom: 2.4rem;
+      margin-bottom: 1.8rem;
     }
 
     @include breakpoint(mobile) {
-      margin-bottom: 2rem;
+      margin-bottom: 1.4rem;
     }
+  }
+
+  &__title {
+    font: var(--title-h1);
+    text-align: center;
+
+    opacity: 0;
   }
 
   .press-filter {
@@ -95,7 +102,10 @@
     }
 
     &__radio-container {
-      transform: none !important;
+      opacity: 0;
+      @include breakpoint(mobile) {
+        transform: none !important;
+      }
     }
 
     &__radio-wrapper:not(:last-of-type) .press-filter__label::after {
@@ -132,6 +142,8 @@
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 2.4rem;
+
+    opacity: 0;
 
     @include breakpoint(mobile) {
       gap: 2rem;
@@ -290,6 +302,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 9.2rem 2rem;
     margin-bottom: 6.6rem;
+
+    opacity: 0;
 
     @include breakpoint(tablet) {
       grid-template-columns: repeat(3, 1fr);

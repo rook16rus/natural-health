@@ -1,6 +1,8 @@
 .breadcrumbs {
   position: relative;
 
+  opacity: 0;
+
   /*@include breakpoint(mobile) {
     &::before {
       content: '';
