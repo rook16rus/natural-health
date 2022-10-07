@@ -1,4 +1,6 @@
 .press-center {
+  padding-bottom: 10rem;
+
   .breadcrumbs {
     margin-top: 2rem;
     margin-bottom: 5.8rem;
@@ -110,5 +112,12 @@
 
   .mailing {
     margin-bottom: 9.2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9.2rem 2rem;
+    margin-bottom: 6.6rem;
   }
 }
