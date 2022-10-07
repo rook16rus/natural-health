@@ -9,6 +9,15 @@
   background-color: var(--gray-color);
   overflow: hidden;
 
+  @include breakpoint(tablet) {
+    flex-direction: column;
+    padding: 4.6rem 5rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 4rem 2rem 3.6rem;
+  }
+
   &::before {
     content: '';
 
@@ -21,6 +30,25 @@
 
     background: url("../img/mailing-bg.svg") no-repeat center;
     background-size: contain;
+
+    @include breakpoint(tablet) {
+      top: -2.8rem;
+      left: auto;
+      right: -13.6rem;
+
+      width: 50rem;
+      height: 50rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      width: 40rem;
+      height: 40rem;
+    }
+
+    @include breakpoint(mobile) {
+      width: 26.6rem;
+      height: 26.6rem;
+    }
   }
 
   &__title {
@@ -32,6 +60,16 @@
     margin-right: 3.7rem;
 
     font: var(--title-h3);
+
+    @include breakpoint(tablet) {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 3.2rem;
+    }
+
+    @include breakpoint(mobile) {
+      max-width: 22.8rem;
+    }
   }
 
   &__photo {
@@ -42,6 +80,10 @@
     height: 10.9rem;
     margin-top: 1.5rem;
     object-fit: contain;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__mail {
@@ -54,6 +96,14 @@
     width: 100%;
     max-width: 49.2rem;
     margin-left: auto;
+
+    @include breakpoint(tablet) {
+      margin-left: 0;
+    }
+
+    @include breakpoint(mobile) {
+      gap: 2.4rem;
+    }
   }
 
   &__form {
@@ -72,8 +122,16 @@
 
     font: var(--title-h4);
 
+    @include breakpoint(mobile) {
+      font-size: 1.8rem;
+    }
+
     @include placeholder() {
       font: var(--title-h4);
+
+      @include breakpoint(mobile) {
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -103,6 +161,15 @@
   &__desc {
     font: var(--text-t3);
     color: rgba(28, 28, 28, 0.6);
+
+    @include breakpoint(tablet) {
+      margin-left: 1.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      max-width: 21.5rem;
+      font-size: 1.3rem;
+    }
 
     a {
       &:hover {
