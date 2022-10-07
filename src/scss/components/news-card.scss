@@ -67,6 +67,8 @@
   }
 
   &__text {
-    font: var(--text-t2)
+    font: var(--text-t2);
+
+    @include maxSizeText(3);
   }
 }
