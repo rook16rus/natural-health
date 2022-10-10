@@ -1,0 +1,42 @@
+.news-other {
+  padding-bottom: 12.6rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7.2rem;
+  }
+
+  &__title {
+    font: var(--title-h1)
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9.2rem 2rem;
+    margin-bottom: 6.6rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8rem 2rem;
+      margin-bottom: 6.2rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6.4rem 2rem;
+      margin-bottom: 5.4rem;
+    }
+
+    @include breakpoint(mobile) {
+      gap: 4.4rem 2rem;
+      margin-bottom: 4rem;
+    }
+
+    @include breakpoint(small-mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

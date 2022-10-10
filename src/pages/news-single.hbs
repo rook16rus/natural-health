@@ -16,7 +16,9 @@
                             Казани</h1>
                         <div class="text-container">
                             <figure class="img">
-                                <img src="img/news-single-1.jpg" data-fancybox alt="Фото">
+                                <div class="img__img-block">
+                                    <img src="img/news-single-1.jpg" data-fancybox alt="Фото">
+                                </div>
                                 <figcaption class="img__caption">Новый завод в Казани</figcaption>
                             </figure>
                             <div class="lead">
@@ -46,7 +48,7 @@
                                 определённый моральный характер, прагматическую установку и соответственно литературно
                                 обработанное».
                             </p>
-                            <div class="slider swiper">
+                            <div class="slider swiper js-init-slider">
                                 <div class="swiper-wrapper">
                                     {{#each slider }}
                                         <div class="slider__slide swiper-slide">
@@ -54,6 +56,8 @@
                                         </div>
                                     {{/each}}
                                 </div>
+                                <div class="swiper-pagination"></div>
+                                {{> slider-navigation }}
                             </div>
                             <p>
                                 В лингвистике термин «текст» используется в широком значении, включая и образцы устной
@@ -64,13 +68,15 @@
                                 определённый моральный характер, прагматическую установку и соответственно литературно
                                 обработанное».
                             </p>
-                            <div class="video">
-                                <img class="video__preview lazyload" data-src="img/news-single-2.jpg" alt="Фото">
-                                <button class="video__button">
-                                    <svg>
-                                        <use xlink:href="#video-icon"></use>
-                                    </svg>
-                                </button>
+                            <div class="video" data-fancybox>
+                                <a class="video__link" data-src="https://youtu.be/Fcc0VRy19VM" data-fancybox>
+                                    <img class="video__preview lazyload" data-src="img/news-single-2.jpg" alt="Фото">
+                                    <button class="video__button">
+                                        <svg>
+                                            <use xlink:href="#video-icon"></use>
+                                        </svg>
+                                    </button>
+                                </a>
                             </div>
                             <h3>Маркированный список</h3>
                             <ul>
@@ -84,14 +90,14 @@
                                         В составе нашей продукции только натуральные растительные ингредиенты, <span>которые
                                         стабилизируют процесс обмена веществ и общий метаболизм.</span>
                                     </p>
-                                    <div class="blockquote__author">
-                                        <div class="blockquote__img-block">
-                                            <img class="blockquote__img lazyload" data-src="img/reviews-1.jpg" alt="Фото автора">
-                                        </div>
-                                        <div class="blockquote__author-info">
-                                            <cite class="blockquote__author-name">Мирослава Андреева</cite>
-                                            <span class="blockquote__author-position">Генеральный директор</span>
-                                        </div>
+                                </div>
+                                <div class="blockquote__author">
+                                    <div class="blockquote__author-img-block">
+                                        <img class="blockquote__author-img lazyload" data-src="img/review-1.jpg" alt="Фото автора">
+                                    </div>
+                                    <div class="blockquote__author-info">
+                                        <cite class="blockquote__author-name">Мирослава Андреева</cite>
+                                        <span class="blockquote__author-position">Генеральный директор</span>
                                     </div>
                                 </div>
                             </blockquote>
@@ -106,16 +112,16 @@
                                 обработанное».
                             </p>
                         </div>
-                        {{> mailing }}
                     </div>
                 </div>
+                {{> mailing }}
             </div>
         </section>
         <section class="news-other">
             <div class="container">
                 <header class="news-other__header">
                     <h2 class="news-other__title">Похожие статьи</h2>
-                    <a class="news-other__link" href="press-center.html">Смотреть все</a>
+                    <a class="news-other__link button button--bordered" href="press-center.html">Смотреть все</a>
                 </header>
                 <ul class="news-other__list">
                     {{#each news }}
