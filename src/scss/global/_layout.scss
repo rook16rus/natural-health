@@ -329,10 +329,13 @@
 }
 
 .blockquote {
+    position: relative;
+
     padding: 6rem 6rem 5.2rem;
 
     border-radius: 2rem;
     background-color: var(--gray-color);
+    overflow: hidden;
 
     @include breakpoint(tablet) {
         padding: 5rem 4rem 4.6rem;
@@ -346,7 +349,28 @@
         padding: 4rem 2.5rem 4rem;
     }
 
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: -5.6rem;
+        right: -5.8rem;
+
+        width: 21.6rem;
+        height: 21.4rem;
+
+        background: url("../img/blockquote-bg.svg") no-repeat center;
+        background-size: contain;
+
+        @include breakpoint(mobile) {
+            right: -8.1rem;
+        }
+    }
+
     &__text {
+        position: relative;
+        z-index: 1;
+
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
@@ -374,6 +398,9 @@
     }
 
     &__author {
+        position: relative;
+        z-index: 1;
+
         display: flex;
         align-items: center;
         gap: 1.4rem;
