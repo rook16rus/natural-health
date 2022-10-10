@@ -27,16 +27,44 @@
     & > h2 {
         margin: 6.4rem 0 2.8rem;
         font: var(--title-h2);
+
+        @include breakpoint(tablet) {
+            margin: 5.6rem 0 2.8rem;
+        }
+
+        @include breakpoint(small-tablet) {
+            margin: 5.2rem 0 2.8rem;
+        }
+
+        @include breakpoint(mobile) {
+            margin: 4.8rem 0 2.8rem;
+        }
     }
 
     & > h3 {
         margin: 4.8rem 0 2.8rem;
         font: var(--title-h3);
+
+        @include breakpoint(tablet) {
+            margin: 4.4rem 0 2.8rem;
+        }
+
+        @include breakpoint(small-tablet) {
+            margin: 4rem 0 2.8rem;
+        }
+
+        @include breakpoint(mobile) {
+            margin: 3.4rem 0 2.8rem;
+        }
     }
 
     & > p {
         margin: 0 0 1.6rem;
         font: var(--text-t1);
+
+        @include breakpoint(mobile) {
+            font-size: 1.4rem;
+        }
     }
 
     & > ul {
@@ -46,6 +74,18 @@
         max-width: 73rem;
         margin: 3.5rem 0 6.4rem;
 
+        @include breakpoint(tablet) {
+            margin: 3.5rem 0 5.6rem;
+        }
+
+        @include breakpoint(small-tablet) {
+            margin: 3.5rem 0 5.2rem;
+        }
+
+        @include breakpoint(mobile) {
+            margin: 2rem 0 4.8rem;
+        }
+
         li {
             display: flex;
             align-items: flex-start;
@@ -53,12 +93,17 @@
 
             font: var(--text-t1);
 
+            @include breakpoint(mobile) {
+                font-size: 1.4rem;
+            }
+
             &::before {
                 content: '';
 
                 width: 1.2rem;
                 height: 1.2rem;
                 margin-top: 0.5rem;
+                flex-shrink: 0;
 
                 background: url("../img/green-star-icon.svg") no-repeat center;
                 background-color: contain;
@@ -68,6 +113,18 @@
 
     .img {
         margin-bottom: 6.4rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 5.6rem;
+        }
+
+        @include breakpoint(small-tablet) {
+            margin-bottom: 5.2rem;
+        }
+
+        @include breakpoint(mobile) {
+            margin-bottom: 4.8rem;
+        }
     }
 
     .slider {
@@ -80,6 +137,18 @@
 
     .blockquote {
         margin: 6.4rem 0;
+
+        @include breakpoint(tablet) {
+            margin: 5.6rem 0;
+        }
+
+        @include breakpoint(small-tablet) {
+            margin: 5.2rem 0;
+        }
+
+        @include breakpoint(mobile) {
+            margin: 4.8rem 0;
+        }
     }
 }
 
@@ -96,6 +165,11 @@
 
         border-radius: 0.8rem;
         overflow: hidden;
+
+        @include breakpoint(mobile) {
+            padding-top: 72.88%;
+            border-radius: 1rem;
+        }
 
         img {
             position: absolute;
@@ -120,11 +194,19 @@
     gap: 2rem;
 
     font: var(--title-h4);
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+    }
 }
 
 .slider {
     border-radius: 0.8rem;
     overflow: hidden;
+
+    @include breakpoint(mobile) {
+        border-radius: 1rem;
+    }
 
     &__slide {
         position: relative;
@@ -132,6 +214,10 @@
         padding-top: 66.85%;
 
         cursor: grab;
+
+        @include breakpoint(mobile) {
+            padding-top: 72.88%;
+        }
 
         img {
             position: absolute;
@@ -158,6 +244,10 @@
         border-radius: 8.7rem;
         background-color: #fff;
 
+        @include breakpoint(mobile) {
+            bottom: 0.5rem;
+        }
+
         .js-prev-slide {
             left: 1.6rem;
         }
@@ -176,6 +266,10 @@
         width: auto;
 
         font: var(--other-2);
+
+        @include breakpoint(mobile) {
+            bottom: 1.3rem;
+        }
     }
 }
 
@@ -190,6 +284,11 @@
         border-radius: 0.8rem;
         overflow: hidden;
         cursor: pointer;
+
+        @include breakpoint(mobile) {
+            padding-top: 72.88%;
+            border-radius: 1rem;
+        }
     }
 
     &__preview {
@@ -217,6 +316,11 @@
         border-radius: 50%;
         background-color: #fff;
 
+        @include breakpoint(mobile) {
+          width: 6rem;
+          height: 6rem;
+        }
+
         svg {
             width: 2.4rem;
             height: 2.4rem;
@@ -230,6 +334,18 @@
     border-radius: 2rem;
     background-color: var(--gray-color);
 
+    @include breakpoint(tablet) {
+        padding: 5rem 4rem 4.6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+        padding: 4.4rem 3rem 4rem;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 4rem 2.5rem 4rem;
+    }
+
     &__text {
         display: flex;
         flex-direction: column;
@@ -240,6 +356,18 @@
         font: var(--title-h3);
         line-height: 90%;
 
+        @include breakpoint(tablet) {
+            margin-bottom: 5rem;
+        }
+
+        @include breakpoint(small-tablet) {
+            margin-bottom: 3.5rem;
+        }
+
+        @include breakpoint(mobile) {
+            margin-bottom: 2.5rem;
+        }
+
         span {
             color: rgba(0, 0, 0, 0.2);
         }
@@ -249,6 +377,10 @@
         display: flex;
         align-items: center;
         gap: 1.4rem;
+
+        @include breakpoint(mobile) {
+            gap: 0.8rem;
+        }
     }
 
     &__author-img-block {
@@ -261,6 +393,23 @@
 
         border: 1px solid rgba(28, 28, 28, 0.1);
         border-radius: 50%;
+
+        @include breakpoint(tablet) {
+            width: 7rem;
+            height: 7rem;
+        }
+
+        @include breakpoint(small-tablet) {
+            width: 6rem;
+            height: 6rem;
+            padding: 0.7rem;
+        }
+
+        @include breakpoint(mobile) {
+            width: 4.7rem;
+            height: 4.7rem;
+            padding: 0.5rem;
+        }
 
         img {
             width: 100%;
@@ -275,6 +424,10 @@
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
+
+        @include breakpoint(mobile) {
+            gap: 0.4rem;
+        }
     }
 
     &__author-name {
