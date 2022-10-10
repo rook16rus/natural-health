@@ -32,6 +32,11 @@
     }
   }
 
+  &__title-wrapper {
+    padding-bottom: 0.6rem;
+    overflow: hidden;
+  }
+
   &__title {
     font: var(--title-h1)
   }

@@ -1,7 +1,7 @@
 {{#extend "layout"}}
     {{#content "main"}}
 
-        <section class="news-single">
+        <section class="news-single js-section-animate">
             <div class="container">
                 <div class="news-single__wrapper">
                     <a class="news-single__back-link" href="press-center.html">
@@ -120,10 +120,12 @@
         <section class="news-other">
             <div class="container">
                 <header class="news-other__header">
-                    <h2 class="news-other__title">Похожие статьи</h2>
-                    <a class="news-other__link button button--bordered" href="press-center.html">Смотреть все</a>
+                    <div class="news-other__title-wrapper">
+                        <h2 class="news-other__title js-title-animate">Похожие статьи</h2>
+                    </div>
+                    <a class="news-other__link button button--bordered js-section-animate" href="press-center.html">Смотреть все</a>
                 </header>
-                <ul class="news-other__list">
+                <ul class="news-other__list js-section-animate">
                     {{#each news }}
                         {{> news-card }}
                     {{/each}}
