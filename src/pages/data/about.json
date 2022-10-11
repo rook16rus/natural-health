@@ -25,5 +25,25 @@
       "desc": "позиций продукции",
       "text": "Natiral Health ведет свою деятельность на территории более 10 иностранных государств."
     }
+  ],
+  "team": [
+    {
+      "img": "img/team-1.jpg"
+    },
+    {
+      "img": "img/team-2.jpg"
+    },
+    {
+      "img": "img/team-3.jpg"
+    },
+    {
+      "img": "img/team-4.jpg"
+    },
+    {
+      "img": "img/team-5.jpg"
+    },
+    {
+      "img": "img/team-1.jpg"
+    }
   ]
 }
