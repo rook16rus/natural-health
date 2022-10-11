@@ -1,0 +1,90 @@
+.about-blockquote {
+  padding-bottom: 12rem;
+
+  &__inner {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 66.6rem;
+    padding: 7.4rem 8rem 9rem;
+
+    background-color: var(--gray-color);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__position {
+    max-width: 35rem;
+    margin-bottom: 2.4rem;
+
+    font: var(--other);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(28, 28, 28, 0.3);
+  }
+
+  &__name {
+    max-width: 52rem;
+    margin-bottom: 3rem;
+
+    font: var(--title-h1);
+  }
+
+  &__text {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 47rem;
+    margin-top: auto;
+
+    font: var(--title-h4);
+
+    p {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: '“';
+
+      position: absolute;
+      left: -2.4rem;
+      top: -0.8rem;
+
+      font: var(--title-h3);
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      right: -13.7rem;
+      bottom: -3.3rem;
+
+      width: 19.7rem;
+      height: 18.1rem;
+
+      background: url("../img/director-signature-2.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 4rem;
+    right: 9rem;
+
+    width: 69.8rem;
+    height: auto;
+
+    filter: drop-shadow(0 0.4rem 8rem rgba(0, 0, 0, 0.05));
+  }
+}
