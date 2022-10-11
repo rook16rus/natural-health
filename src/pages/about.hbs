@@ -3,7 +3,7 @@
 
         <section class="about-intro">
             <div class="container">
-                <div class="about-intro__inner" style="background: url('img/about-intro-bg.jpg') no-repeat center;">
+                <div class="about-intro__inner lazyload" data-bg="img/about-intro-bg.jpg" style="background: url('img/about-intro-bg.jpg') no-repeat center;">
                     {{> breadcrumbs data=breadcrumbs }}
                     <h1 class="about-intro__title">Natural Health</h1>
                     <div class="about-intro__desc">
@@ -22,6 +22,45 @@
                         Смотреть видео о компании
                         </span>
                     </a>
+                </div>
+            </div>
+        </section>
+        <section class="about-activity">
+            <div class="container">
+                <div class="about-activity__inner">
+                    <header class="about-activity__header">
+                        <div class="about-activity__header-left">
+                            <h2 class="about-activity__title">Деятельность компании</h2>
+                            <h3 class="about-activity__subtitle">
+                                Natural Health — российская компания-производитель продукции из природного сырья,
+                                <span>направленной на оздоровление человека и улучшения качеств его жизни.</span>
+                            </h3>
+                        </div>
+                        <div class="about-activity__header-right">
+                            <div class="about-activity__text">
+                                <p>
+                                    Штаб-квартира и основные производственные мощности компании расположены в городе Казань,
+                                    Республика Татарстан.
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="about-activity__body">
+                        <div class="about-activity__img-block">
+                            <div class="about-activity__img">
+                                <img class="lazyload" data-src="img/about-activity-1.jpg" alt="Фото">
+                            </div>
+                        </div>
+                        <ul class="about-activity__features">
+                            {{#each features }}
+                                <li class="about-activity__feature">
+                                    <h3 class="about-activity__feature-title">{{this.title}}</h3>
+                                    <span class="about-activity__feature-title-desc">{{this.desc}}</span>
+                                    <p class="about-activity__feature-text">{{this.text}}</p>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
