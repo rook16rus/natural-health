@@ -316,6 +316,8 @@
         border-radius: 50%;
         background-color: #fff;
 
+        color: var(--black-color);
+
         @include breakpoint(mobile) {
           width: 6rem;
           height: 6rem;
@@ -324,6 +326,7 @@
         svg {
             width: 2.4rem;
             height: 2.4rem;
+            fill: transparent;
         }
     }
 }

@@ -1,0 +1,47 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="about-intro">
+            <div class="container">
+                <div class="about-intro__inner" style="background: url('img/about-intro-bg.jpg') no-repeat center;">
+                    {{> breadcrumbs data=breadcrumbs }}
+                    <h1 class="about-intro__title">Natural Health</h1>
+                    <div class="about-intro__desc">
+                        <p>
+                            Первая в России компания-производитель, разработавшая энергоинформационное направление,
+                            которому нет аналогов в мире.
+                        </p>
+                    </div>
+                    <a class="about-intro__video" data-src="https://youtu.be/Fcc0VRy19VM" data-fancybox>
+                        <div class="about-intro__video-button">
+                            <svg>
+                                <use xlink:href="#video-icon"></use>
+                            </svg>
+                        </div>
+                        <span class="about-intro__video-desc">
+                        Смотреть видео о компании
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}
+
+
+<!--
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+
+    }
+
+-->
