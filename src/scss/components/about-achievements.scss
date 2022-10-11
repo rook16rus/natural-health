@@ -1,5 +1,5 @@
-.about-team {
-  padding-bottom: 13rem;
+.about-achievements {
+  padding-bottom: 10.6rem;
 
   &__title-wrapper {
     padding-bottom: 0.6rem;
@@ -16,11 +16,11 @@
     position: relative;
   }
 
-  &__img {
+  &__slide-img {
     position: relative;
 
     width: 100%;
-    padding-top: 150.88%;
+    padding-top: 100%;
     margin-bottom: 1.6rem;
 
     border-radius: 0.8rem;
@@ -38,16 +38,29 @@
     }
   }
 
-  &__name {
-    max-width: 22rem;
-    margin-bottom: 1.2rem;
+  &__slide-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    height: 2rem;
+    padding: 0 0.7rem;
+    margin-bottom: 1.6rem;
 
-    font: var(--text-t1);
+    border-radius: 11.2rem;
+    overflow: hidden;
+    background-color: var(--gray-color);
+
+    font: var(--text-t4);
   }
 
-  &__position {
+  &__slide-title {
+    margin-bottom: 2rem;
+    font: var(--title-h4);
+  }
+
+  &__slide-text {
     font: var(--text-t2);
-    color: rgba(28, 28, 28, 0.3);
   }
 
   .slider-navigation {

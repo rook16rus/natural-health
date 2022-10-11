@@ -45,5 +45,37 @@
     {
       "img": "img/team-1.jpg"
     }
+  ],
+  "achievements": [
+    {
+      "img": "img/achievement-1.jpg",
+      "date": "20 июня",
+      "title": "Natural Health - генеральный партнер \"Ночной Казани 2022\".",
+      "text": "16 июля прошел забег \"Ночная Казань\". Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357"
+    },
+    {
+      "img": "img/achievement-2.jpg",
+      "date": "11 июня",
+      "title": "23 июля состоится пятилетие Natural Health",
+      "text": "23 июля состоится грандиозное событие -  компания Natural Health отмечает 5-летие"
+    },
+    {
+      "img": "img/achievement-3.jpg",
+      "date": "20 июня",
+      "title": "Natural Health - генеральный партнер \"Ночной Казани 2022\".",
+      "text": "16 июля прошел забег \"Ночная Казань\". Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357"
+    },
+    {
+      "img": "img/achievement-4.jpg",
+      "date": "11 июня",
+      "title": "23 июля состоится пятилетие Natural Health",
+      "text": "23 июля состоится грандиозное событие -  компания Natural Health отмечает 5-летие"
+    },
+    {
+      "img": "img/achievement-1.jpg",
+      "date": "20 июня",
+      "title": "Natural Health - генеральный партнер \"Ночной Казани 2022\".",
+      "text": "16 июля прошел забег \"Ночная Казань\". Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357"
+    }
   ]
 }
