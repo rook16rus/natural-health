@@ -186,14 +186,6 @@
     font: var(--text-t2);
     text-align: center;
 
-    @include breakpoint(tablet) {
-
-    }
-
-    @include breakpoint(small-tablet) {
-
-    }
-
     @include breakpoint(mobile) {
       max-width: 9.5rem;
       font-size: 1.4rem;
