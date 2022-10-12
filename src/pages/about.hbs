@@ -108,7 +108,7 @@
                     <h2 class="about-team__title">Команда профессионалов</h2>
                 </div>
                 <div class="about-team__slider-container js-init-slider-container">
-                    <div class="about-team__slider swiper js-init-slider" data-slides-breakpoints="100:2.2,641:3.2,769:4,1025:5" data-space="20">
+                    <div class="about-team__slider swiper js-init-slider" data-slides-breakpoints="100:2.2,641:3.2,769:4,1025:5" data-spaces="100:12,641:20,769:20,1025:20">
                         <div class="swiper-wrapper">
                             {{#each team }}
                                 <div class="about-team__slide swiper-slide">
@@ -131,10 +131,10 @@
                     <h2 class="about-achievements__title">Достижения компании</h2>
                 </div>
                 <div class="about-achievements__slider-container js-init-slider-container">
-                    <div class="about-achievements__slider swiper js-init-slider" data-slides="4" data-space="20">
+                    <div class="about-achievements__slider swiper js-init-slider" data-slides-breakpoints="100:2.2,641:2.5,769:3,1025:4" data-spaces="100:12,641:20,769:20,1025:20">
                         <div class="swiper-wrapper">
                             {{#each achievements }}
-                                <div class="about-achievements__slider swiper-slide">
+                                <div class="about-achievements__slide swiper-slide">
                                     <div class="about-achievements__slide-img">
                                         <img class="lazyload" data-src="{{this.img}}" alt="Фото достижения">
                                     </div>

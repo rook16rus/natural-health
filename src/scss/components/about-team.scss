@@ -41,7 +41,6 @@
   }
 
   &__slider {
-
     @include breakpoint(small-tablet) {
       overflow: visible;
     }

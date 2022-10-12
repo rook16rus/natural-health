@@ -51,6 +51,10 @@
     @include breakpoint(mobile) {
       margin-bottom: 4.7rem;
     }
+    
+    &__item::after {
+      background-color: #fff;
+    }
   }
 
   &__title {

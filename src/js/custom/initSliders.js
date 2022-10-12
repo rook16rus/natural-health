@@ -62,44 +62,48 @@ export default function initSliders() {
         }
 
         let breakpointsSpacebetween = slider.dataset.spaces;
-        if (breakpointsSpacebetween) {
-            const widths = breakpointsSpacebetween.match(/[0-9]{3,4}:/g).map(i => i.slice(0, -1));
-            const spaces = breakpointsSpacebetween.match(/:[0-9]{1,3}/g).map(i => i.slice(1));
-
-            breakpointsSpacebetween =
-                {
-                    breakpoints: {}
-                }
-
-            for (let i = 0; i < widths.length; i++) {
-                const width = Number(widths[i])
-                const space = Number(spaces[i])
-
-                breakpointsSpacebetween.breakpoints[width] = {
-                    spaceBetween: space,
-                };
-            }
-        }
-
         let breakpointsPerview = slider.dataset.slidesBreakpoints;
-        if (breakpointsPerview) {
-            const widths = breakpointsPerview.match(/[0-9]{3,4}:/g).map(i => i.slice(0, -1));
-            const spaces = breakpointsPerview.match(/:[0-9\.]{1,3}/g).map(i => i.slice(1));
+        const breakpoints = { breakpoints: {} };
 
-            breakpointsPerview =
-                {
-                    breakpoints: {}
+        if (breakpointsSpacebetween || breakpointsPerview) {
+            if (breakpointsSpacebetween) {
+                const widths = breakpointsSpacebetween.match(/[0-9]{3,4}:/g).map(i => i.slice(0, -1));
+                const spaces = breakpointsSpacebetween.match(/:[0-9]{1,3}/g).map(i => i.slice(1));
+
+                for (let i = 0; i < widths.length; i++) {
+                    const width = Number(widths[i])
+                    const space = Number(spaces[i])
+
+                    if (breakpoints.breakpoints[width]) {
+                        breakpoints.breakpoints[width].spaceBetween = space;
+                    } else {
+                        breakpoints.breakpoints[width] = {
+                            spaceBetween: space,
+                        };
+                    }
                 }
+            }
 
-            for (let i = 0; i < widths.length; i++) {
-                const width = Number(widths[i])
-                const slide = Number(spaces[i])
+            if (breakpointsPerview) {
+                const widthsPreview = breakpointsPerview.match(/[0-9]{3,4}:/g).map(i => i.slice(0, -1));
+                const slides = breakpointsPerview.match(/:[0-9\.]{1,3}/g).map(i => i.slice(1));
 
-                breakpointsPerview.breakpoints[width] = {
-                    slidesPerView: slide,
-                };
+                for (let i = 0; i < widthsPreview.length; i++) {
+                    const widthPreview = Number(widthsPreview[i])
+                    const slide = Number(slides[i])
+
+                    if (breakpoints.breakpoints[widthPreview]) {
+                        breakpoints.breakpoints[widthPreview].slidesPerView = slide;
+                    } else {
+                        breakpoints.breakpoints[widthPreview] = {
+                            slidesPerView: slide,
+                        };
+                    }
+                }
             }
         }
+
+        console.log(breakpoints)
 
         const swiper = new Swiper(slider, {
             slidesPerView,
@@ -120,9 +124,10 @@ export default function initSliders() {
                 clickable: true,
                 bulletElement: 'button',
             },
-            ...breakpointsSpacebetween,
-            ...breakpointsPerview,
+            ...breakpoints
         })
+
+        swiper.init()
     })
 
 }
