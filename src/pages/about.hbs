@@ -1,7 +1,7 @@
 {{#extend "layout"}}
     {{#content "main"}}
 
-        <section class="about-intro">
+        <section class="about-intro js-section-animate">
             <div class="container">
                 <div class="about-intro__inner lazyload" data-bg="img/about-intro-bg.jpg" style="background: url('img/about-intro-bg.jpg') no-repeat center; background-size: cover">
                     {{> breadcrumbs data=breadcrumbs }}
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-activity">
+        <section class="about-activity js-section-animate">
             <div class="container">
                 <div class="about-activity__inner">
                     <header class="about-activity__header">
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-production">
+        <section class="about-production js-section-animate">
             <div class="container">
                 <div class="about-production__inner">
                     <h2 class="about-production__title">Производство компании</h2>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-blockquote">
+        <section class="about-blockquote js-section-animate">
             <div class="container">
                 <div class="about-blockquote__inner">
                     <div class="about-blockquote__top">
@@ -105,10 +105,10 @@
         <section class="about-team">
             <div class="container">
                 <div class="about-team__title-wrapper">
-                    <h2 class="about-team__title">Команда профессионалов</h2>
+                    <h2 class="about-team__title js-title-animate">Команда профессионалов</h2>
                 </div>
                 <div class="about-team__slider-container js-init-slider-container">
-                    <div class="about-team__slider swiper js-init-slider" data-slides-breakpoints="100:2.2,641:3.2,769:4,1025:5" data-spaces="100:12,641:20,769:20,1025:20">
+                    <div class="about-team__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:2.2,641:3.2,769:4,1025:5" data-spaces="100:12,641:20,769:20,1025:20">
                         <div class="swiper-wrapper">
                             {{#each team }}
                                 <div class="about-team__slide swiper-slide">
@@ -128,10 +128,10 @@
         <section class="about-achievements">
             <div class="container">
                 <div class="about-achievements__title-wrapper">
-                    <h2 class="about-achievements__title">Достижения компании</h2>
+                    <h2 class="about-achievements__title js-title-animate">Достижения компании</h2>
                 </div>
                 <div class="about-achievements__slider-container js-init-slider-container">
-                    <div class="about-achievements__slider swiper js-init-slider" data-slides-breakpoints="100:2.2,641:2.5,769:3,1025:4" data-spaces="100:12,641:20,769:20,1025:20">
+                    <div class="about-achievements__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:2.2,641:2.5,769:3,1025:4" data-spaces="100:12,641:20,769:20,1025:20">
                         <div class="swiper-wrapper">
                             {{#each achievements }}
                                 <div class="about-achievements__slide swiper-slide">

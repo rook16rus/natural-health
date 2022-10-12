@@ -1,6 +1,8 @@
 .about-activity {
   padding-bottom: 16rem;
 
+  opacity: 0;
+
   @include breakpoint(tablet) {
     padding-bottom: 12rem;
   }
