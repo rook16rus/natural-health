@@ -84,7 +84,7 @@ export default function initSliders() {
         let breakpointsPerview = slider.dataset.slidesBreakpoints;
         if (breakpointsPerview) {
             const widths = breakpointsPerview.match(/[0-9]{3,4}:/g).map(i => i.slice(0, -1));
-            const spaces = breakpointsPerview.match(/:[0-9]{1,2}/g).map(i => i.slice(1));
+            const spaces = breakpointsPerview.match(/:[0-9\.]{1,3}/g).map(i => i.slice(1));
 
             breakpointsPerview =
                 {
