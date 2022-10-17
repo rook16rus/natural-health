@@ -1,0 +1,14 @@
+.basket-popular {
+  padding-bottom: 12rem;
+
+  &__title-wrapper {
+    padding-bottom: 0.6rem;
+    margin-bottom: 4.2rem;
+
+    overflow: hidden;
+  }
+
+  &__title {
+    font: var(--title-h2);
+  }
+}
