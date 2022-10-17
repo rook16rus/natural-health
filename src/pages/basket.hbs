@@ -4,9 +4,9 @@
         <section class="basket">
             <div class="container">
                 <div class="basket__title-wrapper">
-                    <h1 class="basket__title">Корзина</h1>
+                    <h1 class="basket__title js-title-animate">Корзина</h1>
                 </div>
-                <div class="basket__wrapper">
+                <div class="basket__wrapper js-section-animate">
                     <div class="basket__products">
                         <div class="basket__products-inner">
                             <div class="basket__products-header">
@@ -74,7 +74,10 @@
                                         <svg>
                                             <use xlink:href="#present-icon"></use>
                                         </svg>
-                                        <span>У вас подарок</span>
+                                        <span>
+                                            <span>У вас подарок</span>
+                                            <span class="basket__present-condition-mobile">Подарок действует при заказе от 6000 ₽</span>
+                                        </span>
                                     </div>
                                     <p class="basket__present-condition">Подарок действует при заказе от 6000 ₽</p>
                                 </li>
@@ -92,7 +95,10 @@
                                         <svg>
                                             <use xlink:href="#present-icon"></use>
                                         </svg>
-                                        <span>У вас подарок</span>
+                                        <span>
+                                            <span>У вас подарок</span>
+                                            <span class="basket__present-condition-mobile">Подарок действует при заказе от 6000 ₽</span>
+                                        </span>
                                     </div>
                                     <p class="basket__present-condition">Подарок действует при заказе от 6000 ₽</p>
                                 </li>
@@ -153,7 +159,7 @@
         <section class="basket-popular">
             <div class="container">
                 <div class="basket-popular__title-wrapper">
-                    <h2 class="basket-popular__title">Популярные товары</h2>
+                    <h2 class="basket-popular__title js-title-animate">Популярные товары</h2>
                 </div>
                 {{> catalog-list data=popular }}
             </div>
