@@ -103,8 +103,6 @@ export default function initSliders() {
             }
         }
 
-        console.log(breakpoints)
-
         const swiper = new Swiper(slider, {
             slidesPerView,
             autoHeight,
