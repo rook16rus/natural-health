@@ -482,312 +482,259 @@
             </div>
 
             <main class="page-main">
-                <section class="product-card js-section-animate">
+                <section class="basket">
                     <div class="container">
-                        <div class="product-card__wrapper">
-                            <div class="product-card__img">
-                                <div class="product-card__img-slider swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="product-card__img-slide swiper-slide">
-                                            <picture>
-                                                <source srcset="img/product-1.webp" type="image/webp">
-                                                <img class="lazyload" data-src="img/product-1.jpg" alt="Фото продукта">
-                                            </picture>
-                                        </div>
-                                        <div class="product-card__img-slide swiper-slide">
-                                            <picture>
-                                                <source srcset="img/product-1.webp" type="image/webp">
-                                                <img class="lazyload" data-src="img/product-1.jpg" alt="Фото продукта">
-                                            </picture>
-                                        </div>
-                                        <div class="product-card__img-slide swiper-slide">
-                                            <picture>
-                                                <source srcset="img/product-1.webp" type="image/webp">
-                                                <img class="lazyload" data-src="img/product-1.jpg" alt="Фото продукта">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="slider-navigation js-slider-navigation">
-                                        <button class="slider-navigation__button js-prev-slide">
+                        <div class="basket__title-wrapper">
+                            <h1 class="basket__title js-title-animate">Корзина</h1>
+                        </div>
+                        <div class="basket__wrapper js-section-animate">
+                            <div class="basket__products">
+                                <div class="basket__products-inner">
+                                    <div class="basket__products-header"><span class="basket__products-count"><span>4</span>товара в корзине</span>
+                                        <button class="basket__products-clean"><span>Очистить корзину</span>
                                             <svg>
-                                                <use xlink:href="#slider-arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <button class="slider-navigation__button js-next-slide">
-                                            <svg>
-                                                <use xlink:href="#slider-arrow"></use>
+                                                <use xlink:href="#urn-icon"></use>
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="swiper-pagination"></div>
-                                </div><span class="product-card__tag"><svg><use xlink:href="#hit-icon"></use></svg><span>Хит продаж</span>
-                                </span>
-                            </div>
-                            <div class="product-card__content">
-                                <div class="breadcrumbs js-section-animate">
-                                    <ul class="breadcrumbs__list">
-                                        <li class="breadcrumbs__item">
-                                            <a class="breadcrumbs__link" href="index.html">Главная</a>
+                                    <ul class="basket__products-list">
+                                        <li class="basket__products-item">
+                                            <div class="basket__products-item-info">
+                                                <div class="basket__products-item-img">
+                                                    <img class="lazyload" data-src="img/basket-1.jpg" alt="Фото продукта">
+                                                </div>
+                                                <div class="basket__products-item-content">
+                                                    <h3 class="basket__products-item-title">
+                                                        <a href="product.html">Ocean collagen</a>
+                                                    </h3>
+                                                    <p class="basket__products-item-text">Коллаген рыбный для суставов, хрящей, связок и костей, натуральный, гидролизованный.</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__products-item-price-block">
+                                                <div class="basket__products-item-count">
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#minus-icon"></use>
+                                                        </svg>
+                                                    </button><span class="basket__products-item-count-number">4</span>
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#plus-icon"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div><span class="basket__products-item-price"><span class="basket__products-item-price-number">6 000 ₽</span><span class="basket__products-item-price-piece">1 250 ₽/шт.</span>
+                                                </span>
+                                            </div>
+                                            <button class="basket__products-item-delete">
+                                                <svg>
+                                                    <use xlink:href="#urn-icon"></use>
+                                                </svg>
+                                            </button>
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+                                        <li class="basket__products-item">
+                                            <div class="basket__products-item-info">
+                                                <div class="basket__products-item-img">
+                                                    <img class="lazyload" data-src="img/basket-2.jpg" alt="Фото продукта">
+                                                </div>
+                                                <div class="basket__products-item-content">
+                                                    <h3 class="basket__products-item-title">
+                                                        <a href="product.html">BioPit</a>
+                                                    </h3>
+                                                    <p class="basket__products-item-text">Природный коллаген</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__products-item-price-block">
+                                                <div class="basket__products-item-count">
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#minus-icon"></use>
+                                                        </svg>
+                                                    </button><span class="basket__products-item-count-number">4</span>
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#plus-icon"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div><span class="basket__products-item-price"><span class="basket__products-item-price-number">6 000 ₽</span><span class="basket__products-item-price-piece">1 250 ₽/шт.</span>
+                                                </span>
+                                            </div>
+                                            <button class="basket__products-item-delete">
+                                                <svg>
+                                                    <use xlink:href="#urn-icon"></use>
+                                                </svg>
+                                            </button>
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <a class="breadcrumbs__link" href="catalog.html">Желудок и кишечник</a>
+                                        <li class="basket__products-item">
+                                            <div class="basket__products-item-info">
+                                                <div class="basket__products-item-img">
+                                                    <img class="lazyload" data-src="img/basket-3.jpg" alt="Фото продукта">
+                                                </div>
+                                                <div class="basket__products-item-content">
+                                                    <h3 class="basket__products-item-title">
+                                                        <a href="product.html">Si Complex</a>
+                                                    </h3>
+                                                    <p class="basket__products-item-text">Кремниевый комплекс, способствующий поддержанию здорового вида ногтей, кожи и волос</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__products-item-price-block">
+                                                <div class="basket__products-item-count">
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#minus-icon"></use>
+                                                        </svg>
+                                                    </button><span class="basket__products-item-count-number">4</span>
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#plus-icon"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div><span class="basket__products-item-price"><span class="basket__products-item-price-number">6 000 ₽</span><span class="basket__products-item-price-piece">1 250 ₽/шт.</span>
+                                                </span>
+                                            </div>
+                                            <button class="basket__products-item-delete">
+                                                <svg>
+                                                    <use xlink:href="#urn-icon"></use>
+                                                </svg>
+                                            </button>
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <a class="breadcrumbs__link" href="product.html">BioPit</a>
+                                        <li class="basket__products-item">
+                                            <div class="basket__products-item-info">
+                                                <div class="basket__products-item-img">
+                                                    <img class="lazyload" data-src="img/basket-4.jpg" alt="Фото продукта">
+                                                </div>
+                                                <div class="basket__products-item-content">
+                                                    <h3 class="basket__products-item-title">
+                                                        <a href="product.html">Zeol</a>
+                                                    </h3>
+                                                    <p class="basket__products-item-text">Адсорбент на все случаи жизни</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__products-item-price-block">
+                                                <div class="basket__products-item-count">
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#minus-icon"></use>
+                                                        </svg>
+                                                    </button><span class="basket__products-item-count-number">4</span>
+                                                    <button class="basket__products-item-count-button">
+                                                        <svg>
+                                                            <use xlink:href="#plus-icon"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div><span class="basket__products-item-price"><span class="basket__products-item-price-number">6 000 ₽</span><span class="basket__products-item-price-piece">1 250 ₽/шт.</span>
+                                                </span>
+                                            </div>
+                                            <button class="basket__products-item-delete">
+                                                <svg>
+                                                    <use xlink:href="#urn-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <ul class="basket__presents">
+                                        <li class="basket__present">
+                                            <div class="basket__present-info">
+                                                <div class="basket__present-img">
+                                                    <img class="lazyload" src="img/present-1.jpg" alt="Фото продукта">
+                                                </div>
+                                                <div class="basket__present-content">
+                                                    <h3 class="basket__present-title">
+                                                        <a href="product.html">Макроэлемент</a>
+                                                    </h3>
+                                                    <p class="basket__present-text">Нормализует процессы в соединительной ткани</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__present-desc">
+                                                <svg>
+                                                    <use xlink:href="#present-icon"></use>
+                                                </svg><span><span>У вас подарок</span><span class="basket__present-condition-mobile">Подарок действует при заказе от 6000 ₽</span>
+                                                </span>
+                                            </div>
+                                            <p class="basket__present-condition">Подарок действует при заказе от 6000 ₽</p>
+                                        </li>
+                                        <li class="basket__present">
+                                            <div class="basket__present-info">
+                                                <div class="basket__present-img">
+                                                    <img class="lazyload" src="img/present-1.jpg" alt="Фото продукта">
+                                                </div>
+                                                <div class="basket__present-content">
+                                                    <h3 class="basket__present-title">
+                                                        <a href="product.html">Макроэлемент</a>
+                                                    </h3>
+                                                    <p class="basket__present-text">Нормализует процессы в соединительной ткани</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__present-desc">
+                                                <svg>
+                                                    <use xlink:href="#present-icon"></use>
+                                                </svg><span><span>У вас подарок</span><span class="basket__present-condition-mobile">Подарок действует при заказе от 6000 ₽</span>
+                                                </span>
+                                            </div>
+                                            <p class="basket__present-condition">Подарок действует при заказе от 6000 ₽</p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="product-card__categories">
-                                    <div class="product-card__category">
-                                        <svg>
-                                            <use xlink:href="#category-1"></use>
-                                        </svg><span>Желудок и кишечник</span>
-                                    </div>
-                                    <div class="product-card__category">
-                                        <svg>
-                                            <use xlink:href="#category-2"></use>
-                                        </svg><span>Кости и суставы</span>
-                                    </div>
-                                </div>
-                                <h1 class="product-card__title">BioPit</h1>
-                                <p class="product-card__desc">Природный коллаген</p>
-                                <div class="product-card__content-bottom">
-                                    <div class="product-card__features"><span class="product-card__features-title">Чем полезен</span>
-                                        <ul class="product-card__features-list">
-                                            <li class="product-card__features-item">Снизьте риск остеопороза, артрита и остеохондроза</li>
-                                            <li class="product-card__features-item">Обеспечьте профилактику остеоартрита, растяжек и хронических болей в спине</li>
-                                            <li class="product-card__features-item">Улучшите приток крови к мышечной массе</li>
-                                            <li class="product-card__features-item">Укрепите соединительную ткань</li>
-                                            <li class="product-card__features-item">Понизьте холестерин, значительно увеличьте выносливость, скорость обмена веществ</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card__info">
-                                        <div class="product-card__info-property">
-                                            <div class="product-card__volume"><span class="product-card__volume-desc">Объем</span>
-                                                <div class="product-card__volume-value">380 гр</div>
-                                            </div><span class="product-card__price">3 990 ₽</span>
+                                <h3 class="basket__proposal-title">Спецпредложение</h3>
+                                <ul class="basket__proposal-list">
+                                    <li class="basket__proposal-item">
+                                        <p class="basket__proposal-condition">Подарок при заказе от<span>9000 ₽</span>
+                                        </p>
+                                        <div class="basket__proposal-info">
+                                            <div class="basket__proposal-img">
+                                                <img class="lazyload" data-src="img/present-1.jpg" alt="Фото продукта">
+                                            </div>
+                                            <div class="basket__proposal-content">
+                                                <h3 class="basket__proposal-item-title">Макроэлемент</h3>
+                                                <p class="basket__proposal-item-text">Нормализует процессы в соединительной ткани</p>
+                                            </div>
                                         </div>
-                                        <button class="product-card__button button button--green" type="button">В корзину</button><span class="product-card__delivery">Бесплатная доставка</span><span class="product-card__delivery-desc">от 4 500 ₽ по России и СНГ</span>
+                                    </li>
+                                    <li class="basket__proposal-item">
+                                        <p class="basket__proposal-condition">Подарок при заказе от<span>9000 ₽</span>
+                                        </p>
+                                        <div class="basket__proposal-info">
+                                            <div class="basket__proposal-img">
+                                                <img class="lazyload" data-src="img/present-1.jpg" alt="Фото продукта">
+                                            </div>
+                                            <div class="basket__proposal-content">
+                                                <h3 class="basket__proposal-item-title">Макроэлемент</h3>
+                                                <p class="basket__proposal-item-text">Нормализует процессы в соединительной ткани</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="details">
+                                <div class="details__content">
+                                    <h3 class="details__title">Детали заказа</h3>
+                                    <ul class="details__list">
+                                        <li class="details__item"><span class="details__item-name">4 товара</span><span class="details__item-value">1 250 ₽</span>
+                                        </li>
+                                        <li class="details__item"><span class="details__item-name">Доставка</span><span class="details__item-value">250 ₽</span>
+                                        </li>
+                                    </ul>
+                                    <div class="details__result"><span class="details__result-desc">Итого</span><span class="details__result-sum">6 000 ₽</span>
                                     </div>
+                                    <div class="details__deliver"><span class="details__deliver-desc"><span class="details__deliver-count">730</span>₽ до бесплатной доставки</span>
+                                        <div class="details__deliver-indicator">
+                                            <div class="details__deliver-indicator-progress"></div>
+                                        </div>
+                                    </div>
+                                    <a class="details__link button button--green" href="#">Перейти к оформлению</a>
+                                    <a class="details__modal-link" href="#click">Купить в 1 клик</a>
                                 </div>
+                                <form class="details__promo-code" action="#">
+                                    <input class="details__promo-code-input" name="detailsPromoCode" id="detailsPromoCode" type="text" placeholder="Введите промокод">
+                                    <button class="details__promo-code-button button button--black">Применить</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="product-property js-section-animate">
+                <section class="basket-popular">
                     <div class="container">
-                        <div class="product-property__wrapper">
-                            <div class="product-property__accordions">
-                                <div class="product-property__accordion js-accordion" data-close-other="true">
-                                    <div class="product-property__accordion-header js-accordion-btn">
-                                        <h3 class="product-property__accordion-title">Натуральные ингредиенты</h3>
-                                        <svg>
-                                            <use xlink:href="#arrow-down-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="product-property__accordion-content js-accordion-content">
-                                        <p>Полость сердца разделена на два предсердия и два желудочка. Левое предсердие и левый желудочек в совокупности образуют «артериальное сердце», названное так по типу проходящей через него крови, правый объединяются в «венозное сердце», названное по тому же принципу. Сокращение сердца называется систолой, а расслабление — диастолой.</p>
-                                    </div>
-                                </div>
-                                <div class="product-property__accordion js-accordion" data-close-other="true">
-                                    <div class="product-property__accordion-header js-accordion-btn">
-                                        <h3 class="product-property__accordion-title">Способы применения</h3>
-                                        <svg>
-                                            <use xlink:href="#arrow-down-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="product-property__accordion-content js-accordion-content">
-                                        <p>Полость сердца разделена на два предсердия и два желудочка. Левое предсердие и левый желудочек в совокупности образуют «артериальное сердце», названное так по типу проходящей через него крови, правый объединяются в «венозное сердце», названное по тому же принципу. Сокращение сердца называется систолой, а расслабление — диастолой.</p>
-                                    </div>
-                                </div>
-                                <div class="product-property__accordion js-accordion" data-close-other="true">
-                                    <div class="product-property__accordion-header js-accordion-btn">
-                                        <h3 class="product-property__accordion-title">Способы хранения</h3>
-                                        <svg>
-                                            <use xlink:href="#arrow-down-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="product-property__accordion-content js-accordion-content">
-                                        <p>Полость сердца разделена на два предсердия и два желудочка. Левое предсердие и левый желудочек в совокупности образуют «артериальное сердце», названное так по типу проходящей через него крови, правый объединяются в «венозное сердце», названное по тому же принципу. Сокращение сердца называется систолой, а расслабление — диастолой.</p>
-                                    </div>
-                                </div>
-                                <div class="product-property__accordion js-accordion" data-close-other="true">
-                                    <div class="product-property__accordion-header js-accordion-btn">
-                                        <h3 class="product-property__accordion-title">Срок годности</h3>
-                                        <svg>
-                                            <use xlink:href="#arrow-down-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="product-property__accordion-content js-accordion-content">
-                                        <p>Полость сердца разделена на два предсердия и два желудочка. Левое предсердие и левый желудочек в совокупности образуют «артериальное сердце», названное так по типу проходящей через него крови, правый объединяются в «венозное сердце», названное по тому же принципу. Сокращение сердца называется систолой, а расслабление — диастолой.</p>
-                                    </div>
-                                </div>
-                                <div class="product-property__accordion js-accordion" data-close-other="true">
-                                    <div class="product-property__accordion-header js-accordion-btn">
-                                        <h3 class="product-property__accordion-title">Адрес производства</h3>
-                                        <svg>
-                                            <use xlink:href="#arrow-down-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="product-property__accordion-content js-accordion-content">
-                                        <p>Полость сердца разделена на два предсердия и два желудочка. Левое предсердие и левый желудочек в совокупности образуют «артериальное сердце», названное так по типу проходящей через него крови, правый объединяются в «венозное сердце», названное по тому же принципу. Сокращение сердца называется систолой, а расслабление — диастолой.</p>
-                                    </div>
-                                </div>
-                                <div class="product-property__accordion js-accordion" data-close-other="true">
-                                    <div class="product-property__accordion-header js-accordion-btn">
-                                        <h3 class="product-property__accordion-title">Сертификат</h3>
-                                        <svg>
-                                            <use xlink:href="#arrow-down-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="product-property__accordion-content js-accordion-content">
-                                        <p>Полость сердца разделена на два предсердия и два желудочка. Левое предсердие и левый желудочек в совокупности образуют «артериальное сердце», названное так по типу проходящей через него крови, правый объединяются в «венозное сердце», названное по тому же принципу. Сокращение сердца называется систолой, а расслабление — диастолой.</p>
-                                    </div>
-                                </div>
-                                <div class="product-property__accordion js-accordion" data-close-other="true">
-                                    <div class="product-property__accordion-header js-accordion-btn">
-                                        <h3 class="product-property__accordion-title">Противопоказания</h3>
-                                        <svg>
-                                            <use xlink:href="#arrow-down-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="product-property__accordion-content js-accordion-content">
-                                        <p>Полость сердца разделена на два предсердия и два желудочка. Левое предсердие и левый желудочек в совокупности образуют «артериальное сердце», названное так по типу проходящей через него крови, правый объединяются в «венозное сердце», названное по тому же принципу. Сокращение сердца называется систолой, а расслабление — диастолой.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-property__img-block">
-                                <div class="product-property__img">
-                                    <picture>
-                                        <source srcset="img/property-1.webp" type="image/webp">
-                                        <img class="lazyload" data-src="img/property-1.jpg" alt="Фото продукта">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="product-description">
-                    <div class="wide-text-container">
-                        <h2 class="product-description__title">Описание товара</h2>
-                        <h3>Основная информация</h3>
-                        <p>Ресвератрол – это вещество, содержащееся в семенах и кожуре винограда, темных ягодах, орехах, какао и пр. Его природное предназначение состоит в том, чтобы не дать солнечным лучам, бактериям и грибкам повредить свежий плод. Благодаря этим свойствам, ресвератрол обладает множеством положительных эффектов для здоровья и молодости человека:</p>
-                        <h4>Абзац 1.10.32 "de Finibus Bonorum et Malorum"</h4>
-                        <p>Обладает выраженной антиоксидантной активностью. По своим антиоксидантным свойствам ресвератрол превосходит витамины С и Е. Небольшие дозы ресвератрола блокируют ферменты каспазы, вызывающие воспалительный процесс и некроз тканей. Согласно свободнорадикальной теории, старение организма происходит вследствие накопления в клетках «поломок», полученных от воздействия активных форм кислорода. Таким образом ресвератрол, защищающий организм от этого воздействия, можно назвать «хранителем молодости».</p>
-                        <div class="mobile-hide-content js-read-content">
-                            <div class="graphic-block">
-                                <div class="graphic-block__img-block">
-                                    <div class="graphic-block__img">
-                                        <picture>
-                                            <source srcset="img/content-1.webp" type="image/webp">
-                                            <img src="img/content-1.jpg" data-fancybox alt="Фото">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="graphic-block__content">
-                                    <p>Имеет доказанный антиканцерогенный эффект. Об этом свидетельствуют многочисленные опыты, проводимые уже на протяжение 30 лет. Например, японские ученые Кафедры Хирургии Университета Киото засвидетельствовали уменьшение опухоли пищевода под воздействием ресвератрола. Малые дозы ресвератрола (0,02-8 мг/кг), вводимые перорально, сокращали размер опухолей рака желудка и прямой кишки, замедляли развитие карциномы Льюиса.</p>
-                                    <p>Оказывает положительное влияние на здоровье сердечно-сосудистой системы. Профессор Серж Рено в 90-х годах XX века ввел в обиход понятие «французский парадокс», заключающееся в том, что уровень сердечно-сосудистых заболеваний у французов относительно низок, несмотря на употребление алкоголя и жирной пищи. Профессор объясняет это явление употреблением красного сухого вина, состав которого богат ресвератролом. И в самом деле, ресвератрол препятствует накоплению и окислению липопротеинов низкой плотности («плохого холестерина»), тем самым предотвращая развитие атеросклероза.
-                                        <br>Продлевает активность мозга, препятствуя образованию амилоидных бляшек (причина болезни Альцгеймера)
-                                        <br>Обладает противовоспалительным действием, блокируя выработку веществ, запускающих воспалительный процесс (арахидоновой кислоты и циклооксигеназы-2).
-                                    </p>
-                                </div>
-                            </div>
-                            <h4>Почему «BioPit» от Natural Health – это лучший выбор?</h4>
-                            <p>А для достижения эффекта от приема препарата важно не то, какое количество полезного вещества попадет в организм, а сколько его усвоится и «пойдет в дело».</p>
-                            <div class="graphic-block graphic-block--reversed">
-                                <div class="graphic-block__img-block">
-                                    <div class="graphic-block__img">
-                                        <picture>
-                                            <source srcset="img/content-2.webp" type="image/webp">
-                                            <img src="img/content-2.jpg" data-fancybox alt="Фото">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="graphic-block__content">
-                                    <p>Имеет доказанный антиканцерогенный эффект. Об этом свидетельствуют многочисленные опыты, проводимые уже на протяжение 30 лет. Например, японские ученые Кафедры Хирургии Университета Киото засвидетельствовали уменьшение опухоли пищевода под воздействием ресвератрола. Малые дозы ресвератрола (0,02-8 мг/кг), вводимые перорально, сокращали размер опухолей рака желудка и прямой кишки, замедляли развитие карциномы Льюиса.</p>
-                                    <p>Оказывает положительное влияние на здоровье сердечно-сосудистой системы. Профессор Серж Рено в 90-х годах XX века ввел в обиход понятие «французский парадокс», заключающееся в том, что уровень сердечно-сосудистых заболеваний у французов относительно низок, несмотря на употребление алкоголя и жирной пищи. Профессор объясняет это явление употреблением красного сухого вина, состав которого богат ресвератролом. И в самом деле, ресвератрол препятствует накоплению и окислению липопротеинов низкой плотности («плохого холестерина»), тем самым предотвращая развитие атеросклероза.
-                                        <br>Продлевает активность мозга, препятствуя образованию амилоидных бляшек (причина болезни Альцгеймера)
-                                        <br>Обладает противовоспалительным действием, блокируя выработку веществ, запускающих воспалительный процесс (арахидоновой кислоты и циклооксигеназы-2).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="product-description__more-button js-read-button" type="button">Читать полность</button>
-                    </div>
-                </section>
-                <div class="product-reviews">
-                    <section class="reviews-section">
-                        <div class="container">
-
-                            <header class="reviews-section__header">
-                                <div class="reviews-section__title-wrapper">
-                                    <h2 class="reviews-section__title js-title-animate">Отзывы наших покупателей</h2>
-                                </div>
-                                <a class="reviews-section__header-link button button--bordered" href="#">Смотреть все</a>
-                            </header>
-                            <div class="reviews-section__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,641:2,1025:3" data-space="22" data-auto-height="true">
-                                <div class="swiper-wrapper">
-                                    <blockquote class="reviews-section__item swiper-slide">
-                                        <div class="reviews-section__item-top">
-                                            <div class="reviews-section__item-img">
-                                                <picture>
-                                                    <source srcset="img/review-1.webp" type="image/webp">
-                                                    <img class="lazyload" data-src="img/review-1.jpg" alt="Фото автора">
-                                                </picture>
-                                            </div>
-                                            <div class="reviews-section__item-content">
-                                                <cite class="reviews-section__item-author">Мирослава</cite><span class="reviews-section__item-author-info">28 лет, Казань</span>
-                                            </div>
-                                        </div>
-                                        <div class="reviews-section__item-text">
-                                            <p>Нашла я его случайным образом, покупала белковые батончики (перекусывала ими перед тренировкой или после), и вот на батончиках вычитала, что в составе присутствует L-карнитин, вроде способствующий улучшению обмена веществ.</p>
-                                        </div>
-                                    </blockquote>
-                                    <blockquote class="reviews-section__item swiper-slide">
-                                        <div class="reviews-section__item-top">
-                                            <div class="reviews-section__item-img">
-                                                <picture>
-                                                    <source srcset="img/review-2.webp" type="image/webp">
-                                                    <img class="lazyload" data-src="img/review-2.jpg" alt="Фото автора">
-                                                </picture>
-                                            </div>
-                                            <div class="reviews-section__item-content">
-                                                <cite class="reviews-section__item-author">Елизавета</cite><span class="reviews-section__item-author-info">33 года, Москва</span>
-                                            </div>
-                                        </div>
-                                        <div class="reviews-section__item-text">
-                                            <p>Взяла эти капли , капнула по капле в каждый глаз, первое ощущение- как будто песок в глаза сыпанули, жёсткий дискомфорт,но секунд через 10 было ощущение лёгкости,ясности, как дворники у машины расчищают грязь и глаза как будто открылись, сошла какая-то пелена, ощущение полного восторга.</p>
-                                        </div>
-                                    </blockquote>
-                                    <blockquote class="reviews-section__item swiper-slide">
-                                        <div class="reviews-section__item-top">
-                                            <div class="reviews-section__item-img">
-                                                <picture>
-                                                    <source srcset="img/review-3.webp" type="image/webp">
-                                                    <img class="lazyload" data-src="img/review-3.jpg" alt="Фото автора">
-                                                </picture>
-                                            </div>
-                                            <div class="reviews-section__item-content">
-                                                <cite class="reviews-section__item-author">Мария</cite><span class="reviews-section__item-author-info">27 лет, Казань</span>
-                                            </div>
-                                        </div>
-                                        <div class="reviews-section__item-text">
-                                            <p>Нашла я его случайным образом, покупала белковые батончики (перекусывала ими перед тренировкой или после), и вот на батончиках вычитала, что в составе присутствует L-карнитин, вроде способствующий улучшению обмена веществ.</p>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <a class="reviews-section__link button button--bordered" href="#">Смотреть все</a>
-                        </div>
-                    </section>
-                </div>
-                <section class="product-popular">
-                    <div class="container">
-                        <div class="product-popular__title-wrapper">
-                            <h2 class="product-popular__title js-title-animate">Популярные товары</h2>
+                        <div class="basket-popular__title-wrapper">
+                            <h2 class="basket-popular__title js-title-animate">Популярные товары</h2>
                         </div>
                         <ul class="catalog-list js-section-animate">
                             <li class="catalog-list__item">

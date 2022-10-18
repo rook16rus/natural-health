@@ -188,11 +188,25 @@
                         </clipPath>
                     </defs>
                 </symbol>
+                <symbol viewBox="0 0 16 16" fill="none" id="minus-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 8h9" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </symbol>
                 <symbol viewBox="0 0 20 20" fill="none" id="moon-icon" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 10.002a5.36 5.36 0 00.975-6.096.417.417 0 01.5-.561 6.873 6.873 0 013.141 1.791 6.794 6.794 0 01.127 9.606 6.794 6.794 0 01-9.606-.126 6.864 6.864 0 01-1.792-3.14.417.417 0 01.562-.5A5.359 5.359 0 0010 10.001z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </symbol>
                 <symbol viewBox="0 0 31 36" fill="none" id="play-icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M30 16.268c1.333.77 1.333 2.694 0 3.464L3 35.321c-1.333.77-3-.193-3-1.732V2.412C0 .872 1.667-.09 3 .679l27 15.589z" fill="#fff" />
+                </symbol>
+                <symbol viewBox="0 0 16 16" fill="none" id="plus-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 3.5v9" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.5 8h9" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </symbol>
+                <symbol viewBox="0 0 20 20" fill="none" id="present-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.667 9.165h4.583c.69 0 1.25-.56 1.25-1.25v-.833c0-.69-.56-1.25-1.25-1.25H3.75c-.69 0-1.25.56-1.25 1.25v.833c0 .69.56 1.25 1.25 1.25h4.583" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.665 9.168v6.667c0 .92-.746 1.666-1.666 1.666h-10c-.92 0-1.667-.746-1.667-1.666V9.168" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.335 2.5v0c.92 0 1.666.746 1.666 1.667v1.666H8.335c-.92 0-1.667-.746-1.667-1.666v0c0-.92.746-1.667 1.667-1.667z" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.667 2.5v0c.92 0 1.666.746 1.666 1.667v0c0 .92-.746 1.666-1.666 1.666H10V4.167c0-.92.746-1.667 1.667-1.667z" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="8.332" y="5.832" width="3.333" height="11.667" rx="1" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
                 </symbol>
                 <symbol viewBox="0 0 24 24" fill="none" id="search-icon" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.857 3.5a7.357 7.357 0 104.837 12.901l3.952 3.953a.5.5 0 00.708-.708L16.4 15.694A7.357 7.357 0 0010.857 3.5zM4.5 10.857a6.357 6.357 0 1112.714 0 6.357 6.357 0 01-12.714 0z" fill="#1C1C1C" />
@@ -238,6 +252,15 @@
                 </symbol>
                 <symbol viewBox="0 0 9 8" fill="none" id="star-white-icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.333 0a6.77 6.77 0 004 4 6.77 6.77 0 00-4 4 6.77 6.77 0 00-4-4 6.77 6.77 0 004-4z" fill="#fff" />
+                </symbol>
+                <symbol viewBox="0 0 20 20" fill="none" id="urn-icon" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity=".2" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4.168 5.83h11.667" />
+                        <path d="M15 5.836v9.167c0 .92-.746 1.666-1.667 1.666H6.667C5.746 16.67 5 15.923 5 15.003V5.836" />
+                        <path d="M12.5 3.128h-5" />
+                        <path d="M8.335 9.164v4.167" />
+                        <path d="M11.667 9.164v4.167" />
+                    </g>
                 </symbol>
                 <symbol viewBox="0 0 24 24" id="video-icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 3l14 9-14 9V3z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
@@ -1615,6 +1638,34 @@
                                         <use xlink:href="#close-icon"></use>
                                     </svg><span>Сбросить</span>
                                 </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal-click js-modal js-modal-click">
+                <div class="modal__container">
+                    <div class="modal__inner">
+                        <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                            <svg>
+                                <use xlink:href="#close-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="modal__content"><span class="modal-click__schedule">график работы с 09:00 -18:00</span>
+                            <h3 class="modal-click__title">Покупка в 1 клик</h3>
+                            <p class="modal-click__desc">Укажите свои контактные данныи мы свяжемся с вами в ближайшее время.</p>
+                            <form class="modal-click__form" data-need-validation="true" action="#">
+                                <div class="modal-click__input-wrapper input-wrapper">
+                                    <input class="modal-click__input input input--green" data-parsley-pattern="^[а-яА-ЯA-Za-z- ]+[^\s]+$" type="text" name="clickName" id="clickName" required>
+                                    <label class="modal-click__label" for="clickName">Имя</label>
+                                </div>
+                                <div class="modal-click__input-wrapper input-wrapper">
+                                    <input class="modal-click__input input input--green js-phone-input" type="tel" name="clickPhone" id="clickPhone" required>
+                                    <label class="modal-click__label" for="clickPhone">Телефон</label>
+                                </div>
+                                <button class="modal-click__button button button--fill-white" type="submit">Отправить заказ</button>
+                                <p class="modal-click__confidence">Нажимая “Отправить” вы соглашаетесь с<a href="#">политикой конфиденциальности</a>
+                                </p>
                             </form>
                         </div>
                     </div>
