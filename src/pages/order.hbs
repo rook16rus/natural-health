@@ -40,19 +40,7 @@
                                     </form>
                                 </div>
                                 <div class="order__tabs-content js-order-tab-content" data-id="orderTab2">
-                                    <h3 class="order__tabs-subtitle">Данные пеепку</h3>
-                                    <form class="order__deliver" action="#">
-                                        <div class="order__deliver-input-wrapper input-wrapper">
-                                            <input class="order__deliver-input input input--white" type="text" name="orderDeliverAddress" id="orderDeliverAddress" required>
-                                            <label class="order__deliver-label" for="orderDeliverAddress">Адрес доставки</label>
-                                        </div>
-                                        <div class="order__deliver-datepicker js-date-picker-container">
-                                            <input class="order__deliver-datepicker-input js-datepicker" type="text">
-                                        </div>
-                                        <div class="order__deliver-datepicker js-date-picker-container">
-                                            <input class="order__deliver-datepicker-input js-datepicker-time" type="text">
-                                        </div>
-                                    </form>
+
                                 </div>
                                 <div class="order__tabs-content js-order-tab-content" data-id="orderTab3">
                                     <h3 class="order__tabs-subtitle">Палата</h3>
@@ -115,7 +103,7 @@
                             <h2 class="order__payment-title">Способ оплаты</h2>
                             <div class="order__payment-list">
                                 {{#each payment }}
-                                    <button class="order__payment-item">
+                                    <button class="order__payment-item js-payment">
                                         <h3 class="order__payment-item-title">{{this.title}}</h3>
                                         <span class="order__payment-item-desc">{{this.desc}}</span>
                                     </button>

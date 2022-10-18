@@ -261,6 +261,13 @@
 
     background-color: #fff;
     border-radius: 1.2rem;
+
+    transition: 0.3s;
+
+    &.active {
+      background-color: var(--black-color);
+      color: #fff;
+    }
   }
 
   &__payment-item-title {
