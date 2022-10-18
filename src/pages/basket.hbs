@@ -122,37 +122,7 @@
                             {{/each}}
                         </ul>
                     </div>
-                    <div class="basket__details">
-                        <div class="basket__details-content">
-                            <h3 class="basket__details-title">Детали заказа</h3>
-                            <ul class="basket__details-list">
-                                {{#each details }}
-                                    <li class="basket__details-item">
-                                        <span class="basket__details-item-name">{{this.name}}</span>
-                                        <span class="basket__details-item-value">{{this.value}}</span>
-                                    </li>
-                                {{/each}}
-                            </ul>
-                            <div class="basket__details-result">
-                                <span class="basket__details-result-desc">Итого</span>
-                                <span class="basket__details-result-sum">6 000 ₽</span>
-                            </div>
-                            <div class="basket__details-deliver">
-                                <span class="basket__details-deliver-desc">
-                                    <span class="basket__details-deliver-count">730</span> ₽ до бесплатной доставки
-                                </span>
-                                <div class="basket__details-deliver-indicator">
-                                    <div class="basket__details-deliver-indicator-progress"></div>
-                                </div>
-                            </div>
-                            <a class="basket__details-link button button--green" href="#">Перейти к оформлению</a>
-                            <a class="basket__details-modal-link" href="#click">Купить в 1 клик</a>
-                        </div>
-                        <form class="basket__details-promo-code" action="#">
-                            <input class="basket__details-promo-code-input" name="detailsPromoCode" id="detailsPromoCode" type="text" placeholder="Введите промокод">
-                            <button class="basket__details-promo-code-button button button--black">Применить</button>
-                        </form>
-                    </div>
+                    {{> details }}
                 </div>
             </div>
         </section>
