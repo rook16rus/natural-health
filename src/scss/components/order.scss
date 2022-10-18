@@ -122,12 +122,35 @@
   }
 
   &__deliver-datepicker {
+    position: relative;
+
     width: 100%;
     max-width: 19rem;
 
     border-radius: 0.6rem;
     background-color: #fff;
     overflow: hidden;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      right: 1.6rem;
+
+      width: 1.6rem;
+      height: 1.6rem;
+
+      background: url("../img/icons/arrow-down-icon.svg") no-repeat center;
+      background-size: cover;
+
+      transition: 0.3s;
+    }
+
+    &.active::after {
+      transform: translateY(-50%) rotate(0);
+    }
   }
 
   &__deliver-datepicker-input {
@@ -135,6 +158,8 @@
     align-items: center;
     padding: 0 1.6rem;
     height: 5.2rem;
+
+    font: var(--text-t2);
   }
 
   &__client {
