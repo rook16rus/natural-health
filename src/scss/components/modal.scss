@@ -87,15 +87,13 @@
     }
 
     @include breakpoint(small-tablet) {
-      top: 0.4rem;
-      right: 0.4rem;
+      top: auto;
+      bottom: calc(100% + 1.2rem);
+      right: 0;
       left: auto;
 
       width: 4rem;
       height: 4rem;
-
-      border-radius: 0;
-      background-color: transparent;
     }
   }
 }
@@ -307,6 +305,132 @@
     svg {
       width: 1.2rem;
       height: 1.2rem;
+    }
+  }
+}
+
+.modal-click {
+  .modal__container {
+    max-width: 47rem;
+  }
+
+  .modal__inner {
+    padding: 2.8rem 2rem 6.6rem;
+    
+
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+
+    color: #fff;
+
+    @include breakpoint(small-tablet) {
+      padding: 2.8rem 2rem 6rem;
+    }
+
+    @include breakpoint(mobile) {
+      padding: 2.3rem 2rem 5.3rem;
+    }
+  }
+
+  .modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__schedule {
+    align-self: flex-end;
+    margin-bottom: 6rem;
+
+    font: var(--text-t2);
+    opacity: 0.3;
+  }
+
+  &__title {
+    margin-bottom: 1.2rem;
+    
+    font: var(--title-h2);
+    text-align: center;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__desc {
+    max-width: 30.8rem;
+    margin-bottom: 2.8rem;
+
+    font: var(--text-t2);
+    text-align: center;
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 1.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      max-width: 28.2rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  &__form {
+    max-width: 27.8rem;
+
+    @include breakpoint(mobile) {
+      max-width: 32rem;
+      width: 100%;
+    }
+  }
+
+  &__input-wrapper {
+    margin-bottom: 1.6rem;
+
+    &:last-of-type {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .modal-click__label {
+    left: 2rem;
+
+    font: var(--text-t2);
+
+    &.active {
+      top: 0.2rem;
+    }
+  }
+
+  .parsley-errors-list {
+    right: 0.7rem;
+  }
+
+  &__button {
+    width: 100%;
+    height: 5.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__confidence {
+    max-width: 26.6rem;
+
+    font: var(--text-t3);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+
+    @include breakpoint(mobile) {
+      max-width: 27rem;
+      font-size: 1.2rem;
+    }
+
+    a {
+      text-decoration: underline;
+      
+      transition: 0.3s;
+      
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }

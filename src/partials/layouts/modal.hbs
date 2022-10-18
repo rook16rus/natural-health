@@ -132,3 +132,37 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal modal-click js-modal js-modal-click">
+    <div class="modal__container">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                <svg>
+                    <use xlink:href="#close-icon"></use>
+                </svg>
+            </button>
+            <div class="modal__content">
+                <span class="modal-click__schedule">график работы с 09:00 -18:00</span>
+                <h3 class="modal-click__title">Покупка в 1 клик</h3>
+                <p class="modal-click__desc">
+                    Укажите свои контактные данныи мы свяжемся с вами в ближайшее время.
+                </p>
+                <form class="modal-click__form" data-need-validation="true" action="#">
+                    <div class="modal-click__input-wrapper input-wrapper">
+                        <input class="modal-click__input input input--green" data-parsley-pattern="^[а-яА-ЯA-Za-z- ]+[^\s]+$"  type="text" name="clickName" id="clickName" required>
+                        <label class="modal-click__label" for="clickName">Имя</label>
+                    </div>
+                    <div class="modal-click__input-wrapper  input-wrapper">
+                        <input class="modal-click__input input input--green js-phone-input"type="tel" name="clickPhone" id="clickPhone" required>
+                        <label class="modal-click__label" for="clickPhone">Телефон</label>
+                    </div>
+                    <button class="modal-click__button button button--fill-white" type="submit">Отправить заказ</button>
+                    <p class="modal-click__confidence">
+                        Нажимая “Отправить” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

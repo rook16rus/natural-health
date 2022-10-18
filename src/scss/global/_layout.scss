@@ -689,6 +689,18 @@
             color: #fff;
         }
     }
+    
+    &--fill-white {
+        border-color: #fff;
+        background-color: #fff;
+        color: var(--primary-color);
+
+        &:hover {
+            border-color: var(--black-color);
+            background-color: var(--black-color);
+            color: #fff;
+        }
+    }
 
     &--bordered {
         color: var(--black-color);
@@ -823,6 +835,23 @@
     border-bottom: 1px solid rgba(28, 28, 28, 0.15);
 
     font: var(--text-t1);
+
+    &--green {
+        height: 5.2rem;
+        padding: 0 2rem;
+        
+        border-bottom: 0;
+        border-radius: 0.6rem;
+        background-color: rgba(247, 247, 247, 0.1);
+
+        font: var(--text-t2);
+        color: #fff;
+
+        @include placeholder() {
+            font: var(--text-t2);
+            color: #fff;
+        }
+    }
 
     @include breakpoint(mobile) {
         height: 5.2rem;
