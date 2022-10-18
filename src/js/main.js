@@ -37,6 +37,7 @@ import showResetButton from "./build-in/showResetButton";
 import productSlider from "./build-in/productSlider";
 import accordions from "./build-in/accordions";
 import readMoreButton from "./build-in/readMoreButton";
+import datepicker from "./build-in/datepicker";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initSliders();
     editableTextContainer();
 
+    datepicker();
     detectTouch();
     setScrollbarWidth();
     anchorLinks();

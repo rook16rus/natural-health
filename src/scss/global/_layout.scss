@@ -853,6 +853,17 @@
         }
     }
 
+    &--white {
+        z-index: 0;
+
+        height: 5.2rem;
+        padding: 0 1.6rem;
+
+        border-bottom: 0;
+
+        font: var(--text-t2);
+    }
+
     @include breakpoint(mobile) {
         height: 5.2rem;
         font-size: 1.6rem;

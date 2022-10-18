@@ -1,30 +1,21 @@
-/* ######
-
-Как пользоваться:
-
-Пример:
-
-###### */
-
-import 'bootstrap-datepicker';
-import 'bootstrap-datepicker/js/locales/bootstrap-datepicker.ru';
+import AirDatepicker from 'air-datepicker';
 
 export default function datepicker() {
-    const elements = Array.from(document.querySelectorAll('.js-datepicker'));
+    const elementsDate = document.querySelectorAll('.js-datepicker');
 
-    elements.forEach(element => {
-        $(element)
-            .datepicker({
-                format: 'dd.mm.yyyy',
-                container: element.hasAttribute('data-picker-container') ? element.getAttribute('data-picker-container') : '#picker-container',
-                language: 'ru',
-                autoclose: true
-            })
-            .on('show', function(e) {
-                element.classList.add('datepicker-shown');
-            })
-            .on('hide', function(e) {
-                element.classList.remove('datepicker-shown');
-            });
+    elementsDate.forEach(element => {
+       new AirDatepicker(element, {
+           dateFormat: 'd MMM',
+           minDate: 0,
+       })
     });
+
+    const elementsTime = document.querySelectorAll('.js-datepicker-time');
+
+    elementsTime.forEach(element => {
+        new AirDatepicker(element, {
+            timepicker: true,
+            onlyTimepicker: true,
+        })
+    })
 }

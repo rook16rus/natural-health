@@ -1,0 +1,112 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="order">
+            <div class="container">
+                <div class="order__title-wrapper">
+                    <h1 class="order__title">Оформление заказа</h1>
+                </div>
+                <div class="order__wrapper">
+                    <div class="order__content">
+                        <div class="order__tabs-block">
+                            <h2 class="order__tabs-title">Способ доставки</h2>
+                            <div class="order__tabs">
+                                {{#each tabs }}
+                                    <button class="order__tab">
+                                        <div class="order__tab-header">
+                                            <h3 class="order__tab-title">{{this.title}}</h3>
+                                            <svg class="order__tab-icon">
+                                                <use xlink:href="#{{this.svg}}"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="order__tab-desc">{{this.desc}}</span>
+                                    </button>
+                                {{/each}}
+                            </div>
+                            <div class="order__tabs-contents">
+                                <div class="order__tabs-content">
+                                    <h3 class="order__tabs-subtitle">Данные доставки</h3>
+                                    <form class="order__deliver" action="#">
+                                        <div class="order__deliver-input-wrapper input-wrapper">
+                                            <input class="order__deliver-input input input--white" type="text" name="orderDeliverAddress" id="orderDeliverAddress" required>
+                                            <label class="order__deliver-label" for="orderDeliverAddress">Адрес доставки</label>
+                                        </div>
+                                        <div class="order__deliver-datepicker">
+                                            <input class="order__deliver-datepicker-input js-datepicker" type="text">
+                                        </div>
+                                        <div class="order__deliver-datepicker">
+                                            <input class="order__deliver-datepicker-input js-datepicker-time" type="text">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__client">
+                            <h2 class="order__client-title">Данные получателя заказа</h2>
+                            <form class="order__client-form" data-need-validation="true" action="#">
+                                <div class="order__client-input-wrapper input-wrapper">
+                                    <input class="order__client-input input input--white" type="text" name="clientSurname" id="clientSurname" required>
+                                    <label class="order__client-label" for="clientSurname">Фамилия</label>
+                                </div>
+                                <div class="order__client-input-wrapper input-wrapper">
+                                    <input class="order__client-input input input--white" type="text" name="clientName" id="clientName" required>
+                                    <label class="order__client-label" for="clientName">Имя</label>
+                                </div>
+                                <div class="order__client-input-wrapper input-wrapper">
+                                    <input class="order__client-input input input--white" type="text" name="clientPatronymic" id="clientPatronymic" required>
+                                    <label class="order__client-label" for="clientPatronymic">Отчество</label>
+                                </div>
+                                <div class="order__client-input-wrapper input-wrapper order__client-input-wrapper--long">
+                                    <input class="order__client-input input input--white js-phone-input" type="tel" name="clientPhone" id="clientPhone" required>
+                                    <label class="order__client-label" for="clientPhone">Телефон</label>
+                                </div>
+                                <div class="order__client-input-wrapper input-wrapper order__client-input-wrapper--long">
+                                    <input class="order__client-input input input--white" type="email" name="clientEmail" id="clientEmail" required>
+                                    <label class="order__client-label" for="clientEmail">Email</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="order__payment">
+                            <h2 class="order__payment-title">Способ оплаты</h2>
+                            <div class="order__payment-list">
+                                {{#each payment }}
+                                    <button class="order__payment-item">
+                                        <h3 class="order__payment-item-title">{{this.title}}</h3>
+                                        <span class="order__payment-item-desc">{{this.desc}}</span>
+                                    </button>
+                                {{/each}}
+                            </div>
+                        </div>
+                        <div class="order__button-block">
+                            <button class="order__button button button--green">Оплатить</button>
+                            <p class="order__confidence">
+                                Нажимая кнопку «Оплатить» вы соглашаетесь с <a href="#">договором — офертой</a> и с
+                                <a href="#">политикой обработки персональных данных</a>
+                            </p>
+                        </div>
+                    </div>
+                    {{> details buttonText='Оплатить' }}
+                </div>
+            </div>
+        </section>
+        {{> basket-popular }}
+
+    {{/content}}
+{{/extend}}
+
+
+<!--
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+
+    }
+
+-->

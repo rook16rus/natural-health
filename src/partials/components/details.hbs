@@ -13,19 +13,25 @@
             <span class="details__result-desc">Итого</span>
             <span class="details__result-sum">6 000 ₽</span>
         </div>
-        <div class="details__deliver">
+        {{#if deliver }}
+            <div class="details__deliver">
                                 <span class="details__deliver-desc">
                                     <span class="details__deliver-count">730</span> ₽ до бесплатной доставки
                                 </span>
-            <div class="details__deliver-indicator">
-                <div class="details__deliver-indicator-progress"></div>
+                <div class="details__deliver-indicator">
+                    <div class="details__deliver-indicator-progress"></div>
+                </div>
             </div>
-        </div>
-        <a class="details__link button button--green" href="#">Перейти к оформлению</a>
-        <a class="details__modal-link" href="#click">Купить в 1 клик</a>
+        {{/if}}
+        <a class="details__link button button--green" href="#">{{this.buttonText}}</a>
+        {{#if clickButton }}
+            <a class="details__modal-link" href="#click">Купить в 1 клик</a>
+        {{/if}}
     </div>
-    <form class="details__promo-code" action="#">
-        <input class="details__promo-code-input" name="detailsPromoCode" id="detailsPromoCode" type="text" placeholder="Введите промокод">
-        <button class="details__promo-code-button button button--black">Применить</button>
-    </form>
+    {{#if promoCode }}
+        <form class="details__promo-code" action="#">
+            <input class="details__promo-code-input" name="detailsPromoCode" id="detailsPromoCode" type="text" placeholder="Введите промокод">
+            <button class="details__promo-code-button button button--black">Применить</button>
+        </form>
+    {{/if}}
 </div>

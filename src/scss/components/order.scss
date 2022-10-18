@@ -1,0 +1,257 @@
+.order {
+  padding: 9.2rem 0 12rem;
+
+  &__title-wrapper {
+    padding-bottom: 0.6rem;
+    margin-bottom: 7.4rem;
+  }
+
+  &__title {
+    font: var(--title-h1);
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  &__content {
+    grid-column: span 8;
+  }
+
+  .details {
+    grid-column: span 4;
+    min-height: 40.9rem;
+  }
+
+  &__tabs-block {
+    padding: 4.8rem 6rem 6rem;
+    margin-bottom: 2rem;
+
+    border-radius: 2rem;
+    background-color: var(--gray-color);
+  }
+
+  &__tabs-title {
+    margin-bottom: 3.2rem;
+
+    font: var(--title-h3);
+  }
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.6rem 1.9rem;
+    min-height: 10.6rem;
+
+    background-color: #fff;
+    border-radius: 1.2rem;
+  }
+
+  &__tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+
+    svg {
+      flex-shrink: 0;
+      width: 4rem;
+      height: 2rem;
+      margin-top: 0.5rem;
+      object-fit: contain;
+    }
+  }
+
+  &__tab-title {
+    font: var(--text-t1);
+    text-align: left;
+  }
+
+  &__tab-desc {
+    opacity: 0.4;
+
+    font: var(--text-t2);
+  }
+
+  &__tabs-contents {
+    position: relative;
+  }
+
+  &__tabs-subtitle {
+    margin-bottom: 0.8rem;
+    font: var(--text-t2);
+  }
+
+  &__deliver {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  &__deliver-input-wrapper {
+    width: 100%;
+    max-width: 36.5rem;
+
+    border-radius: 0.6rem;
+    background-color: #fff;
+  }
+
+  & .order__deliver-label {
+    left: 1.6rem;
+
+    opacity: 0.4;
+
+    font: var(--text-t2);
+
+    &.active {
+      opacity: 0.4;
+    }
+  }
+
+  &__deliver-datepicker {
+    width: 100%;
+    max-width: 19rem;
+
+    border-radius: 0.6rem;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  &__deliver-datepicker-input {
+    display: flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    height: 5.2rem;
+  }
+
+  &__client {
+    padding: 4.8rem 6rem 6rem;
+    margin-bottom: 2rem;
+
+    border-radius: 2rem;
+    background-color: var(--gray-color);
+  }
+
+  &__client-title {
+    margin-bottom: 3.2rem;
+    font: var(--title-h3);
+  }
+
+  &__client-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    max-width: 70.9rem;
+  }
+
+  &__client-input-wrapper {
+    width: 100%;
+    max-width: 21.6rem;
+
+    background-color: #fff;
+    border-radius: 0.6rem;
+    overflow: hidden;
+
+    &--long {
+      max-width: 28rem;
+    }
+  }
+
+  & .order__client-label {
+    left: 1.6rem;
+
+    opacity: 0.4;
+
+    font: var(--text-t2);
+
+    &.active {
+      opacity: 0.4;
+    }
+  }
+
+  &__payment {
+    padding: 4.8rem 6rem 6rem;
+    margin-bottom: 3.7rem;
+
+    border-radius: 2rem;
+    background-color: var(--gray-color);
+  }
+
+  &__payment-title {
+    margin-bottom: 3.2rem;
+    font: var(--title-h3);
+  }
+
+  &__payment-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+  }
+
+  &__payment-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.6rem 1.9rem;
+    min-height: 10.6rem;
+
+    background-color: #fff;
+    border-radius: 1.2rem;
+  }
+
+  &__payment-item-title {
+    font: var(--text-t1);
+    text-align: left;
+  }
+
+  &__payment-item-desc {
+    font: var(--text-t2);
+    text-align: left;
+    opacity: 0.4;
+  }
+
+  &__button-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+  }
+
+  &__button {
+    height: 5.2rem;
+    margin-bottom: 2rem;
+
+    font: var(--text-t2);
+  }
+
+  &__confidence {
+    align-self: center;
+    max-width: 31.2rem;
+    
+    font: var(--text-t3);
+    text-align: center;
+    color: rgba(28, 28, 28, 0.3);
+    
+    a {
+      transition: 0.3s;
+      
+      &:hover {
+        color: var(--black-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}
