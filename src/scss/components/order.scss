@@ -58,6 +58,13 @@
 
     background-color: #fff;
     border-radius: 1.2rem;
+
+    transition: 0.3s;
+    
+    &.active {
+      background-color: var(--black-color);
+      color: #fff;
+    }
   }
 
   &__tab-header {
@@ -88,6 +95,24 @@
 
   &__tabs-contents {
     position: relative;
+  }
+
+  &__tabs-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    &.active {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &__tabs-subtitle {

@@ -38,6 +38,7 @@ import productSlider from "./build-in/productSlider";
 import accordions from "./build-in/accordions";
 import readMoreButton from "./build-in/readMoreButton";
 import datepicker from "./build-in/datepicker";
+import orderTabs from "./build-in/orderTabs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     productSlider();
     accordions();
     readMoreButton();
+    orderTabs();
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
