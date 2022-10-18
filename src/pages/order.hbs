@@ -31,16 +31,50 @@
                                             <input class="order__deliver-input input input--white" type="text" name="orderDeliverAddress" id="orderDeliverAddress" required>
                                             <label class="order__deliver-label" for="orderDeliverAddress">Адрес доставки</label>
                                         </div>
-                                        <div class="order__deliver-datepicker js-date-picker-container">
+                                        <div class="order__deliver-datepicker js-datepicker-container">
                                             <input class="order__deliver-datepicker-input js-datepicker" type="text">
                                         </div>
-                                        <div class="order__deliver-datepicker js-date-picker-container">
+                                        <div class="order__deliver-datepicker js-datepicker-container">
                                             <input class="order__deliver-datepicker-input js-datepicker-time" type="text">
                                         </div>
                                     </form>
                                 </div>
                                 <div class="order__tabs-content js-order-tab-content" data-id="orderTab2">
+                                    <div class="order__pickup">
+                                        <div class="order__pickup-map">
 
+                                        </div>
+                                        <div class="order__pickup-info">
+                                            <div class="order__pickup-info-item">
+                                                <h3 class="order__pickup-info-title">Вы можете забрать товар по адресу:</h3>
+                                                <address class="order__pickup-info-address">ул. Восстания 100 к5050, Казань</address>
+                                            </div>
+                                            <div class="order__pickup-info-item">
+                                                <h3 class="order__pickup-info-title">Часы работы</h3>
+                                                <ul class="order__pickup-schedule">
+                                                    {{# each pickupShedule }}
+                                                        <li class="order__pickup-schedule-item">
+                                                            <span class="order__pickup-schedule-day">{{this.day}}</span>
+                                                            <span class="order__pickup-schedule-time">{{this.time}}</span>
+                                                        </li>
+                                                    {{/each}}
+                                                </ul>
+                                            </div>
+                                            <div class="order__pickup-info-item">
+                                                <h3 class="order__pickup-info-title">Телефон</h3>
+                                                <a class="order__pickup-phone" href="tel:88001015923">8 800 101–59–23</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="order__tabs-subtitle">Вы можете выбрать дату и время. И мы упакуем заказ точно в срок</h3>
+                                    <form class="order__pickup-form" action="#">
+                                        <div class="order__pickup-datepicker js-datepicker-container">
+                                            <input class="order__pickup-datepicker-input js-datepicker" type="text">
+                                        </div>
+                                        <div class="order__pickup-datepicker js-datepicker-container">
+                                            <input class="order__deliver-datepicker-input js-datepicker-time" type="text">
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="order__tabs-content js-order-tab-content" data-id="orderTab3">
                                     <h3 class="order__tabs-subtitle">Палата</h3>

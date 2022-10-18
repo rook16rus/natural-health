@@ -47,7 +47,7 @@ export default function datepicker() {
 
 function rotateArrow(datepicker) {
     const datepickerEl = datepicker.$el;
-    const container = datepickerEl.closest('.js-date-picker-container');
+    const container = datepickerEl.closest('.js-datepicker-container');
 
     container.classList.toggle('active');
 }
