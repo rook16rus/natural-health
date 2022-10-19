@@ -39,10 +39,10 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="order__tabs-content js-order-tab-content active" data-id="orderTab2">
-                                    <div class="order__pickup">
-                                        <div class="order__pickup-map js-pickup-map" id="map" data-marker="../img/placemark.svg" data-zoom="15" data-coordinates="55.83358447926472,49.040342224536886"></div>
-                                        <div class="order__pickup-info">
+                                <div class="order__tabs-content js-order-tab-content" data-id="orderTab2">
+                                    <div class="map-navigation">
+                                        <div class="map-navigation__map js-pickup-map" id="map" data-marker="../img/placemark.svg" data-zoom="15" data-coordinates="55.83358447926472,49.040342224536886"></div>
+                                        <div class="map-navigation__content">
                                             <div class="order__pickup-info-item">
                                                 <h3 class="order__pickup-info-title">Вы можете забрать товар по адресу:</h3>
                                                 <address class="order__pickup-info-address">ул. Восстания 100 к5050, Казань</address>
@@ -64,7 +64,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h3 class="order__tabs-subtitle">Вы можете выбрать дату и время. И мы упакуем заказ точно в срок</h3>
+                                    <h3 class="order__pickup-subtitle">Вы можете выбрать дату и время. И мы упакуем заказ точно в срок</h3>
                                     <form class="order__pickup-form" action="#">
                                         <div class="order__pickup-datepicker js-datepicker-container">
                                             <input class="order__pickup-datepicker-input js-datepicker" type="text">
@@ -74,20 +74,32 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="order__tabs-content js-order-tab-content" data-id="orderTab3">
-                                    <h3 class="order__tabs-subtitle">Палата</h3>
-                                    <form class="order__deliver" action="#">
-                                        <div class="order__deliver-input-wrapper input-wrapper">
-                                            <input class="order__deliver-input input input--white" type="text" name="orderDeliverAddress" id="orderDeliverAddress" required>
-                                            <label class="order__deliver-label" for="orderDeliverAddress">Адрес доставки</label>
+                                <div class="order__tabs-content js-order-tab-content active" data-id="orderTab3">
+                                    <div class="map-navigation">
+                                        <div class="map-navigation__map"></div>
+                                        <div class="map-navigation__content">
+                                            <!--<p class="order__tabs-content-desc">
+                                                  Выберите на карте пункт выдачи CDEK
+                                                </p>-->
+                                            <div class="map-navigation__info">
+                                                <div class="map-navigation__info-item">
+                                                    <h3 class="map-navigation__info-title">Адрес выбранного пункта выдачи</h3>
+                                                    <address class="map-navigation__info-address">Чистопольская ул., 26/5, Казань</address>
+                                                </div>
+                                                <div class="map-navigation__info-item">
+                                                    <h3 class="map-navigation__info-title">Часы работы</h3>
+                                                    <ul class="map-navigation__schedule">
+                                                        {{#each cdekSchedule }}
+                                                            <li class="map-navigation__schedule-item">
+                                                                <span class="map-navigation__schedule-day">{{this.day}}</span>
+                                                                <span class="map-navigation__schedule-time">{{this.time}}</span>
+                                                            </li>
+                                                        {{/each}}
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="order__deliver-datepicker js-date-picker-container">
-                                            <input class="order__deliver-datepicker-input js-datepicker" type="text">
-                                        </div>
-                                        <div class="order__deliver-datepicker js-date-picker-container">
-                                            <input class="order__deliver-datepicker-input js-datepicker-time" type="text">
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
                                 <div class="order__tabs-content js-order-tab-content" data-id="orderTab4">
                                     <h3 class="order__tabs-subtitle">ТЕСТ</h3>
