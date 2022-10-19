@@ -40,6 +40,7 @@ import readMoreButton from "./build-in/readMoreButton";
 import datepicker from "./build-in/datepicker";
 import orderTabs from "./build-in/orderTabs";
 import payment from "./build-in/payment";
+import pickupMap from "./build-in/pickupMap";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     readMoreButton();
     orderTabs();
     payment();
+    pickupMap();
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');

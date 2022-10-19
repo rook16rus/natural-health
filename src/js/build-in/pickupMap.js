@@ -1,7 +1,7 @@
 import loadApi from "./loadApi";
 
-export default function yandexMap() {
-    /*let map = document.querySelector('#map');
+export default function pickupMap() {
+    let map = document.querySelector('.js-pickup-map');
     if (!map) return;
 
     const urlElement = document.querySelector('.js-map-url');
@@ -13,12 +13,11 @@ export default function yandexMap() {
     })
 
     function init() {
-        const mapElement = document.querySelector('#map');
-        const zoom = mapElement.dataset.zoom;
-        const marker = mapElement.dataset.marker;
-        const coords = mapElement.dataset.coordinates.split(',');
+        const zoom = map.dataset.zoom;
+        const coords = map.dataset.coordinates.split(',');
+        const marker = map.dataset.marker;
 
-        map = new ymaps.Map('map', {
+        map = new ymaps.Map(map, {
             center: [...coords],
             zoom
         });
@@ -30,17 +29,27 @@ export default function yandexMap() {
         map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
         map.controls.remove('rulerControl'); // удаляем контрол правил
 
-        addMarker([55.68678156906752,51.39040749999995], map, marker);
+        addMarker([...coords], map, marker);
     }
 
     function addMarker(coords, map, markerIcon) {
-        const marker = new ymaps.Placemark(coords, {}, {
+        /*const BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+            `
+                <div class='balloon'>
+                    {{ properties.balloonContent }}
+                </div>
+            `
+            , {});*/
+
+        const marker = new ymaps.Placemark(coords, {
+            balloonContent: 'ул. Восстания 100 к5050, Казань',
+        }, {
             iconLayout: 'default#image',
             iconImageHref: markerIcon,
-            iconImageSize: [60, 77],
-            iconImageOffset: [-30, -77]
+            iconImageSize: [40, 40],
+            iconImageOffset: [-20, -40]
         });
 
         map.geoObjects.add(marker);
-    }*/
+    }
 }

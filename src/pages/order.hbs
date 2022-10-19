@@ -39,11 +39,9 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="order__tabs-content js-order-tab-content" data-id="orderTab2">
+                                <div class="order__tabs-content js-order-tab-content active" data-id="orderTab2">
                                     <div class="order__pickup">
-                                        <div class="order__pickup-map">
-
-                                        </div>
+                                        <div class="order__pickup-map js-pickup-map" id="map" data-marker="../img/placemark.svg" data-zoom="15" data-coordinates="55.83358447926472,49.040342224536886"></div>
                                         <div class="order__pickup-info">
                                             <div class="order__pickup-info-item">
                                                 <h3 class="order__pickup-info-title">Вы можете забрать товар по адресу:</h3>
@@ -52,7 +50,7 @@
                                             <div class="order__pickup-info-item">
                                                 <h3 class="order__pickup-info-title">Часы работы</h3>
                                                 <ul class="order__pickup-schedule">
-                                                    {{# each pickupShedule }}
+                                                    {{# each pickupSchedule }}
                                                         <li class="order__pickup-schedule-item">
                                                             <span class="order__pickup-schedule-day">{{this.day}}</span>
                                                             <span class="order__pickup-schedule-time">{{this.time}}</span>
@@ -62,7 +60,7 @@
                                             </div>
                                             <div class="order__pickup-info-item">
                                                 <h3 class="order__pickup-info-title">Телефон</h3>
-                                                <a class="order__pickup-phone" href="tel:88001015923">8 800 101–59–23</a>
+                                                <a class="order__pickup-phone link" href="tel:88001015923">8 800 101–59–23</a>
                                             </div>
                                         </div>
                                     </div>
