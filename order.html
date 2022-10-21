@@ -686,242 +686,404 @@
             </div>
 
             <main class="page-main">
-                <section class="press-center">
+                <section class="order">
                     <div class="container">
-                        <div class="breadcrumbs js-section-animate">
-                            <ul class="breadcrumbs__list">
-                                <li class="breadcrumbs__item">
-                                    <a class="breadcrumbs__link" href="index.html">Главная</a>
-                                </li>
-                                <li class="breadcrumbs__item">
-                                    <a class="breadcrumbs__link" href="press-center.html">Пресс-центр</a>
-                                </li>
-                            </ul>
+                        <div class="order__title-wrapper">
+                            <h1 class="order__title js-title-animate">Оформление заказа</h1>
                         </div>
-                        <div class="press-center__title-wrapper">
-                            <h1 class="press-center__title js-title-animate">Пресс-центр</h1>
-                        </div>
-                        <div class="press-filter">
-                            <div class="press-filter__radio-wrapper">
-                                <div class="press-filter__radio-container js-title-animate">
-                                    <input class="press-filter__radio visually-hidden" type="radio" name="pressNews" id="pressNews" checked="checked">
-                                    <label class="press-filter__label" for="pressNews"><span>Новости</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="press-filter__radio-wrapper">
-                                <div class="press-filter__radio-container js-title-animate">
-                                    <input class="press-filter__radio visually-hidden" type="radio" name="pressNews" id="pressMedia">
-                                    <label class="press-filter__label" for="pressMedia"><span>СМИ о нас</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="press-filter__radio-wrapper">
-                                <div class="press-filter__radio-container js-title-animate">
-                                    <input class="press-filter__radio visually-hidden" type="radio" name="pressNews" id="pressBlog">
-                                    <label class="press-filter__label" for="pressBlog"><span>Блог о здоровье</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="press-center__main-news js-section-animate">
-                            <li class="press-center__main-new">
-                                <a class="press-center__main-new-link" href="news-single.html">
-                                    <div class="press-center__main-new-img">
-                                        <picture>
-                                            <source srcset="img/main-press-1.webp" type="image/webp">
-                                            <img class="lazyload" data-src="img/main-press-1.jpg" alt="Фото новости">
-                                        </picture>
+                        <div class="order__wrapper js-section-animate">
+                            <div class="order__content">
+                                <div class="order__tabs-block">
+                                    <h2 class="order__tabs-title">Способ доставки</h2>
+                                    <div class="order__tabs js-order-tabs">
+                                        <button class="order__tab js-order-tab active" data-href="orderTab1">
+                                            <div class="order__tab-header">
+                                                <h3 class="order__tab-title">Курьером</h3>
+                                                <svg class="order__tab-icon">
+                                                    <use xlink:href="#"></use>
+                                                </svg>
+                                            </div><span class="order__tab-desc">2-3 дня, 500 ₽</span>
+                                        </button>
+                                        <button class="order__tab js-order-tab" data-href="orderTab2">
+                                            <div class="order__tab-header">
+                                                <h3 class="order__tab-title">Самовывоз</h3>
+                                                <svg class="order__tab-icon">
+                                                    <use xlink:href="#"></use>
+                                                </svg>
+                                            </div><span class="order__tab-desc">Сегодня, бесплатно</span>
+                                        </button>
+                                        <button class="order__tab js-order-tab" data-href="orderTab3">
+                                            <div class="order__tab-header">
+                                                <h3 class="order__tab-title">Пункт выдачи СДЕК</h3>
+                                                <svg class="order__tab-icon">
+                                                    <use xlink:href="#sdek-icon"></use>
+                                                </svg>
+                                            </div><span class="order__tab-desc">18 - 20 апреля, 350&nbsp;₽</span>
+                                        </button>
+                                        <button class="order__tab js-order-tab" data-href="orderTab4">
+                                            <div class="order__tab-header">
+                                                <h3 class="order__tab-title">Пункт выдачи Почта России</h3>
+                                                <svg class="order__tab-icon">
+                                                    <use xlink:href="#pochta-icon"></use>
+                                                </svg>
+                                            </div><span class="order__tab-desc">20 - 24 апреля, 150&nbsp;₽</span>
+                                        </button>
                                     </div>
-                                    <div class="press-center__main-new-content"><span class="press-center__main-new-time">20 июня</span>
-                                        <div class="press-center__main-new-info">
-                                            <h3 class="press-center__main-new-title">22 июля состоялось открытие третьего завода Natural Health в Казани</h3>
-                                            <div class="press-center__main-new-text">
-                                                <p>То место, где рождается здоровье, забота и любовь к самому себе.</p>
-                                                <p>22 июля состоялось открытие новой производственной площадки в Казани. Это место по праву считается одним из лучших, ведь оно соотвествует всем инновационным технологиям и отвечает самым последним стандартам качества.</p>
-                                                <p>Компании Natural Health 5 лет, уже многое сделано с большим успехом, а сколько еще будет!</p>
-                                                <p>Дорогие друзья, рады сообщить, что</p>
+                                    <div class="order__tabs-contents">
+                                        <div class="order__tabs-content js-order-tab-content active" data-id="orderTab1">
+                                            <h3 class="order__tabs-subtitle">Данные доставки</h3>
+                                            <form class="order__deliver" action="#">
+                                                <div class="order__deliver-input-wrapper input-wrapper">
+                                                    <input class="order__deliver-input input input--white" type="text" name="orderDeliverAddress" id="orderDeliverAddress" required>
+                                                    <label class="order__deliver-label" for="orderDeliverAddress">Адрес доставки</label>
+                                                </div>
+                                                <div class="order__deliver-datepicker js-datepicker-container">
+                                                    <input class="order__deliver-datepicker-input js-datepicker" type="text">
+                                                </div>
+                                                <div class="order__deliver-datepicker js-datepicker-container">
+                                                    <input class="order__deliver-datepicker-input js-datepicker-time" type="text">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="order__tabs-content js-order-tab-content" data-id="orderTab2">
+                                            <div class="map-navigation">
+                                                <div class="map-navigation__map js-pickup-map" id="map" data-marker="../img/placemark.svg" data-zoom="15" data-coordinates="55.83358447926472,49.040342224536886"></div>
+                                                <div class="order__pickup-info">
+                                                    <div class="order__pickup-info-item">
+                                                        <h3 class="order__pickup-info-title">Вы можете забрать товар по адресу:</h3>
+                                                        <address class="order__pickup-info-address">ул. Восстания 100 к5050, Казань</address>
+                                                    </div>
+                                                    <div class="order__pickup-info-item">
+                                                        <h3 class="order__pickup-info-title">Часы работы</h3>
+                                                        <ul class="order__pickup-schedule">
+                                                            <li class="order__pickup-schedule-item"><span class="order__pickup-schedule-day">Понедельник - Четверг</span><span class="order__pickup-schedule-time">09:00 -18:00</span>
+                                                            </li>
+                                                            <li class="order__pickup-schedule-item"><span class="order__pickup-schedule-day">Пятница</span><span class="order__pickup-schedule-time">09:00 -17:00</span>
+                                                            </li>
+                                                            <li class="order__pickup-schedule-item"><span class="order__pickup-schedule-day">Суббота - Воскресение</span><span class="order__pickup-schedule-time">Выходной</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="order__pickup-info-item">
+                                                        <h3 class="order__pickup-info-title">Телефон</h3>
+                                                        <a class="order__pickup-phone link" href="tel:88001015923">8 800 101–59–23</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h3 class="order__pickup-subtitle">Вы можете выбрать дату и время. И мы упакуем заказ точно в срок</h3>
+                                            <form class="order__pickup-form" action="#">
+                                                <div class="order__pickup-datepicker js-datepicker-container">
+                                                    <input class="order__pickup-datepicker-input js-datepicker" type="text">
+                                                </div>
+                                                <div class="order__pickup-datepicker js-datepicker-container">
+                                                    <input class="order__deliver-datepicker-input js-datepicker-time" type="text">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="order__tabs-content js-order-tab-content" data-id="orderTab3">
+                                            <div class="map-navigation">
+                                                <div class="map-navigation__map"></div>
+                                                <div class="map-navigation__content">
+                                                    <div class="map-navigation__info">
+                                                        <div class="map-navigation__info-item">
+                                                            <h3 class="map-navigation__info-title">Адрес выбранного пункта выдачи</h3>
+                                                            <address class="map-navigation__info-address">Чистопольская ул., 26/5, Казань</address>
+                                                        </div>
+                                                        <div class="map-navigation__info-item">
+                                                            <h3 class="map-navigation__info-title">Часы работы</h3>
+                                                            <ul class="map-navigation__schedule">
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Понедельник</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Вторник</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Среда</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Четверг</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Пятница</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Суббота</span><span class="map-navigation__schedule-time">10:00 — 18:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Воскресение</span><span class="map-navigation__schedule-time">10:00 — 18:00</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order__tabs-content js-order-tab-content" data-id="orderTab4">
+                                            <div class="map-navigation">
+                                                <div class="map-navigation__map"></div>
+                                                <div class="map-navigation__content">
+                                                    <div class="map-navigation__info">
+                                                        <div class="map-navigation__info-item">
+                                                            <h3 class="map-navigation__info-title">Адрес выбранного пункта выдачи</h3>
+                                                            <address class="map-navigation__info-address">Чистопольская ул., 26/5, Казань</address>
+                                                        </div>
+                                                        <div class="map-navigation__info-item">
+                                                            <h3 class="map-navigation__info-title">Часы работы</h3>
+                                                            <ul class="map-navigation__schedule">
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Понедельник</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Вторник</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Среда</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Четверг</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Пятница</span><span class="map-navigation__schedule-time">10:00 — 20:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Суббота</span><span class="map-navigation__schedule-time">10:00 — 18:00</span>
+                                                                </li>
+                                                                <li class="map-navigation__schedule-item"><span class="map-navigation__schedule-day">Воскресение</span><span class="map-navigation__schedule-time">10:00 — 18:00</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
+                                <div class="order__client">
+                                    <h2 class="order__client-title">Данные получателя заказа</h2>
+                                    <form class="order__client-form" data-need-validation="true" action="#">
+                                        <div class="order__client-input-wrapper input-wrapper">
+                                            <input class="order__client-input input input--white" type="text" name="clientSurname" id="clientSurname" required>
+                                            <label class="order__client-label" for="clientSurname">Фамилия</label>
+                                        </div>
+                                        <div class="order__client-input-wrapper input-wrapper">
+                                            <input class="order__client-input input input--white" type="text" name="clientName" id="clientName" required>
+                                            <label class="order__client-label" for="clientName">Имя</label>
+                                        </div>
+                                        <div class="order__client-input-wrapper input-wrapper">
+                                            <input class="order__client-input input input--white" type="text" name="clientPatronymic" id="clientPatronymic" required>
+                                            <label class="order__client-label" for="clientPatronymic">Отчество</label>
+                                        </div>
+                                        <div class="order__client-input-wrapper input-wrapper order__client-input-wrapper--long">
+                                            <input class="order__client-input input input--white js-phone-input" type="tel" name="clientPhone" id="clientPhone" required>
+                                            <label class="order__client-label" for="clientPhone">Телефон</label>
+                                        </div>
+                                        <div class="order__client-input-wrapper input-wrapper order__client-input-wrapper--long">
+                                            <input class="order__client-input input input--white" type="email" name="clientEmail" id="clientEmail" required>
+                                            <label class="order__client-label" for="clientEmail">Email</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="order__payment">
+                                    <h2 class="order__payment-title">Способ оплаты</h2>
+                                    <div class="order__payment-list">
+                                        <button class="order__payment-item active js-payment">
+                                            <h3 class="order__payment-item-title">Онлайн оплата</h3><span class="order__payment-item-desc">Visa, Mastercard, МИР</span>
+                                        </button>
+                                        <button class="order__payment-item js-payment">
+                                            <h3 class="order__payment-item-title">Онлайн оплата</h3><span class="order__payment-item-desc">Visa, Mastercard, МИР</span>
+                                        </button>
+                                        <button class="order__payment-item js-payment">
+                                            <h3 class="order__payment-item-title">Онлайн оплата</h3><span class="order__payment-item-desc">Visa, Mastercard, МИР</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="order__button-block">
+                                    <button class="order__button button button--green">Оплатить</button>
+                                    <p class="order__confidence">Нажимая кнопку «Оплатить» вы соглашаетесь с<a href="#">договором — офертой</a>и с<a href="#">политикой обработки персональных данных</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="details__content">
+                                    <h3 class="details__title">Детали заказа</h3>
+                                    <ul class="details__list">
+                                        <li class="details__item"><span class="details__item-name">4 товара</span><span class="details__item-value">1 250 ₽</span>
+                                        </li>
+                                        <li class="details__item"><span class="details__item-name">Доставка</span><span class="details__item-value">250 ₽</span>
+                                        </li>
+                                    </ul>
+                                    <div class="details__result"><span class="details__result-desc">Итого</span><span class="details__result-sum">6 000 ₽</span>
+                                    </div>
+                                    <a class="details__link button button--green" href="#">Оплатить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="basket-popular">
+                    <div class="container">
+                        <div class="basket-popular__title-wrapper">
+                            <h2 class="basket-popular__title js-title-animate">Популярные товары</h2>
+                        </div>
+                        <ul class="catalog-list js-section-animate">
+                            <li class="catalog-list__item">
+                                <div class="catalog-list__item-block">
+                                    <div class="catalog-list__img">
+                                        <picture>
+                                            <source srcset="img/catalog-1.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-1.jpg" alt="Фото товара">
+                                        </picture>
+                                        <picture>
+                                            <source srcset="img/catalog-2.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-2.jpg" alt="Фото товара">
+                                        </picture><span class="catalog-list__hit"><svg><use xlink:href="#hit-icon"></use></svg><span>Хит продаж</span>
+                                        </span>
+                                        <div class="catalog-list__basket">
+                                            <svg>
+                                                <use xlink:href="#backet-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-list__price-block">
+                                        <h3 class="catalog-list__title">
+                                            <a tabindex="-1" href="product.html">Aurum</a>
+                                        </h3><span class="catalog-list__price">3 990 ₽</span>
+                                    </div>
+                                    <p class="catalog-list__text">Нормализует структурно-функциональные процессы в соединительной ткани, способствует регенерации.</p>
+                                    <ul class="catalog-list__advantages">
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#shield-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#moon-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#bone-icon"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="catalog-list__item">
+                                <div class="catalog-list__item-block">
+                                    <div class="catalog-list__img">
+                                        <picture>
+                                            <source srcset="img/catalog-2.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-2.jpg" alt="Фото товара">
+                                        </picture>
+                                        <picture>
+                                            <source srcset="img/catalog-1.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-1.jpg" alt="Фото товара">
+                                        </picture>
+                                        <div class="catalog-list__basket">
+                                            <svg>
+                                                <use xlink:href="#backet-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-list__price-block">
+                                        <h3 class="catalog-list__title">
+                                            <a tabindex="-1" href="product.html">Antiparazit 2</a>
+                                        </h3><span class="catalog-list__price">2 990 ₽</span>
+                                    </div>
+                                    <p class="catalog-list__text">Для поджелудочной железы</p>
+                                    <ul class="catalog-list__advantages">
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#shield-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#moon-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#bone-icon"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="catalog-list__item">
+                                <div class="catalog-list__item-block">
+                                    <div class="catalog-list__img">
+                                        <picture>
+                                            <source srcset="img/catalog-1.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-1.jpg" alt="Фото товара">
+                                        </picture>
+                                        <picture>
+                                            <source srcset="img/catalog-2.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-2.jpg" alt="Фото товара">
+                                        </picture>
+                                        <div class="catalog-list__basket">
+                                            <svg>
+                                                <use xlink:href="#backet-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-list__price-block">
+                                        <h3 class="catalog-list__title">
+                                            <a tabindex="-1" href="product.html">Aurum</a>
+                                        </h3><span class="catalog-list__price">3 990 ₽</span>
+                                    </div>
+                                    <p class="catalog-list__text">Нормализует структурно-функциональные процессы в соединительной ткани, способствует регенерации.</p>
+                                    <ul class="catalog-list__advantages">
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#shield-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#moon-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#bone-icon"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="catalog-list__item">
+                                <div class="catalog-list__item-block">
+                                    <div class="catalog-list__img">
+                                        <picture>
+                                            <source srcset="img/catalog-2.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-2.jpg" alt="Фото товара">
+                                        </picture>
+                                        <picture>
+                                            <source srcset="img/catalog-1.webp" type="image/webp">
+                                            <img class="lazyload" data-src="img/catalog-1.jpg" alt="Фото товара">
+                                        </picture>
+                                        <div class="catalog-list__basket">
+                                            <svg>
+                                                <use xlink:href="#backet-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-list__price-block">
+                                        <h3 class="catalog-list__title">
+                                            <a tabindex="-1" href="product.html">Antiparazit 2</a>
+                                        </h3><span class="catalog-list__price">2 990 ₽</span>
+                                    </div>
+                                    <p class="catalog-list__text">Для поджелудочной железы</p>
+                                    <ul class="catalog-list__advantages">
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#shield-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#moon-icon"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg>
+                                                <use xlink:href="#bone-icon"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
-                        <div class="mailing js-section-animate">
-                            <h2 class="mailing__title">Подписывайтесь на&nbsp;нашу&nbsp;рассылку</h2>
-                            <img class="mailing__photo lazyload" data-src="img/mailing-1.png" alt="Фото ноутбука">
-                            <div class="mailing__mail">
-                                <form class="mailing__form">
-                                    <input class="mailing__input" name="mailing" id="mailing" type="email" placeholder="Укажите e-mail">
-                                    <button class="mailing__button" type="submit">
-                                        <svg>
-                                            <use xlink:href="#mailing-arrow-icon"></use>
-                                        </svg>
-                                    </button>
-                                </form>
-                                <p class="mailing__desc">При подписке вы принимаете условия
-                                    <br>
-                                    <a href="#">Политики конфиденциальности</a>&nbsp;и<a href="#">Обработки персональных данных</a>
-                                </p>
-                            </div>
-                        </div>
-                        <ul class="press-center__list js-section-animate">
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-1.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-1.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">20 июня</time>
-                                <h3 class="news-card__title">Natural Health - генеральный партнер &quot;Ночной Казани 2022&quot;.</h3>
-                                <p class="news-card__text">16 июля прошел забег &quot;Ночная Казань&quot;. Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-2.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-2.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">11 июня</time>
-                                <h3 class="news-card__title">23 июля состоится пятилетие Natural Health</h3>
-                                <p class="news-card__text">23 июля состоится грандиозное событие - компания Natural Health отмечает 5-летие со дня своего основания. Еще в 2017 году началась история Natural Health, которая на данный момент приобрела статус международной компании, сотрудничество с которой позволяет удовлетворить любые амбиции.</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-3.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-3.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">20 июня</time>
-                                <h3 class="news-card__title">Natural Health - генеральный партнер &quot;Ночной Казани 2022&quot;.</h3>
-                                <p class="news-card__text">16 июля прошел забег &quot;Ночная Казань&quot;. Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-4.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-4.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">11 июня</time>
-                                <h3 class="news-card__title">23 июля состоится пятилетие Natural Health</h3>
-                                <p class="news-card__text">23 июля состоится грандиозное событие - компания Natural Health отмечает 5-летие со дня своего основания. Еще в 2017 году началась история Natural Health, которая на данный момент приобрела статус международной компании, сотрудничество с которой позволяет удовлетворить любые амбиции.</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-5.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-5.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">11 июня</time>
-                                <h3 class="news-card__title">23 июля состоится пятилетие Natural Health</h3>
-                                <p class="news-card__text">23 июля состоится грандиозное событие - компания Natural Health отмечает 5-летие со дня своего основания. Еще в 2017 году началась история Natural Health, которая на данный момент приобрела статус международной компании, сотрудничество с которой позволяет удовлетворить любые амбиции.</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-6.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-6.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">02 июня</time>
-                                <h3 class="news-card__title">Панельная дискуссия «Поиск новых возможностей и трансформация компаний»</h3>
-                                <p class="news-card__text">С 3 по 4 июня на территории самого современного города России - Иннополиса проходит панельная дискуссия с представителями компаний «Поиск новых возможностей и трансформация компаний» в рамках практико-ориентированной образовательной программы для новых и будущих Генеральных директоров СИБУРа «Химия лидерства».</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-7.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-7.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">11 июня</time>
-                                <h3 class="news-card__title">23 июля состоится пятилетие Natural Health</h3>
-                                <p class="news-card__text">23 июля состоится грандиозное событие - компания Natural Health отмечает 5-летие со дня своего основания. Еще в 2017 году началась история Natural Health, которая на данный момент приобрела статус международной компании, сотрудничество с которой позволяет удовлетворить любые амбиции.</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-8.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-8.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">20 июня</time>
-                                <h3 class="news-card__title">Natural Health - генеральный партнер &quot;Ночной Казани 2022&quot;.</h3>
-                                <p class="news-card__text">16 июля прошел забег &quot;Ночная Казань&quot;. Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-9.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-9.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">20 июня</time>
-                                <h3 class="news-card__title">Natural Health - генеральный партнер &quot;Ночной Казани 2022&quot;.</h3>
-                                <p class="news-card__text">16 июля прошел забег &quot;Ночная Казань&quot;. Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-10.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-10.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">11 июня</time>
-                                <h3 class="news-card__title">23 июля состоится пятилетие Natural Health</h3>
-                                <p class="news-card__text">23 июля состоится грандиозное событие - компания Natural Health отмечает 5-летие со дня своего основания. Еще в 2017 году началась история Natural Health, которая на данный момент приобрела статус международной компании, сотрудничество с которой позволяет удовлетворить любые амбиции.</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-11.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-11.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">20 июня</time>
-                                <h3 class="news-card__title">Natural Health - генеральный партнер &quot;Ночной Казани 2022&quot;.</h3>
-                                <p class="news-card__text">16 июля прошел забег &quot;Ночная Казань&quot;. Natural Health является главным спонсором данного мероприятия. Подробнее: https://m.business-gazeta.ru/article/557357</p>
-                            </a>
-                            <a class="news-card" href="news-single.html">
-                                <div class="news-card__img">
-                                    <picture>
-                                        <source srcset="img/news-12.jpg" type="image/webp">
-                                        <img class="lazyload" data-src="img/news-12.webp" alt="Фото новости">
-                                    </picture>
-                                </div>
-                                <time class="news-card__time">11 июня</time>
-                                <h3 class="news-card__title">23 июля состоится пятилетие Natural Health</h3>
-                                <p class="news-card__text">23 июля состоится грандиозное событие - компания Natural Health отмечает 5-летие со дня своего основания. Еще в 2017 году началась история Natural Health, которая на данный момент приобрела статус международной компании, сотрудничество с которой позволяет удовлетворить любые амбиции.</p>
-                            </a>
-                        </ul>
-                        <div class="cards-navigation">
-                            <button class="cards-navigation__more-button button button--bordered" type="submit">Показать еще</button>
-                            <div class="cards-navigation__pagination">
-                                <a class="cards-navigation__pagination-prev" href="#">
-                                    <svg>
-                                        <use xlink:href="#arrow-down-icon"></use>
-                                    </svg>
-                                </a>
-                                <div class="cards-navigation__pagination-numbers">
-                                    <a class="cards-navigation__pagination-number active" href="#">1</a>
-                                    <a class="cards-navigation__pagination-number" href="#">2</a>
-                                    <a class="cards-navigation__pagination-number" href="#">3</a>
-                                    <a class="cards-navigation__pagination-number cards-navigation__pagination-number--hide-on-mobile" href="#">4</a>
-                                    <a class="cards-navigation__pagination-number cards-navigation__pagination-number--hide-on-mobile" href="#">5</a><span class="cards-navigation__pagination-number" href="#">...</span>
-                                    <a class="cards-navigation__pagination-number" href="#">10</a>
-                                </div>
-                                <a class="cards-navigation__pagination-next" href="#">
-                                    <svg>
-                                        <use xlink:href="#arrow-down-icon"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </section>
             </main>
