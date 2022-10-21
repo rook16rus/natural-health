@@ -22,7 +22,9 @@
     grid-template-columns: 1fr;
   }
 
-  &__link {
+  &__item-block {
+    position: relative;
+
     display: block;
     height: 100%;
 
@@ -179,6 +181,16 @@
 
     @include breakpoint(mobile) {
       margin-right: 0.8rem;
+    }
+
+    a::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      z-index: 2;
+
+      inset: 0;
     }
   }
 

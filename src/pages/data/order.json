@@ -3,7 +3,8 @@
     {
       "id": 1,
       "title": "Курьером",
-      "desc": "2-3 дня, 500 ₽"
+      "desc": "2-3 дня, 500 ₽",
+      "active": true
     },
     {
       "id": 2,
@@ -14,19 +15,20 @@
       "id": 3,
       "title": "Пункт выдачи СДЕК",
       "svg": "sdek-icon",
-      "desc": "18 - 20 апреля, 350 ₽"
+      "desc": "18 - 20 апреля, 350&nbsp;₽"
     },
     {
       "id": 4,
       "title": "Пункт выдачи Почта России",
       "svg": "pochta-icon",
-      "desc": "20 - 24 апреля, 150 ₽"
+      "desc": "20 - 24 апреля, 150&nbsp;₽"
     }
   ],
   "payment": [
     {
       "title": "Онлайн оплата",
-      "desc": "Visa, Mastercard, МИР"
+      "desc": "Visa, Mastercard, МИР",
+      "active": true
     },
     {
       "title": "Онлайн оплата",

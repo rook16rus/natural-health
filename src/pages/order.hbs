@@ -12,19 +12,19 @@
                             <h2 class="order__tabs-title">Способ доставки</h2>
                             <div class="order__tabs js-order-tabs">
                                 {{#each tabs }}
-                                    <button class="order__tab js-order-tab" data-href="orderTab{{this.id}}">
+                                    <button class="order__tab js-order-tab{{#if active }} active{{/if}}" data-href="orderTab{{this.id}}">
                                         <div class="order__tab-header">
                                             <h3 class="order__tab-title">{{this.title}}</h3>
                                             <svg class="order__tab-icon">
                                                 <use xlink:href="#{{this.svg}}"></use>
                                             </svg>
                                         </div>
-                                        <span class="order__tab-desc">{{this.desc}}</span>
+                                        <span class="order__tab-desc">{{{this.desc}}}</span>
                                     </button>
                                 {{/each}}
                             </div>
                             <div class="order__tabs-contents">
-                                <div class="order__tabs-content js-order-tab-content" data-id="orderTab1">
+                                <div class="order__tabs-content js-order-tab-content active" data-id="orderTab1">
                                     <h3 class="order__tabs-subtitle">Данные доставки</h3>
                                     <form class="order__deliver" action="#">
                                         <div class="order__deliver-input-wrapper input-wrapper">
@@ -42,7 +42,7 @@
                                 <div class="order__tabs-content js-order-tab-content" data-id="orderTab2">
                                     <div class="map-navigation">
                                         <div class="map-navigation__map js-pickup-map" id="map" data-marker="../img/placemark.svg" data-zoom="15" data-coordinates="55.83358447926472,49.040342224536886"></div>
-                                        <div class="map-navigation__content">
+                                        <div class="order__pickup-info">
                                             <div class="order__pickup-info-item">
                                                 <h3 class="order__pickup-info-title">Вы можете забрать товар по адресу:</h3>
                                                 <address class="order__pickup-info-address">ул. Восстания 100 к5050, Казань</address>
@@ -101,7 +101,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="order__tabs-content js-order-tab-content active" data-id="orderTab4">
+                                <div class="order__tabs-content js-order-tab-content" data-id="orderTab4">
                                     <div class="map-navigation">
                                         <div class="map-navigation__map"></div>
                                         <div class="map-navigation__content">
@@ -159,7 +159,7 @@
                             <h2 class="order__payment-title">Способ оплаты</h2>
                             <div class="order__payment-list">
                                 {{#each payment }}
-                                    <button class="order__payment-item js-payment">
+                                    <button class="order__payment-item{{#if active }} active{{/if}} js-payment">
                                         <h3 class="order__payment-item-title">{{this.title}}</h3>
                                         <span class="order__payment-item-desc">{{this.desc}}</span>
                                     </button>
