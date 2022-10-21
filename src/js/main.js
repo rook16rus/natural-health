@@ -41,6 +41,7 @@ import datepicker from "./build-in/datepicker";
 import orderTabs from "./build-in/orderTabs";
 import payment from "./build-in/payment";
 import pickupMap from "./build-in/pickupMap";
+import mapShow from "./build-in/mapShow";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -80,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     orderTabs();
     payment();
     pickupMap();
+    mapShow();
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');

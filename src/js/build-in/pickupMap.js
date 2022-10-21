@@ -17,6 +17,10 @@ export default function pickupMap() {
         const coords = map.dataset.coordinates.split(',');
         const marker = map.dataset.marker;
 
+        if (matchMedia('(max-width: 640px)')) {
+            map.style.height = '0';
+        }
+
         map = new ymaps.Map(map, {
             center: [...coords],
             zoom
