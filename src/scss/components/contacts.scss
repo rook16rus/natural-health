@@ -1,14 +1,40 @@
 .contacts {
   padding: 9.2rem 0 8rem;
 
+  @include breakpoint(tablet) {
+    padding: 8.2rem 0 7.5rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding: 7rem 0;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 5.6rem 0 6rem;
+  }
+
   &__title-wrapper {
     padding-bottom: 0.6rem;
     margin-bottom: 7.4rem;
 
     overflow: hidden;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 5.4rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 3.4rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.4rem;
+    }
   }
 
   &__title {
+    opacity: 0;
+
     font: var(--title-h1);
     text-align: center;
   }
@@ -22,11 +48,33 @@
 
     border-radius: 2rem;
     background-color: var(--gray-color);
+    opacity: 0;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 5.2rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      gap: 3.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      gap: 2.4rem;
+      padding: 2rem;
+
+      border-radius: 1rem;
+    }
   }
 
   &__img-block {
     flex-grow: 1;
     max-width: 67.2rem;
+
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -37,6 +85,11 @@
 
     border-radius: 1.6rem;
     overflow: hidden;
+
+    @include breakpoint(mobile) {
+      padding-top: 67.65%;
+      border-radius: 1rem;
+    }
 
     img {
       position: absolute;
@@ -54,11 +107,31 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem 1rem;
     max-width: 54rem;
+
+    @include breakpoint(tablet) {
+      gap: 3.6rem 1rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+
+    @include breakpoint(mobile) {
+      gap: 2.4rem;
+    }
   }
 
   &__info-item {
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(small-tablet) {
+      &--socials {
+        order: 1;
+      }
+    }
 
     &--large {
       grid-column: span 2;
@@ -87,6 +160,10 @@
   &__socials {
     display: flex;
     gap: 0.8rem;
+
+    @include breakpoint(small-tablet) {
+      gap: 1rem;
+    }
   }
 
   &__social-link {
@@ -111,6 +188,12 @@
 
   &__map-block {
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
   }
 
   &__map {
@@ -120,6 +203,19 @@
     border-radius: 2rem;
     background-color: var(--gray-color);
     overflow: hidden;
+
+    @include breakpoint(tablet) {
+      height: 55rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      height: 45rem;
+    }
+
+    @include breakpoint(mobile) {
+      height: 34.3rem;
+      border-radius: 1.4rem;
+    }
   }
 
   &__route {
@@ -137,6 +233,10 @@
 
     border-radius: 10rem;
     background-color: #fff;
+
+    @include breakpoint(small-tablet) {
+      display: none;
+    }
   }
 
   &__route-img {
@@ -171,5 +271,14 @@
 
   &__route-link {
     margin-left: auto;
+  }
+
+  &__route-link-mobile {
+    display: none;
+
+    @include breakpoint(small-tablet) {
+      display: flex;
+      margin-top: 3rem;
+    }
   }
 }

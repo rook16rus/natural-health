@@ -4,9 +4,9 @@
         <section class="contacts">
             <div class="container">
                 <div class="contacts__title-wrapper">
-                    <h1 class="contacts__title">Контакты</h1>
+                    <h1 class="contacts__title js-title-animate">Контакты</h1>
                 </div>
-                <div class="contacts__content">
+                <div class="contacts__content js-section-animate">
                     <div class="contacts__img-block">
                         <div class="contacts__img">
                             <img class="lazyload" data-src="img/contacts-1.jpg" alt="Фото здания">
@@ -25,7 +25,7 @@
                                 {{/each}}
                             </ul>
                         </div>
-                        <div class="contacts__info-item">
+                        <div class="contacts__info-item contacts__info-item--socials">
                             <h3 class="contacts__subtitle">Соц.сети</h3>
                             <ul class="contacts__socials">
                                 {{#each socials }}
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contacts__map-block">
+                <div class="contacts__map-block js-section-animate">
                     <div class="contacts__map js-contacts-map" data-coordinates="55.83358745014747,49.04030590101966" data-marker="img/logo-placemarker.svg" data-zoom="15"></div>
                     <div class="contacts__route">
                         <div class="contacts__route-img">
@@ -73,6 +73,7 @@
                         </div>
                         <a class="contacts__route-link button button--bordered" href="https://yandex.ru/maps/?rtext=~55.83358745014747,49.04030590101966" target="_blank">Проложить маршрут</a>
                     </div>
+                    <a class="contacts__route-link-mobile button button--bordered" href="https://yandex.ru/maps/?rtext=~55.83358745014747,49.04030590101966" target="_blank">Проложить маршрут</a>
                 </div>
             </div>
         </section>
