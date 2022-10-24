@@ -4,9 +4,9 @@
         <section class="reviews">
             <div class="container">
                 <div class="reviews__title-wrapper">
-                    <h1 class="reviews__title">Отзывы</h1>
+                    <h1 class="reviews__title js-title-animate">Отзывы</h1>
                 </div>
-                <div class="reviews__wrapper">
+                <div class="reviews__wrapper js-section-animate">
                     <div class="reviews__list">
                         {{#each reviews }}
                             <blockquote class="reviews__item">
@@ -66,8 +66,8 @@
                         </p>
                         <a class="reviews__add-link button button--green" href="#">Добавить отзыв</a>
                     </div>
-                    <a class="reviews__add-link-mobile js-add-link button button--green" href="#">Добавить отзыв</a>
                 </div>
+                <a class="reviews__add-link-mobile js-add-link button button--green" href="#">Добавить отзыв</a>
                 {{> cards-navigation }}
             </div>
         </section>
