@@ -18,6 +18,7 @@ export default function header() {
     });
 
     document.documentElement.style.setProperty('--header-height', header.clientHeight + 'px');
+    document.body.style.setProperty('--header-height', header.clientHeight + 'px');
 
     window.addEventListener('scroll', () => {
         if (header.getBoundingClientRect().top > document.documentElement.getBoundingClientRect().top) {
