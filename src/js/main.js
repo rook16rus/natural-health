@@ -42,6 +42,7 @@ import orderTabs from "./build-in/orderTabs";
 import payment from "./build-in/payment";
 import pickupMap from "./build-in/pickupMap";
 import mapShow from "./build-in/mapShow";
+import copyText from "./build-in/copyText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     payment();
     pickupMap();
     mapShow();
+    copyText()
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list', '.catalog-list__price-block');
