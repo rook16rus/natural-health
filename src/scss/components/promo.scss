@@ -11,6 +11,24 @@
   background-color: var(--gray-color);
   overflow: hidden;
 
+  @include breakpoint(tablet) {
+    gap: 6rem;
+    padding: 3.2rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    width: 100%;
+    max-width: 50rem;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3rem;
+  }
+
+  @include breakpoint(mobile) {
+    gap: 2.3rem;
+    padding: 2.4rem;
+  }
+
   &::before {
     content: '';
 
@@ -23,10 +41,27 @@
 
     background: url("../img/promo-bg.svg") no-repeat center;
     background-size: contain;
+
+    @include breakpoint(small-tablet) {
+      top: -8.7rem;
+      right: -7.3rem;
+      left: auto;
+      bottom: auto;
+
+      width: 19.8rem;
+      height: 19.8rem;
+    }
   }
 
   &__content {
+    position: relative;
+    z-index: 1;
+
     max-width: 24.7rem;
+
+    @include breakpoint(mobile) {
+      max-width: 22rem;
+    }
   }
 
   &__title {
@@ -43,7 +78,14 @@
 
   &__form {
     position: relative;
+    z-index: 1;
+
     margin-top: 1.8rem;
+
+    @include breakpoint(small-tablet) {
+      margin-top: 0;
+      width: 100% ;
+    }
   }
 
   &__input {
