@@ -1,5 +1,7 @@
 export default function copyText() {
     const copyText = document.querySelector(".js-copy-text");
+    if (!copyText) return
+
     const copyButton = document.querySelector('.js-copy-button');
     const copyTextTooltip = document.querySelector('.js-copy-tooltip')
 

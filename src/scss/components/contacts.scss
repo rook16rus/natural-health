@@ -1,0 +1,175 @@
+.contacts {
+  padding: 9.2rem 0 8rem;
+
+  &__title-wrapper {
+    padding-bottom: 0.6rem;
+    margin-bottom: 7.4rem;
+
+    overflow: hidden;
+  }
+
+  &__title {
+    font: var(--title-h1);
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 6.8rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
+
+    border-radius: 2rem;
+    background-color: var(--gray-color);
+  }
+
+  &__img-block {
+    flex-grow: 1;
+    max-width: 67.2rem;
+  }
+
+  &__img {
+    position: relative;
+
+    width: 100%;
+    padding-top: 63.09%;
+
+    border-radius: 1.6rem;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 1rem;
+    max-width: 54rem;
+  }
+
+  &__info-item {
+    display: flex;
+    flex-direction: column;
+
+    &--large {
+      grid-column: span 2;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 1.2rem;
+
+    font: var(--title-h4);
+    color: rgba(28, 28, 28, 0.3);
+  }
+
+  &__address {
+    font: var(--title-h3);
+  }
+
+  &__schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    font: var(--text-t1);
+  }
+
+  &__socials {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+
+    border: 1px solid rgba(28, 28, 28, 0.2);
+    border-radius: 50%;
+
+    svg {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  &__links, &__requisites {
+    @extend .contacts__schedule
+  }
+
+  &__map-block {
+    position: relative;
+  }
+
+  &__map {
+    width: 100%;
+    height: 69.1rem;
+
+    border-radius: 2rem;
+    background-color: var(--gray-color);
+    overflow: hidden;
+  }
+
+  &__route {
+    position: absolute;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    width: 100%;
+    max-width: 52.3rem;
+    padding: 0.8rem 2.2rem 0.8rem 0.8rem;
+
+    border-radius: 10rem;
+    background-color: #fff;
+  }
+
+  &__route-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.4rem;
+    height: 6.4rem;
+    flex-shrink: 0;
+
+    background-color: var(--gray-color);
+    border-radius: 50%;
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__route-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    font: var(--text-t2);
+  }
+
+
+  &__route-city {
+    color: rgba(28, 28, 28, 0.4);
+  }
+
+  &__route-link {
+    margin-left: auto;
+  }
+}
