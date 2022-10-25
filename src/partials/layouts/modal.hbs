@@ -193,7 +193,7 @@
     </div>
 </div>
 
-<div class="modal modal-review js-modal js-modal-review active">
+<div class="modal modal-review js-modal js-modal-review">
     <div class="modal__container">
         <div class="modal__inner">
             <button class="modal__close js-close-modal" type="button" title="Закрыть">
@@ -274,6 +274,76 @@
         </div>
     </div>
 </div>
+
+<div class="modal modal-feedback js-modal js-modal-feedback-product active">
+    <div class="modal__container">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                <svg>
+                    <use xlink:href="#close-icon"></use>
+                </svg>
+            </button>
+            <div class="modal__content">
+                <h3 class="modal-feedback__title">Отзыв о товаре</h3>
+                <div class="modal-feedback__product">
+                    <div class="modal-feedback__product-img">
+                        <img class="lazyload" data-src="img/feedback-1.jpg" alt="Фото товара">
+                    </div>
+                    <div class="modal-feedback__product-content">
+                        <h4 class="modal-feedback__product-title">Ocean collagen</h4>
+                        <p class="modal-feedback__product-desc">
+                            Коллаген рыбный для суставов, хрящей, связок и костей, натуральный, гидролизованный
+                        </p>
+                    </div>
+                </div>
+                <form class="modal-feedback__form" action="#">
+                    <div class="modal-feedback__inputs">
+                        <div class="modal-feedback__input-wrapper input-wrapper">
+                            <input class="modal-feedback__input input" type="text" name="feedbackName" id="feedbackName">
+                            <label class="modal-feedback__label" for="feedbackName">Имя</label>
+                        </div>
+                        <div class="modal-feedback__input-wrapper input-wrapper">
+                            <input class="modal-feedback__input input" type="text" name="feedbackCity" id="feedbackCity">
+                            <label class="modal-feedback__label" for="feedbackCity">Город</label>
+                        </div>
+                        <div class="modal-feedback__input-wrapper input-wrapper">
+                            <input class="modal-feedback__input input" type="number" name="feedbackAge" id="feedbackAge">
+                            <label class="modal-feedback__label" for="feedbackAge">Возраст</label>
+                        </div>
+                        <div class="modal-feedback__input-wrapper modal-feedback__input-wrapper--textarea input-wrapper">
+                            <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment"></textarea>
+                            <label class="modal-feedback__label" for="feedbackComment">Отзыв</label>
+                        </div>
+                    </div>
+                    <div class="modal-feedback__files-block">
+                        <div class="modal-feedback__files">
+                            <div class="modal-feedback__file">
+                                <button class="modal-feedback__file-button">
+                                    <svg>
+                                        <use xlink:href="#file-add-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal-feedback__files-content">
+                            <p class="modal-feedback__files-desc">
+                                Добавьте фото нажав на кнопку или же перетащите в эту область
+                            </p>
+                            <span class="modal-feedback__files-condition">
+                                до 4 изображений в формате PNG, JPEG.
+                            </span>
+                        </div>
+                    </div>
+                    <button class="modal-feedback__button button button--green">Отправить отзыв</button>
+                    <p class="modal-feedback__confidence">
+                        Нажимая кнопку «Отправить отзыв» вы соглашаетесь с <a href="#">договором — офертой</a> и с <a href="#">политикой обработки персональных данных</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--
 
