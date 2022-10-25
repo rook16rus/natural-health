@@ -438,6 +438,24 @@
 }
 
 .modal-review {
+  &--without-img {
+    div.modal__container {
+      max-width: 60rem;
+    }
+
+    button.modal__close {
+      background-color: var(--gray-color);
+    }
+
+    .modal-review__wrapper {
+      display: block;
+    }
+
+    .modal-review__content {
+      max-width: none;
+    }
+  }
+
   .modal__container {
     max-width: 126.4rem;
   }
