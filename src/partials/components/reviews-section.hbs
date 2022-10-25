@@ -4,7 +4,12 @@
             <div class="reviews-section__title-wrapper">
                 <h2 class="reviews-section__title js-title-animate">Отзывы наших покупателей</h2>
             </div>
-            <a class="reviews-section__header-link button button--bordered" href="#">Смотреть все</a>
+            <div class="reviews-section__header-links">
+                {{#if addReview }}
+                    <a class="reviews-section__header-link button button--green" href="#feedback-product">Добавить отзыв</a>
+                {{/if}}
+                <a class="reviews-section__header-link button button--bordered" href="reviews.html">Смотреть все</a>
+            </div>
         </header>
         <div class="reviews-section__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,641:2,1025:3" data-space="22" data-auto-height="true">
             <div class="swiper-wrapper">
@@ -29,6 +34,11 @@
                 {{/each}}
             </div>
         </div>
-        <a class="reviews-section__link button button--bordered" href="#">Смотреть все</a>
+        <div class="reviews-section__mobile-links">
+            {{#if addReview }}
+                <a class="reviews-section__link button button--green" href="#feedback-product">Добавить отзыв</a>
+            {{/if}}
+            <a class="reviews-section__link button button--bordered" href="reviews.html">Смотреть все</a>
+        </div>
     </div>
 </section>

@@ -35,13 +35,18 @@
     font: var(--title-h1);
   }
 
-  &__header-link {
+  &__header-links {
+    display: flex;
+    gap: 1.2rem;
     margin-bottom: 0.8rem;
-    white-space: nowrap;
 
-    @include breakpoint(mobile) {
+    @include breakpoint(small-tablet) {
       display: none;
     }
+  }
+
+  &__header-link {
+    white-space: nowrap;
   }
 
   &__item {
@@ -146,12 +151,20 @@
     }
   }
 
-  &__link {
+  &__mobile-links {
     display: none;
 
-    @include breakpoint(mobile) {
+    @include breakpoint(small-tablet) {
       display: inline-flex;
+      flex-direction: column;
+      gap: 1.2rem;
       margin-top: 3rem;
+    }
+  }
+
+  &__link {
+    @include breakpoint(small-tablet) {
+      display: inline-flex;
     }
   }
 }
