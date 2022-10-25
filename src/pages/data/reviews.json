@@ -20,5 +20,19 @@
     {
 
     }
+  ],
+  "reviewGallery": [
+    {
+      "img": "img/review-modal-1.jpg"
+    },
+    {
+      "img": "img/review-modal-2.jpg"
+    },
+    {
+      "img": "img/review-modal-1.jpg"
+    },
+    {
+      "img": "img/review-modal-3.jpg"
+    }
   ]
 }
