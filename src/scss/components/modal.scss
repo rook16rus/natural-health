@@ -1082,7 +1082,7 @@
     }
   }
 
-  &__form {
+  &__wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -1153,73 +1153,11 @@
     }
   }
 
-  &__files-block {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+  .files {
     margin-bottom: 4.8rem;
 
     @include breakpoint(mobile) {
       margin-bottom: 4rem;
-    }
-  }
-
-  &__file {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    height: 10rem;
-
-    border-radius: 1rem;
-    background-color: var(--gray-color);
-    overflow: hidden;
-
-    @include breakpoint(mobile) {
-      width: 14.3rem;
-      height: 14.3rem;
-    }
-  }
-
-  &__file-button {
-    &::before {
-      content: '';
-
-      position: absolute;
-      inset: 0;
-    }
-
-    svg {
-      width: 6rem;
-      height: 6rem;
-    }
-  }
-
-  &__files-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  &__files-desc {
-    max-width: 29rem;
-    font: var(--text-t1);
-
-    @include breakpoint(mobile) {
-      span {
-        display: none;
-      }
-    }
-  }
-
-  &__files-condition {
-    font: var(--text-t2);
-    color: rgba(28, 28, 28, 0.3);
-
-    @include breakpoint(mobile) {
-      font-size: 1.4rem;
     }
   }
 

@@ -37,6 +37,7 @@
     "custom-event-polyfill": "^1.0.7",
     "dayjs": "^1.10.7",
     "detect-it": "^4.0.1",
+    "dropzone": "^6.0.0-beta.2",
     "gsap": "^3.9.1",
     "imagesloaded": "^4.1.4",
     "imask": "^6.4.2",

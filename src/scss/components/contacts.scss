@@ -1,16 +1,32 @@
 .contacts {
-  padding: 9.2rem 0 8rem;
+  padding: 2rem 0 8rem;
 
   @include breakpoint(tablet) {
-    padding: 8.2rem 0 7.5rem;
+    padding: 1.6rem 0 7.5rem;
   }
 
   @include breakpoint(small-tablet) {
-    padding: 7rem 0;
+    padding: 1.2rem 0;
   }
 
   @include breakpoint(mobile) {
-    padding: 5.6rem 0 6rem;
+    padding: 0.8rem 0 6rem;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 5.8rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 5.2rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 4.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__title-wrapper {

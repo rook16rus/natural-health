@@ -3,12 +3,120 @@
 @import "../../node_modules/nouislider/dist/nouislider";
 @import '../../node_modules/air-datepicker/air-datepicker';
 @import "../../node_modules/@fancyapps/ui/dist/fancybox";
+@import "../../node_modules/dropzone/dist/basic";
 
 .swiper-slide {
     box-sizing: border-box;
     height: auto;
     display: flex;
     flex-direction: column;
+}
+
+
+.dz-message {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 1rem;
+    background-color: var(--gray-color);
+    overflow: hidden;
+
+    font-size: 0;
+
+    &.hide {
+        display: none;
+    }
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        padding-top: 100%;
+
+        &:first-child:last-child {
+            grid-column: span 2;
+        }
+    }
+}
+
+.dz-button {
+    position: static;
+
+    width: 6rem;
+    height: 6rem;
+
+    background: url("../img/icons/file-add-icon.svg") no-repeat center;
+    background-size: contain;
+
+    @include breakpoint(mobile) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        inset: 0;
+    }
+}
+
+.dropzone {
+    .dz-preview {
+        width: auto;
+        margin: 0;
+    }
+
+    .dz-image {
+        position: relative;
+
+        width: 10rem;
+        height: 10rem;
+
+        border-radius: 1rem;
+        background-color: var(--gray-color);
+        overflow: hidden;
+
+        @include breakpoint(mobile) {
+            width: 100%;
+            padding-top: 100%;
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dz-remove {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 4rem;
+        height: 4rem;
+
+        border-radius: 50%;
+        background: #fff url("../img/icons/close-icon.svg") no-repeat center;
+        background-size: 1.2rem;
+
+        font-size: 0;
+    }
+}
+
+.dz-error-message, .dz-size, .dz-filename, .dz-progress, .dz-error-mark, .dz-success-mark {
+    display: none !important;
 }
 
 .swiper-button-lock {
