@@ -90,6 +90,11 @@
                     <path d="M16.667 7.5h-7.5c-.92 0-1.667.746-1.667 1.667v7.5c0 .92.746 1.666 1.667 1.666h7.5c.92 0 1.666-.746 1.666-1.666v-7.5c0-.92-.746-1.667-1.666-1.667z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M4.168 12.501h-.833a1.667 1.667 0 01-1.667-1.666v-7.5a1.667 1.667 0 011.667-1.667h7.5A1.666 1.666 0 0112.5 3.335v.833" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                 </symbol>
+                <symbol viewBox="0 0 60 60" fill="none" id="file-add-icon" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="29" y="23" width="2" height="14" rx="1" fill="#1C1C1C" />
+                    <rect x="37" y="29" width="2" height="14" rx="1" transform="rotate(90 37 29)" fill="#1C1C1C" />
+                    <rect x="13" y="13" width="34" height="34" rx="17" stroke="#1C1C1C" stroke-width="2" />
+                </symbol>
                 <symbol viewBox="0 0 20 20" fill="none" id="filter-icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 4.167h2.5" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M2.5 4.167h9.167" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1380,7 +1385,9 @@
                             <div class="reviews-section__title-wrapper">
                                 <h2 class="reviews-section__title js-title-animate">Отзывы наших покупателей</h2>
                             </div>
-                            <a class="reviews-section__header-link button button--bordered" href="#">Смотреть все</a>
+                            <div class="reviews-section__header-links">
+                                <a class="reviews-section__header-link button button--bordered" href="reviews.html">Смотреть все</a>
+                            </div>
                         </header>
                         <div class="reviews-section__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,641:2,1025:3" data-space="22" data-auto-height="true">
                             <div class="swiper-wrapper">
@@ -1434,7 +1441,9 @@
                                 </blockquote>
                             </div>
                         </div>
-                        <a class="reviews-section__link button button--bordered" href="#">Смотреть все</a>
+                        <div class="reviews-section__mobile-links">
+                            <a class="reviews-section__link button button--bordered" href="reviews.html">Смотреть все</a>
+                        </div>
                     </div>
                 </section>
                 <section class="news-section">
@@ -1874,6 +1883,183 @@
                                 </div>
                                 <button class="modal-click__button button button--fill-white" type="submit">Отправить заказ</button>
                                 <p class="modal-click__confidence">Нажимая “Отправить” вы соглашаетесь с<a href="#">политикой конфиденциальности</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal-review js-modal js-modal-review">
+                <div class="modal__container">
+                    <div class="modal__inner">
+                        <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                            <svg>
+                                <use xlink:href="#close-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="modal__content">
+                            <div class="modal-review__wrapper">
+                                <div class="modal-review__slider-block">
+                                    <div class="modal-review__slider swiper">
+                                        <div class="swiper-wrapper"></div>
+                                        <div class="slider-navigation js-slider-navigation">
+                                            <button class="slider-navigation__button js-prev-slide">
+                                                <svg>
+                                                    <use xlink:href="#slider-arrow"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="slider-navigation__button js-next-slide">
+                                                <svg>
+                                                    <use xlink:href="#slider-arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="modal-review__gallery swiper">
+                                        <div class="modal-review__gallery-wrapper swiper-wrapper"></div>
+                                    </div>
+                                </div>
+                                <blockquote class="modal-review__content">
+                                    <div class="modal-review__author">
+                                        <div class="modal-review__author-img">
+                                            <img class="lazyload" data-src="img/reviews-1.jpg" alt="Фото автора">
+                                        </div>
+                                        <div class="modal-review__author-content">
+                                            <cite class="modal-review__author-name">Мирослава</cite><span class="modal-review__author-resume">28 лет, Казань</span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-review__text">
+                                        <p>Добрый день, друзья!! Делюсь результатом применения cordis и vasis, 2 марта у мужа случился инфаркт, вставили стенд, был на реабилитации и в конце марта был уже дома.</p>
+                                        <p>Сразу начали использовать эти два продукта по тем рекомендациям, что дают наши специалисты: сначала по 2-3 капли 2 раза в день, утром и вечером. Из фармопрепаратов применяем противотромбовые и регулирующие пульс.</p>
+                                        <p>Вчера сделали ЭКГ как сказала участковый терапевт, всё норм, даже не отметили, что был инфаркт.Огромная благодарность всем, кто создаёт и продвигает эти продукты.</p>
+                                        <p>Продолжаем восстановления, ещё есть с чем поработать.Всем здоровья, оптимизма, веры в то, что мы на правильном пути!</p>
+                                    </div>
+                                    <div class="modal-review__product">
+                                        <div class="modal-review__product-img">
+                                            <img class="lazyload" src="img/reviews-product-1.jpg" alt="Фото продукта">
+                                        </div>
+                                        <div class="modal-review__product-content"><span class="modal-review__product-desc">Товар из отзыва</span>
+                                            <a class="modal-review__product-link" href="product.html"><span>BioPit</span>
+                                                <svg>
+                                                    <use xlink:href="#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal-feedback js-modal js-modal-feedback-product">
+                <div class="modal__container">
+                    <div class="modal__inner">
+                        <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                            <svg>
+                                <use xlink:href="#close-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="modal__content">
+                            <h3 class="modal-feedback__title">Отзыв о товаре</h3>
+                            <div class="modal-feedback__product">
+                                <div class="modal-feedback__product-img">
+                                    <img class="lazyload" data-src="img/feedback-1.jpg" alt="Фото товара">
+                                </div>
+                                <div class="modal-feedback__product-content">
+                                    <h4 class="modal-feedback__product-title">Ocean collagen</h4>
+                                    <p class="modal-feedback__product-desc">Коллаген рыбный для суставов, хрящей, связок и костей, натуральный, гидролизованный</p>
+                                </div>
+                            </div>
+                            <form class="modal-feedback__form" action="#">
+                                <div class="modal-feedback__inputs">
+                                    <div class="modal-feedback__input-wrapper input-wrapper">
+                                        <input class="modal-feedback__input input" type="text" name="feedbackName" id="feedbackName">
+                                        <label class="modal-feedback__label" for="feedbackName">Имя</label>
+                                    </div>
+                                    <div class="modal-feedback__input-wrapper input-wrapper">
+                                        <input class="modal-feedback__input input" type="text" name="feedbackCity" id="feedbackCity">
+                                        <label class="modal-feedback__label" for="feedbackCity">Город</label>
+                                    </div>
+                                    <div class="modal-feedback__input-wrapper input-wrapper">
+                                        <input class="modal-feedback__input input" type="number" name="feedbackAge" id="feedbackAge">
+                                        <label class="modal-feedback__label" for="feedbackAge">Возраст</label>
+                                    </div>
+                                    <div class="modal-feedback__input-wrapper modal-feedback__input-wrapper--textarea input-wrapper">
+                                        <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment"></textarea>
+                                        <label class="modal-feedback__label" for="feedbackComment">Отзыв</label>
+                                    </div>
+                                </div>
+                                <div class="modal-feedback__files-block">
+                                    <div class="modal-feedback__files">
+                                        <div class="modal-feedback__file">
+                                            <button class="modal-feedback__file-button">
+                                                <svg>
+                                                    <use xlink:href="#file-add-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-feedback__files-content">
+                                        <p class="modal-feedback__files-desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
+                                        </p><span class="modal-feedback__files-condition">до 4 изображений в формате PNG, JPEG.</span>
+                                    </div>
+                                </div>
+                                <button class="modal-feedback__button button button--green">Отправить отзыв</button>
+                                <p class="modal-feedback__confidence">Нажимая кнопку «Отправить отзыв» вы соглашаетесь с<a href="#">договором — офертой</a>и с<a href="#">политикой обработки персональных&nbsp;данных</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal-feedback js-modal js-modal-feedback">
+                <div class="modal__container">
+                    <div class="modal__inner">
+                        <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                            <svg>
+                                <use xlink:href="#close-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="modal__content">
+                            <h3 class="modal-feedback__title">Ваш отзыв</h3>
+                            <form class="modal-feedback__form" action="#">
+                                <div class="modal-feedback__inputs">
+                                    <div class="modal-feedback__input-wrapper input-wrapper">
+                                        <input class="modal-feedback__input input" type="text" name="feedbackName" id="feedbackName">
+                                        <label class="modal-feedback__label" for="feedbackName">Имя</label>
+                                    </div>
+                                    <div class="modal-feedback__input-wrapper input-wrapper">
+                                        <input class="modal-feedback__input input" type="text" name="feedbackCity" id="feedbackCity">
+                                        <label class="modal-feedback__label" for="feedbackCity">Город</label>
+                                    </div>
+                                    <div class="modal-feedback__input-wrapper input-wrapper">
+                                        <input class="modal-feedback__input input" type="number" name="feedbackAge" id="feedbackAge">
+                                        <label class="modal-feedback__label" for="feedbackAge">Возраст</label>
+                                    </div>
+                                    <div class="modal-feedback__input-wrapper modal-feedback__input-wrapper--textarea input-wrapper">
+                                        <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment"></textarea>
+                                        <label class="modal-feedback__label" for="feedbackComment">Отзыв</label>
+                                    </div>
+                                </div>
+                                <div class="modal-feedback__files-block">
+                                    <div class="modal-feedback__files">
+                                        <div class="modal-feedback__file">
+                                            <button class="modal-feedback__file-button">
+                                                <svg>
+                                                    <use xlink:href="#file-add-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-feedback__files-content">
+                                        <p class="modal-feedback__files-desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
+                                        </p><span class="modal-feedback__files-condition">до 4 изображений в формате PNG, JPEG.</span>
+                                    </div>
+                                </div>
+                                <button class="modal-feedback__button button button--green">Отправить отзыв</button>
+                                <p class="modal-feedback__confidence">Нажимая кнопку «Отправить отзыв» вы соглашаетесь с<a href="#">договором — офертой</a>и с<a href="#">политикой обработки персональных&nbsp;данных</a>
                                 </p>
                             </form>
                         </div>
