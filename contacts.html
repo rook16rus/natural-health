@@ -1216,44 +1216,44 @@
                                     <p class="modal-feedback__product-desc">Коллаген рыбный для суставов, хрящей, связок и костей, натуральный, гидролизованный</p>
                                 </div>
                             </div>
-                            <form class="modal-feedback__form" action="#">
-                                <div class="modal-feedback__inputs">
+                            <div class="modal-feedback__wrapper" action="#">
+                                <form class="modal-feedback__inputs">
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="text" name="feedbackName" id="feedbackName">
-                                        <label class="modal-feedback__label" for="feedbackName">Имя</label>
+                                        <input class="modal-feedback__input input" type="text" name="feedbackProductName" id="feedbackProductName">
+                                        <label class="modal-feedback__label" for="feedbackProductName">Имя</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="text" name="feedbackCity" id="feedbackCity">
-                                        <label class="modal-feedback__label" for="feedbackCity">Город</label>
+                                        <input class="modal-feedback__input input" type="text" name="feedbackProductCity" id="feedbackProductCity">
+                                        <label class="modal-feedback__label" for="feedbackProductCity">Город</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="number" name="feedbackAge" id="feedbackAge">
-                                        <label class="modal-feedback__label" for="feedbackAge">Возраст</label>
+                                        <input class="modal-feedback__input input" type="number" name="feedbackProductAge" id="feedbackProductAge">
+                                        <label class="modal-feedback__label" for="feedbackProductAge">Возраст</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper modal-feedback__input-wrapper--textarea input-wrapper">
-                                        <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment"></textarea>
-                                        <label class="modal-feedback__label" for="feedbackComment">Отзыв</label>
+                                        <textarea class="modal-feedback__textarea input" name="feedbackProductComment" id="feedbackProductComment"></textarea>
+                                        <label class="modal-feedback__label" for="feedbackProductComment">Отзыв</label>
                                     </div>
-                                </div>
-                                <div class="modal-feedback__files-block">
-                                    <div class="modal-feedback__files">
-                                        <div class="modal-feedback__file">
-                                            <button class="modal-feedback__file-button">
-                                                <svg>
-                                                    <use xlink:href="#file-add-icon"></use>
-                                                </svg>
-                                            </button>
+                                </form>
+                                <div class="files js-dropzone-container">
+                                    <div class="files__wrapper">
+                                        <form class="files__form dropzone js-dropzone" action="#"></form>
+                                        <div class="files__content js-dropzone-content">
+                                            <p class="files__desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
+                                            </p><span class="files__condition">до 4 изображений в формате PNG, JPEG.</span>
                                         </div>
                                     </div>
-                                    <div class="modal-feedback__files-content">
-                                        <p class="modal-feedback__files-desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
-                                        </p><span class="modal-feedback__files-condition">до 4 изображений в формате PNG, JPEG.</span>
+                                    <div class="files__progress js-dropzone-progress-block"><span class="files__progress-counter"><span class="files__progress-count js-dropzone-progress-count">03</span>/<span class="dropzone-progress-total">04</span>
+                                        </span>
+                                        <div class="files__progress-bar">
+                                            <div class="files__progress-bar-fill js-dropzone-progress"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <button class="modal-feedback__button button button--green">Отправить отзыв</button>
                                 <p class="modal-feedback__confidence">Нажимая кнопку «Отправить отзыв» вы соглашаетесь с<a href="#">договором — офертой</a>и с<a href="#">политикой обработки персональных&nbsp;данных</a>
                                 </p>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1268,8 +1268,8 @@
                         </button>
                         <div class="modal__content">
                             <h3 class="modal-feedback__title">Ваш отзыв</h3>
-                            <form class="modal-feedback__form" action="#">
-                                <div class="modal-feedback__inputs">
+                            <div class="modal-feedback__wrapper">
+                                <form class="modal-feedback__inputs">
                                     <div class="modal-feedback__input-wrapper input-wrapper">
                                         <input class="modal-feedback__input input" type="text" name="feedbackName" id="feedbackName">
                                         <label class="modal-feedback__label" for="feedbackName">Имя</label>
@@ -1286,26 +1286,26 @@
                                         <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment"></textarea>
                                         <label class="modal-feedback__label" for="feedbackComment">Отзыв</label>
                                     </div>
-                                </div>
-                                <div class="modal-feedback__files-block">
-                                    <div class="modal-feedback__files">
-                                        <div class="modal-feedback__file">
-                                            <button class="modal-feedback__file-button">
-                                                <svg>
-                                                    <use xlink:href="#file-add-icon"></use>
-                                                </svg>
-                                            </button>
+                                </form>
+                                <div class="files js-dropzone-container">
+                                    <div class="files__wrapper">
+                                        <form class="files__form dropzone js-dropzone" action="#"></form>
+                                        <div class="files__content js-dropzone-content">
+                                            <p class="files__desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
+                                            </p><span class="files__condition">до 4 изображений в формате PNG, JPEG.</span>
                                         </div>
                                     </div>
-                                    <div class="modal-feedback__files-content">
-                                        <p class="modal-feedback__files-desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
-                                        </p><span class="modal-feedback__files-condition">до 4 изображений в формате PNG, JPEG.</span>
+                                    <div class="files__progress js-dropzone-progress-block"><span class="files__progress-counter"><span class="files__progress-count js-dropzone-progress-count">03</span>/<span class="dropzone-progress-total">04</span>
+                                        </span>
+                                        <div class="files__progress-bar">
+                                            <div class="files__progress-bar-fill js-dropzone-progress"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <button class="modal-feedback__button button button--green">Отправить отзыв</button>
                                 <p class="modal-feedback__confidence">Нажимая кнопку «Отправить отзыв» вы соглашаетесь с<a href="#">договором — офертой</a>и с<a href="#">политикой обработки персональных&nbsp;данных</a>
                                 </p>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
