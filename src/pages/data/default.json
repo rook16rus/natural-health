@@ -231,5 +231,43 @@
       "name": "Доставка",
       "value": "250 ₽"
     }
+  ],
+  "searchCatalog": [
+    {
+      "img": "img/catalog-1.jpg",
+      "imgWebp": "img/catalog-1.webp",
+      "img2": "img/catalog-2.jpg",
+      "imgWebp2": "img/catalog-2.webp",
+      "title": "Aurum",
+      "price": "3 990 ₽",
+      "text": "Нормализует структурно-функциональные процессы в соединительной ткани, способствует регенерации.",
+      "hit": true
+    },
+    {
+      "img": "img/catalog-2.jpg",
+      "imgWebp": "img/catalog-2.webp",
+      "img2": "img/catalog-1.jpg",
+      "imgWebp2": "img/catalog-1.webp",
+      "title": "Aurum",
+      "price": "2 990 ₽",
+      "text": "Для поджелудочной железы"
+    }
+  ],
+  "searchTags": [
+    {
+      "text": "Для сна"
+    },
+    {
+      "text": "Витамины"
+    },
+    {
+      "text": "Добавки"
+    },
+    {
+      "text": "Косметика"
+    },
+    {
+      "text": "биопит"
+    }
   ]
 }

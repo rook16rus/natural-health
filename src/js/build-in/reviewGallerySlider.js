@@ -6,6 +6,14 @@ export default function reviewGallerySlider() {
 
     const swiperThumb = new Swiper('.modal-review__gallery', {
         slidesPerView: "auto",
+        on: {
+            touchEnd: function(s,e) {
+                let range = 5;
+                let diff = s.touches.diff = s.isHorizontal() ? s.touches.currentX - s.touches.startX : s.touches.currentY
+                    - s.touches.startY;
+                if (diff < range || diff > -range) s.allowClick = true;
+            },
+        }
     })
 
     const swiper = new Swiper('.modal-review__slider', {

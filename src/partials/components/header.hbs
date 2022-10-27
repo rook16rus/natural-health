@@ -39,6 +39,21 @@
                     <span class="header__user-basket-count">1</span>
                 </a>
             </div>
+            <div class="header__search-block">
+                <input class="header__search" type="text" name="search" id="search" placeholder="Введите запрос">
+                <div class="header__search-result">
+                    <h3 class="header__search-title">Чаще всего ищут</h3>
+                    <ul class="header__search-tags">
+                        {{#each searchTags }}
+                            <li class="header__search-tag">
+                                <a class="header__search-tag-link" href="catalog-search.html">{{this.text}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                    {{> catalog-list mod='catalog-list--search' data=searchCatalog }}
+                    <a class="header__search-link button button--black" href="catalog-search.html">Смотреть все</a>
+                </div>
+            </div>
         </nav>
     </div>
     <nav class="header__burger-nav">
@@ -82,3 +97,20 @@
         </div>
     </nav>
 </div>
+
+
+<!--
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+
+    }
+
+-->

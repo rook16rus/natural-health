@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modalFix();
 
     alignHeights('.lines__list', '.lines__item-title');
-    alignHeights('.catalog-list', '.catalog-list__price-block');
+    alignHeights('.catalog-list:not(.catalog-list--search)', '.catalog-list__price-block');
     alignWidths('.footer__menu', '.footer__menu-schedule-value');
 });
 
