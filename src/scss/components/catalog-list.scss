@@ -23,15 +23,21 @@
   }
 
   &--search {
-    grid-template-columns: repeat(2, 1fr);
-    min-height: 58.8rem;
-
-    overflow-x: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    min-width: 58.8rem;
 
     .catalog-list__item {
       display: flex;
       align-items: flex-start;
       gap: 1.6rem;
+      width: 100%;
+      max-width: 35.2rem;
+
+      @include breakpoint(mobile) {
+        max-width: 28.4rem;
+      }
     }
 
     .catalog-list__img {
@@ -40,8 +46,14 @@
       height: 18rem;
       padding-top: 0;
       margin-bottom: 0;
+      flex-shrink: 0;
 
       border-radius: 0.8rem 0.8rem 1.8rem 0.4rem;
+
+      @include breakpoint(tablet) {
+        height: 16rem;
+        max-width: 12.1rem;
+      }
 
       img {
         border-radius: 0.8rem 0.8rem 1.8rem 0.4rem;
@@ -49,22 +61,19 @@
     }
 
     .catalog-list__basket {
-      display: none;
+      right: 1rem;
+      bottom: 0.6rem;
 
-      &--searched {
-        position: static;
-
-        display: flex;
-        width: 4rem;
-        height: 4rem;
-        margin-top: auto;
-
-        background-color: var(--gray-color);
-      }
+      width: 4rem;
+      height: 4rem;
     }
 
     .catalog-list__hit {
       display: none;
+    }
+
+    .catalog-list__price-block {
+      font-size: 2rem;
     }
 
     .catalog-list__text {
@@ -72,12 +81,18 @@
     }
 
     .catalog-list__advantages {
-      margin-bottom: 1.2rem;
+      margin-bottom: 2rem;
     }
+  }
+
+  &__slider {
+    margin: 0;
+    overflow: visible;
   }
 
   &__item {
     position: relative;
+    flex-direction: row;
 
     &:hover {
       .catalog-list__img picture {

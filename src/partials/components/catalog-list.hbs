@@ -1,6 +1,9 @@
-<ul class="catalog-list{{#if mod }} {{mod}}{{/if}} js-section-animate">
+{{#if slider }}
+    <div class="catalog-list__slider swiper js-init-slider" data-slides="auto" data-space="20">
+{{/if}}
+<ul class="catalog-list{{#if mod }} {{mod}}{{/if}}{{#if slider }} swiper-wrapper{{/if}} js-section-animate">
     {{#each data }}
-        <li class="catalog-list__item">
+        <li class="catalog-list__item{{#if ../slider }} swiper-slide{{/if}}">
             <div class="catalog-list__img">
                 <picture>
                     <source srcset="{{this.imgWebp}}" type="image/webp">
@@ -47,14 +50,10 @@
                         </svg>
                     </li>
                 </ul>
-                {{#if ../mod }}
-                    <button class="catalog-list__basket catalog-list__basket--searched">
-                        <svg>
-                            <use xlink:href="#backet-icon"></use>
-                        </svg>
-                    </button>
-                {{/if}}
             </div>
         </li>
     {{/each}}
 </ul>
+{{#if slider }}
+    </div>
+{{/if}}

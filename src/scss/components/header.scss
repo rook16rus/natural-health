@@ -87,6 +87,9 @@
 
     opacity: 0;
 
+    /* todo: Убрать после адаптива */
+    transform: none !important;
+
     @include breakpoint(tablet) {
       display: flex;
       justify-content: space-between;
@@ -351,15 +354,48 @@
 
   &__search-block {
     position: absolute;
-    right: 3.5rem;
+    right: 3.6rem;
     top: 50%;
     transform: translateY(-50%);
 
     width: 100%;
     max-width: 88.1rem;
+
+    @include breakpoint(tablet) {
+      position: fixed;
+      top: 0.8rem;
+      left: 0.8rem;
+      right: 0.8rem;
+      transform: none;
+      z-index: 101;
+
+      max-width: none;
+      width: auto;
+    }
   }
 
-  &__search {
+  &__search-wrapper {
+    @include breakpoint(tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__search-form {
+    position: relative;
+
+    @include breakpoint(tablet) {
+      position: absolute;
+      top: 1.6rem;
+      left: 2rem;
+      right: 2rem;
+
+      width: auto;
+    }
+  }
+
+  &__search-input {
     display: flex;
     align-items: center;
     width: 100%;
@@ -371,35 +407,94 @@
     background-color: var(--gray-color);
   }
 
-  &__search-result {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 78.7rem;
+  &__search-button {
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &__search-result {
     position: absolute;
     top: calc(100% + 0.9rem);
     left: 0;
 
+    width: 100%;
+    max-width: 78.7rem;
     padding: 3.2rem;
 
     background-color: #fff;
     border-radius: 2rem;
     overflow: hidden;
     box-shadow: -0.3rem 0.4rem 3.2rem 0 rgba(0, 0, 0, 0.1), -0.3rem 0.4rem 0.7rem 0 rgba(0, 0, 0, 0.04);
+
+    @include breakpoint(tablet) {
+      position: static;
+      padding: 2rem;
+      padding-top: 7.6rem;
+      padding-bottom: 3.2rem;
+      max-width: none;
+    }
+
+    @include breakpoint(mobile) {
+      border-radius: 1.2rem;
+    }
+  }
+
+  &__search-content {
+    display: flex;
+    flex-direction: column;
+
+    &:first-of-type {
+      display: none;
+    }
   }
 
   &__search-title {
     margin-bottom: 1.4rem;
     font: var(--title-h4);
+
+    @include breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__search-tags-slider {
+    margin: 0;
+    overflow: visible;
   }
 
   &__search-tags {
     display: flex;
-    gap: 0.4rem;
-    margin-bottom: 4.8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem 0;
+    max-width: 58rem;
+    
+    @media (min-width: 641px) {
+      transform: none !important;
+    }
 
-    overflow-x: auto;
+    @include breakpoint(tablet) {
+      max-width: 80rem;
+    }
+
+    @include breakpoint(mobile) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__search-tag {
+    width: auto;
   }
 
   &__search-tag-link {
@@ -412,9 +507,11 @@
     background-color: var(--gray-color);
 
     font: var(--text-t2);
+    white-space: nowrap;
   }
 
   .catalog-list {
+    margin-top: 1.4rem;
     margin-bottom: 4rem;
   }
 
@@ -422,5 +519,10 @@
     align-self: center;
     height: 5.2rem;
     padding: 0 3.6rem;
+
+    @include breakpoint(mobile) {
+      width: 100%;
+      max-width: 40rem;
+    }
   }
 }

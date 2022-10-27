@@ -54,7 +54,6 @@ window.catalogResetButtons = [];
 window.priceRanges = [];
 
 document.addEventListener('DOMContentLoaded', function () {
-    initSliders();
     editableTextContainer();
 
     datepicker();
@@ -104,6 +103,7 @@ document.addEventListener('lazyloaded', () => {
 
 document.fonts.ready.then((res) => {
     featuresSlider();
+    initSliders();
 })
 
 window.addEventListener('load', function () {

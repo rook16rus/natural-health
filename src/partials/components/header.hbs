@@ -40,18 +40,34 @@
                 </a>
             </div>
             <div class="header__search-block">
-                <input class="header__search" type="text" name="search" id="search" placeholder="Введите запрос">
-                <div class="header__search-result">
-                    <h3 class="header__search-title">Чаще всего ищут</h3>
-                    <ul class="header__search-tags">
-                        {{#each searchTags }}
-                            <li class="header__search-tag">
-                                <a class="header__search-tag-link" href="catalog-search.html">{{this.text}}</a>
-                            </li>
-                        {{/each}}
-                    </ul>
-                    {{> catalog-list mod='catalog-list--search' data=searchCatalog }}
-                    <a class="header__search-link button button--black" href="catalog-search.html">Смотреть все</a>
+                <div class="header__search-wrapper">
+                    <form class="header__search-form" action="#">
+                        <input class="header__search-input" type="text" name="search" id="search" placeholder="Введите запрос">
+                        <button class="header__search-button">
+                            <svg>
+                                <use xlink:href="#search-icon"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="header__search-result">
+                        <div class="header__search-content">
+                            <h3 class="header__search-title">Чаще всего ищут</h3>
+                            <div class="header__search-tags-slider swiper js-init-slider" data-slides="auto" data-spaces="100:8,641:4">
+                                <ul class="header__search-tags swiper-wrapper">
+                                    {{#each searchTags }}
+                                        <li class="header__search-tag swiper-slide">
+                                            <a class="header__search-tag-link" href="catalog-search.html">{{this.text}}</a>
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-content">
+                            <h3 class="header__search-title">Найдено 13 товаров</h3>
+                            {{> catalog-list mod='catalog-list--search' slider=true data=searchCatalog }}
+                            <a class="header__search-link button button--black" href="catalog-search.html">Смотреть все</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
