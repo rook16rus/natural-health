@@ -41,3 +41,20 @@ function handleForm() {
         })
     })
 }
+/*
+
+document.addEventListener('click', checkTarget);
+
+const
+
+function checkTarget(e) {
+    if (e.target.classList.contains('.js-search-button') || e.target.closest('.js-search-button') || e.target.closest('.js-search')) {
+        showSearch()
+    } else {
+        hideSearch();
+    }
+}
+
+function showSearch(e) {
+
+}*/
