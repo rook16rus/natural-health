@@ -37,7 +37,7 @@
 
     @include breakpoint(tablet) {
       position: relative;
-      z-index: 101;
+      z-index: 1;
 
       display: block;
       flex-shrink: 0;
@@ -361,6 +361,16 @@
     width: 100%;
     max-width: 88.1rem;
 
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s opacity, 0.3s visibility;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
     @include breakpoint(tablet) {
       position: fixed;
       top: 0.8rem;
@@ -390,6 +400,7 @@
       top: 1.6rem;
       left: 2rem;
       right: 2rem;
+      z-index: 1;
 
       width: auto;
     }
@@ -438,7 +449,10 @@
     box-shadow: -0.3rem 0.4rem 3.2rem 0 rgba(0, 0, 0, 0.1), -0.3rem 0.4rem 0.7rem 0 rgba(0, 0, 0, 0.04);
 
     @include breakpoint(tablet) {
-      position: static;
+      position: relative;
+      top: auto;
+      left: auto;
+
       padding: 2rem;
       padding-top: 7.6rem;
       padding-bottom: 3.2rem;
@@ -451,11 +465,20 @@
   }
 
   &__search-content {
+    position: absolute;
+
     display: flex;
     flex-direction: column;
 
-    &:first-of-type {
-      display: none;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    &.show {
+      position: static;
+      opacity: 1;
+      visibility: visible;
     }
   }
 

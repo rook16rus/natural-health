@@ -42,7 +42,7 @@
             <div class="header__search-block js-search">
                 <div class="header__search-wrapper">
                     <form class="header__search-form" action="#">
-                        <input class="header__search-input" type="text" name="search" id="search" placeholder="Введите запрос">
+                        <input class="header__search-input js-search-input" type="text" name="search" id="search" placeholder="Введите запрос">
                         <button class="header__search-button">
                             <svg>
                                 <use xlink:href="#search-icon"></use>
@@ -50,7 +50,7 @@
                         </button>
                     </form>
                     <div class="header__search-result">
-                        <div class="header__search-content">
+                        <div class="header__search-content show js-search-recommend">
                             <h3 class="header__search-title">Чаще всего ищут</h3>
                             <div class="header__search-tags-slider swiper js-init-slider" data-slides="auto" data-spaces="100:8,641:4">
                                 <ul class="header__search-tags swiper-wrapper">
@@ -62,7 +62,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="header__search-content">
+                        <div class="header__search-content js-search-result">
                             <h3 class="header__search-title">Найдено 13 товаров</h3>
                             {{> catalog-list mod='catalog-list--search' slider=true data=searchCatalog }}
                             <a class="header__search-link button button--black" href="catalog-search.html">Смотреть все</a>
