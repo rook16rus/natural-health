@@ -18,13 +18,16 @@
   ],
   "slider": [
     {
-      "img": "img/news-single-2.jpg"
+      "img": "img/news-single-2.jpg",
+      "imgWebp": "img/news-single-2.webp"
     },
     {
-      "img": "img/news-single-2.jpg"
+      "img": "img/news-single-2.jpg",
+      "imgWebp": "img/news-single-2.webp"
     },
     {
-      "img": "img/news-single-2.jpg"
+      "img": "img/news-single-2.jpg",
+      "imgWebp": "img/news-single-2.webp"
     }
   ],
   "news": [

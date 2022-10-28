@@ -17,7 +17,10 @@
                         <div class="text-container">
                             <figure class="img">
                                 <div class="img__img-block">
-                                    <img src="img/news-single-1.jpg" data-fancybox alt="Фото">
+                                    <picture>
+                                        <source srcset="img/news-single-1.webp" type="image/webp">
+                                        <img src="img/news-single-1.jpg" data-fancybox alt="Фото">
+                                    </picture>
                                 </div>
                                 <figcaption class="img__caption">Новый завод в Казани</figcaption>
                             </figure>
@@ -52,7 +55,10 @@
                                 <div class="swiper-wrapper">
                                     {{#each slider }}
                                         <div class="slider__slide swiper-slide">
-                                            <img class="slider__img" src="{{this.img}}" data-fancybox="sliderImg" alt="Фото">
+                                            <picture>
+                                                <source srcset="{{this.imgWebp}}" type="image/webp">
+                                                <img class="slider__img" src="{{this.img}}" data-fancybox="sliderImg" alt="Фото">
+                                            </picture>
                                         </div>
                                     {{/each}}
                                 </div>
@@ -70,7 +76,10 @@
                             </p>
                             <div class="video" data-fancybox>
                                 <a class="video__link" data-src="https://youtu.be/Fcc0VRy19VM" data-fancybox>
-                                    <img class="video__preview lazyload" data-src="img/news-single-2.jpg" alt="Фото">
+                                    <picture>
+                                        <source srcset="img/news-single-2.webp" type="image/webp">
+                                        <img class="video__preview lazyload" data-src="img/news-single-2.jpg" alt="Фото">
+                                    </picture>
                                     <button class="video__button">
                                         <svg>
                                             <use xlink:href="#video-icon"></use>
