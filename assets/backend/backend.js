@@ -44,6 +44,8 @@ function handleForm() {
 
 const search = document.querySelector('.js-search');
 const searchInput = document.querySelector('.js-search-input');
+const resultContent = document.querySelector('.js-search-result');
+const recommendContent = document.querySelector('.js-search-recommend');
 
 document.addEventListener('click', checkTarget);
 searchInput.addEventListener('input', toggleContents);
@@ -54,9 +56,6 @@ document.addEventListener('keydown', function (event) {
 });
 
 function toggleContents() {
-    const resultContent = document.querySelector('.js-search-result');
-    const recommendContent = document.querySelector('.js-search-recommend');
-
     if (searchInput.value.trim()) {
         resultContent.classList.add('show');
         recommendContent.classList.remove('show');
@@ -66,11 +65,18 @@ function toggleContents() {
     }
 }
 
+function hideContents() {
+    resultContent.classList.remove('show');
+    recommendContent.classList.remove('show');
+}
+
 function checkTarget(e) {
     if (e.target.classList.contains('.js-search-button') || e.target.closest('.js-search-button') || e.target.closest('.js-search')) {
-        showSearch()
+        showSearch();
+        toggleContents();
     } else {
         hideSearch();
+        hideContents();
     }
 }
 
