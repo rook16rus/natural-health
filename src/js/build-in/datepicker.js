@@ -6,7 +6,7 @@ export default function datepicker() {
     elementsDate.forEach(element => {
        const datepicker = new AirDatepicker(element, {
            dateFormat: 'd MMM',
-           minDate: 0,
+           minDate: new Date(),
            onSelect({date, formattedDate, datepicker}) {
                const now = new Date();
 

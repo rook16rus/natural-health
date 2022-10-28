@@ -4,6 +4,8 @@ export default function mapShow() {
     buttons.forEach(button => {
         const map = button.previousElementSibling;
 
+        if (!matchMedia('(max-width: 640px)').matches) return
+
         if (map.classList.contains('js-none-map')) {
             map.style.height = '0';
         }

@@ -17,7 +17,7 @@ export default function pickupMap() {
         const coords = map.dataset.coordinates.split(',');
         const marker = map.dataset.marker;
 
-        if (matchMedia('(max-width: 640px)')) {
+        if (matchMedia('(max-width: 640px)').matches) {
             map.style.height = '0';
         }
 

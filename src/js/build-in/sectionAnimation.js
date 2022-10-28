@@ -22,7 +22,8 @@ export default function sectionAnimation() {
         }, {
             duration: 1,
             opacity: 1,
-            y: "0rem"
+            y: "0rem",
+            clearProps: 'transform'
         })
     })
 }
