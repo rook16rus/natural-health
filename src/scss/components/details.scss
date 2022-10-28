@@ -63,6 +63,10 @@
     font: var(--text-t2);
   }
 
+  &__item-value--red {
+    color: var(--system-color);
+  }
+
   &__result {
     display: flex;
     align-items: center;

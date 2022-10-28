@@ -5,7 +5,7 @@
             {{#each details }}
                 <li class="details__item">
                     <span class="details__item-name">{{this.name}}</span>
-                    <span class="details__item-value">{{this.value}}</span>
+                    <span class="details__item-value{{#if promocode }} details__item-value--red{{/if}}">{{this.value}}</span>
                 </li>
             {{/each}}
         </ul>
