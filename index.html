@@ -2107,8 +2107,8 @@
                                     <p class="modal-feedback__product-desc">Коллаген рыбный для суставов, хрящей, связок и костей, натуральный, гидролизованный</p>
                                 </div>
                             </div>
-                            <div class="modal-feedback__wrapper" action="#">
-                                <form class="modal-feedback__inputs">
+                            <form class="modal-feedback__wrapper" enctype="multipart/form-data" action="#">
+                                <div class="modal-feedback__inputs">
                                     <div class="modal-feedback__input-wrapper input-wrapper">
                                         <input class="modal-feedback__input input" type="text" name="feedbackProductName" id="feedbackProductName">
                                         <label class="modal-feedback__label" for="feedbackProductName">Имя</label>
@@ -2125,10 +2125,10 @@
                                         <textarea class="modal-feedback__textarea input" name="feedbackProductComment" id="feedbackProductComment"></textarea>
                                         <label class="modal-feedback__label" for="feedbackProductComment">Отзыв</label>
                                     </div>
-                                </form>
+                                </div>
                                 <div class="files js-dropzone-container">
                                     <div class="files__wrapper">
-                                        <form class="files__form dropzone js-dropzone" action="#"></form>
+                                        <div class="files__form dropzone js-dropzone"></div>
                                         <div class="files__content js-dropzone-content">
                                             <p class="files__desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
                                             </p><span class="files__condition">до 4 изображений в формате PNG, JPEG.</span>
@@ -2144,7 +2144,7 @@
                                 <button class="modal-feedback__button button button--green">Отправить отзыв</button>
                                 <p class="modal-feedback__confidence">Нажимая кнопку «Отправить отзыв» вы соглашаетесь с<a href="#">договором — офертой</a>и с<a href="#">политикой обработки персональных&nbsp;данных</a>
                                 </p>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -2159,8 +2159,8 @@
                         </button>
                         <div class="modal__content">
                             <h3 class="modal-feedback__title">Ваш отзыв</h3>
-                            <div class="modal-feedback__wrapper">
-                                <form class="modal-feedback__inputs">
+                            <form class="modal-feedback__wrapper" enctype="multipart/form-data" action="#">
+                                <div class="modal-feedback__inputs">
                                     <div class="modal-feedback__input-wrapper input-wrapper">
                                         <input class="modal-feedback__input input" type="text" name="feedbackName" id="feedbackName">
                                         <label class="modal-feedback__label" for="feedbackName">Имя</label>
@@ -2177,10 +2177,10 @@
                                         <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment"></textarea>
                                         <label class="modal-feedback__label" for="feedbackComment">Отзыв</label>
                                     </div>
-                                </form>
+                                </div>
                                 <div class="files js-dropzone-container">
                                     <div class="files__wrapper">
-                                        <form class="files__form dropzone js-dropzone" action="#"></form>
+                                        <div class="files__form dropzone js-dropzone"></div>
                                         <div class="files__content js-dropzone-content">
                                             <p class="files__desc">Добавьте фото нажав&nbsp;на кнопку<span>или же перетащите в эту область</span>
                                             </p><span class="files__condition">до 4 изображений в формате PNG, JPEG.</span>
@@ -2196,7 +2196,7 @@
                                 <button class="modal-feedback__button button button--green">Отправить отзыв</button>
                                 <p class="modal-feedback__confidence">Нажимая кнопку «Отправить отзыв» вы соглашаетесь с<a href="#">договором — офертой</a>и с<a href="#">политикой обработки персональных&nbsp;данных</a>
                                 </p>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
