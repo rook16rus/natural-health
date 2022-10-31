@@ -67,25 +67,12 @@
     justify-content: center;
     margin-bottom: 8rem;
 
-    overflow-x: auto;
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
-
-    font: var(--title-h3);
-
-    &::-webkit-scrollbar {
-      width: 0;
-    }
-
     @include breakpoint(tablet) {
       margin-bottom: 6rem;
     }
 
     @include breakpoint(small-tablet) {
       margin-bottom: 4rem;
-      flex-direction: row;
-      gap: 0;
-      align-items: center;
     }
 
     @include breakpoint(mobile) {
@@ -110,7 +97,6 @@
 
     &__radio-wrapper:not(:last-of-type) .press-filter__label::after {
       display: block;
-      flex-shrink: 0;
       margin: 0.3rem 4.4rem 0;
 
       @include breakpoint(tablet) {
@@ -129,8 +115,6 @@
     }
 
     &__label {
-      white-space: nowrap;
-
       span::before {
         display: none;
       }

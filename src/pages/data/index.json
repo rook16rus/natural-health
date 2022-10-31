@@ -183,9 +183,13 @@
   ],
   "pressFilter": [
     {
-      "id": "pressMedia",
-      "text": "СМИ о нас",
+      "id": "pressNews",
+      "text": "Новости",
       "checked": true
+    },
+    {
+      "id": "pressMedia",
+      "text": "СМИ о нас"
     },
     {
       "id": "pressBlog",

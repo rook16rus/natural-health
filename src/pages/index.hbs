@@ -179,6 +179,9 @@
         {{> reviews-section }}
         <section class="news-section">
             <div class="container">
+                <div class="news-section__title-wrapper">
+                    <h2 class="news-section__title js-title-animate">Пресс-центр</h2>
+                </div>
                 <header class="news-section__header">
                     {{> press-filter data=pressFilter }}
                     <a class="news-section__link button button--bordered js-section-animate" href="news.html">Смотреть все</a>
@@ -216,3 +219,20 @@
 
     {{/content}}
 {{/extend}}
+
+
+<!--
+
+    @include breakpoint(tablet) {
+
+    }
+
+    @include breakpoint(small-tablet) {
+
+    }
+
+    @include breakpoint(mobile) {
+
+    }
+
+-->

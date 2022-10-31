@@ -24,6 +24,29 @@
     }
   }
 
+  &__title-wrapper {
+    padding-bottom: 0.6rem;
+    margin-bottom: 3.4rem;
+
+    overflow: hidden;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 3rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 2.4rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__title {
+    font: var(--title-h1);
+  }
+
   &__link {
     @include breakpoint(tablet) {
       display: none;
