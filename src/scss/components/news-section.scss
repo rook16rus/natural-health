@@ -39,8 +39,8 @@
     }
   }
 
-  .swiper-slide {
-    @media (max-width: 500px) {
+  .news-list__item {
+    @include breakpoint(small-mobile) {
       &:nth-child(n + 2) {
         display: none;
       }

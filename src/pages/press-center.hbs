@@ -46,11 +46,7 @@
                     {{/each}}
                 </ul>
                 {{> mailing }}
-                <ul class="press-center__list js-section-animate">
-                    {{#each news }}
-                        {{> news-card }}
-                    {{/each}}
-                </ul>
+                {{> news-list data=news }}
                 {{> cards-navigation }}
             </div>
         </section>

@@ -183,15 +183,7 @@
                     {{> press-filter data=pressFilter }}
                     <a class="news-section__link button button--bordered js-section-animate" href="news.html">Смотреть все</a>
                 </header>
-                <div class="news-section__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,500:2,769:3,1025:4" data-space="20" data-auto-height="true">
-                    <div class="swiper-wrapper">
-                        {{#each news }}
-                            <div class="swiper-slide">
-                                {{> news-card }}
-                            </div>
-                        {{/each}}
-                    </div>
-                </div>
+                {{> news-list data=news }}
                 <a class="news-section__tablet-link button button--bordered" href="news.html">Смотреть все</a>
             </div>
         </section>
