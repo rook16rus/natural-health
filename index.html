@@ -38,6 +38,11 @@
                     <path d="M1 1l20 20" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M21 1L1 21" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" />
                 </symbol>
+                <symbol viewBox="0 0 16 12" fill="none" id="burger-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1h16" stroke="#1C1C1C" />
+                    <path d="M0 6h16" stroke="#1C1C1C" />
+                    <path d="M0 11h16" stroke="#1C1C1C" />
+                </symbol>
                 <symbol viewBox="0 0 16 16" fill="none" id="button-icon" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.167 6.5H3.333A1.333 1.333 0 012 5.167V3.333C2 2.597 2.597 2 3.333 2h1.834C5.903 2 6.5 2.597 6.5 3.333v1.834c0 .736-.597 1.333-1.333 1.333z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.667 6.5h-1.834A1.333 1.333 0 019.5 5.167V3.333C9.5 2.597 10.097 2 10.833 2h1.834C13.403 2 14 2.597 14 3.333v1.834c0 .736-.597 1.333-1.333 1.333z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
@@ -615,7 +620,10 @@
             <div class="header">
                 <div class="container">
                     <nav class="header__nav js-section-animate" data-delay="0.2">
-                        <div class="header__burger"><span></span>
+                        <div class="header__burger">
+                            <svg>
+                                <use xlink:href="#burger-icon"></use>
+                            </svg>
                         </div>
                         <a class="header__logo link" href="index.html">
                             <svg>
@@ -650,7 +658,7 @@
                                 <a class="header__menu-link link" href="contacts.html">Контакты</a>
                             </li>
                         </ul>
-                        <a class="header__phone link" href="tel:8800999348000">8 800 999 348 000</a>
+                        <a class="header__phone link" href="tel:8800999348000">8 800 101 59 23</a>
                         <div class="header__user-navigation">
                             <button class="header__user-search link js-search-button">
                                 <svg>
@@ -1521,7 +1529,7 @@
                                 <h2 class="reviews-section__title js-title-animate">Отзывы наших покупателей</h2>
                             </div>
                             <div class="reviews-section__header-links">
-                                <a class="reviews-section__header-link button button--bordered" href="reviews.html">Смотреть все</a>
+                                <a class="reviews-section__header-link button button--bordered js-section-animate" href="reviews.html">Смотреть все</a>
                             </div>
                         </header>
                         <div class="reviews-section__slider swiper js-init-slider js-section-animate" data-slides-breakpoints="100:1,641:2,1025:3" data-space="22" data-auto-height="true">
@@ -1583,12 +1591,22 @@
                 </section>
                 <section class="news-section">
                     <div class="container">
+                        <div class="news-section__title-wrapper">
+                            <h2 class="news-section__title js-title-animate">Пресс-центр</h2>
+                        </div>
 
                         <header class="news-section__header">
                             <div class="press-filter">
                                 <div class="press-filter__radio-wrapper">
                                     <div class="press-filter__radio-container js-title-animate">
-                                        <input class="press-filter__radio visually-hidden" type="radio" name="pressNews" id="pressMedia" checked="checked">
+                                        <input class="press-filter__radio visually-hidden" type="radio" name="pressNews" id="pressNews" checked="checked">
+                                        <label class="press-filter__label" for="pressNews"><span>Новости</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="press-filter__radio-wrapper">
+                                    <div class="press-filter__radio-container js-title-animate">
+                                        <input class="press-filter__radio visually-hidden" type="radio" name="pressNews" id="pressMedia">
                                         <label class="press-filter__label" for="pressMedia"><span>СМИ о нас</span>
                                         </label>
                                     </div>
