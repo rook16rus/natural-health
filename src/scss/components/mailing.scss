@@ -109,6 +109,12 @@
 
   &__form {
     position: relative;
+    
+    &:hover {
+      .mailing__button {
+        background-color: #025752;
+      }
+    }
   }
 
   &__input {
@@ -129,6 +135,7 @@
 
     @include placeholder() {
       font: var(--title-h4);
+      color: var(--black-color);
 
       @include breakpoint(mobile) {
         font-size: 1.8rem;
@@ -153,6 +160,8 @@
 
     color: #fff;
 
+    transition: 0.3s;
+
     svg {
       width: 1.2rem;
       height: 0.8rem;
@@ -173,8 +182,12 @@
     }
 
     a {
+      text-decoration: underline;
+
+      transition: 0.3s;
+
       &:hover {
-        text-decoration: underline;
+        color: rgba(28,28,28,1);
       }
     }
   }

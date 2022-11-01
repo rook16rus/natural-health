@@ -183,7 +183,9 @@
                     <h2 class="news-section__title js-title-animate">Пресс-центр</h2>
                 </div>
                 <header class="news-section__header">
-                    {{> press-filter data=pressFilter }}
+                    <div class="news-section__filter">
+                        {{> press-filter data=pressFilter }}
+                    </div>
                     <a class="news-section__link button button--bordered js-section-animate" href="news.html">Смотреть все</a>
                 </header>
                 {{> news-list data=news }}

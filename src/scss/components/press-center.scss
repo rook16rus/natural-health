@@ -63,6 +63,10 @@
     opacity: 0;
   }
 
+  &__filter {
+    min-width: 0;
+  }
+
   .press-filter {
     justify-content: center;
     margin-bottom: 8rem;
@@ -136,6 +140,9 @@
   }
 
   &__main-new-link {
+    position: relative;
+    z-index: 1;
+
     display: flex;
 
     background-color: var(--primary-color);

@@ -7,7 +7,9 @@
                 <div class="press-center__title-wrapper">
                     <h1 class="press-center__title js-title-animate">Пресс-центр</h1>
                 </div>
-                {{> press-filter data=pressFilter }}
+                <div class="press-center__filter">
+                    {{> press-filter data=pressFilter }}
+                </div>
                 <ul class="press-center__main-news js-section-animate">
                     {{#each mainNews }}
                         <li class="press-center__main-new">
@@ -28,7 +30,7 @@
                                             </p>
                                             <p>
                                                 22 июля состоялось открытие новой производственной площадки в Казани.
-                                                Это место по праву считается одним из лучших, ведь оно соотвествует всем
+                                                <br>Это место по праву считается одним из лучших, ведь оно соотвествует всем
                                                 инновационным технологиям и отвечает самым последним стандартам качества.
                                             </p>
                                             <p>

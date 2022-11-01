@@ -47,6 +47,14 @@
     font: var(--title-h1);
   }
 
+  &__filter {
+    min-width: 0;
+
+    .swiper {
+      margin: 0;
+    }
+  }
+
   &__link {
     @include breakpoint(tablet) {
       display: none;
