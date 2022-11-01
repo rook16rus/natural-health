@@ -14,23 +14,32 @@ export default function featuresSlider() {
         }
     })*/
 
-    let number = -500;
+    const slider = document.querySelector('.features .swiper');
+    if (!slider) return;
 
-    const wrapper = document.querySelector('.features .swiper-wrapper');
-    let count = 0;
+    const wrapper = slider.querySelector('.swiper-wrapper');
+    const slidesWidth = [...wrapper.querySelectorAll('.swiper-slide')].reduce((sum, slide) => sum + slide.clientWidth, 0);
 
-    setInterval(() => {
-        wrapper.style.transform = `translateX(${number}px)`;
-        number = number - 500;
+    if (slidesWidth <= slider.clientWidth) return;
 
+    let slideIndex = 0;
+    let distance = -500;
 
-    }, 8000);
+    moveWrapper();
+    addSlide();
+    setInterval(moveWrapper, 8000);
+    setInterval(addSlide, 5000)
 
-    setInterval(() => {
+    function moveWrapper() {
+        wrapper.style.transform = `translateX(${distance}px)`;
+        distance = distance - 500;
+    }
+
+    function addSlide() {
         const slides = wrapper.querySelectorAll('.swiper-slide');
-        const clone = slides[count].cloneNode(true);
+        const clone = slides[slideIndex].cloneNode(true);
         wrapper.appendChild(clone);
 
-        count++
-    }, 5000)
+        slideIndex++
+    }
 }
