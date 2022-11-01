@@ -1470,22 +1470,22 @@
                                     <p class="modal-feedback__product-desc">Коллаген рыбный для суставов, хрящей, связок и костей, натуральный, гидролизованный</p>
                                 </div>
                             </div>
-                            <form class="modal-feedback__wrapper" enctype="multipart/form-data" action="#">
+                            <form class="modal-feedback__wrapper" data-need-validation enctype="multipart/form-data" action="#">
                                 <div class="modal-feedback__inputs">
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="text" name="feedbackProductName" id="feedbackProductName">
+                                        <input class="modal-feedback__input input" type="text" name="feedbackProductName" id="feedbackProductName" required>
                                         <label class="modal-feedback__label" for="feedbackProductName">Имя</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="text" name="feedbackProductCity" id="feedbackProductCity">
-                                        <label class="modal-feedback__label" for="feedbackProductCity">Город</label>
+                                        <input class="modal-feedback__input input js-phone-input" type="tel" name="feedbackProductPhone" id="feedbackProductPhone" required>
+                                        <label class="modal-feedback__label" for="feedbackProductPhone">Телефон</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="number" name="feedbackProductAge" id="feedbackProductAge">
-                                        <label class="modal-feedback__label" for="feedbackProductAge">Возраст</label>
+                                        <input class="modal-feedback__input input" type="email" name="feedbackProductMail" id="feedbackProductMail" required>
+                                        <label class="modal-feedback__label" for="feedbackProductMail">Почта</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper modal-feedback__input-wrapper--textarea input-wrapper">
-                                        <textarea class="modal-feedback__textarea input" name="feedbackProductComment" id="feedbackProductComment"></textarea>
+                                        <textarea class="modal-feedback__textarea input" name="feedbackProductComment" id="feedbackProductComment" required></textarea>
                                         <label class="modal-feedback__label" for="feedbackProductComment">Отзыв</label>
                                     </div>
                                 </div>
@@ -1522,22 +1522,22 @@
                         </button>
                         <div class="modal__content">
                             <h3 class="modal-feedback__title">Ваш отзыв</h3>
-                            <form class="modal-feedback__wrapper" enctype="multipart/form-data" action="#">
+                            <form class="modal-feedback__wrapper" enctype="multipart/form-data" data-need-validation action="#">
                                 <div class="modal-feedback__inputs">
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="text" name="feedbackName" id="feedbackName">
+                                        <input class="modal-feedback__input input" data-parsley-pattern="^[а-яА-ЯA-Za-z- ]+[^\s]+$" type="text" name="feedbackName" id="feedbackName" required>
                                         <label class="modal-feedback__label" for="feedbackName">Имя</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="text" name="feedbackCity" id="feedbackCity">
-                                        <label class="modal-feedback__label" for="feedbackCity">Город</label>
+                                        <input class="modal-feedback__input input js-phone-input" type="tel" name="feedbackPhone" id="feedbackPhone" required>
+                                        <label class="modal-feedback__label" for="feedbackPhone">Телефон</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper input-wrapper">
-                                        <input class="modal-feedback__input input" type="number" name="feedbackAge" id="feedbackAge">
-                                        <label class="modal-feedback__label" for="feedbackAge">Возраст</label>
+                                        <input class="modal-feedback__input input" type="email" name="feedbackMail" id="feedbackMail" required>
+                                        <label class="modal-feedback__label" for="feedbackMail">Почта</label>
                                     </div>
                                     <div class="modal-feedback__input-wrapper modal-feedback__input-wrapper--textarea input-wrapper">
-                                        <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment"></textarea>
+                                        <textarea class="modal-feedback__textarea input" name="feedbackComment" id="feedbackComment" required></textarea>
                                         <label class="modal-feedback__label" for="feedbackComment">Отзыв</label>
                                     </div>
                                 </div>
