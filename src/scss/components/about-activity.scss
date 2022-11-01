@@ -107,6 +107,7 @@
     flex-direction: column;
     gap: 1.6rem;
     max-width: 22.2rem;
+    margin-top: 4.6rem;
 
     font: var(--text-t2);
 
@@ -124,7 +125,7 @@
       width: 29.9rem;
       height: 29.6rem;
 
-      background: url("../img/blockquote-bg.svg") no-repeat center;
+      background: url("../img/about-activity-bg.svg") no-repeat center;
       background-size: contain;
 
       @include breakpoint(tablet) {
