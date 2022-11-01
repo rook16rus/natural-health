@@ -86,19 +86,6 @@
       font-size: 1.8rem;
     }
 
-    &__radio-wrapper {
-      @include breakpoint(mobile) {
-        overflow: visible;
-      }
-    }
-
-    &__radio-container {
-      opacity: 0;
-      @include breakpoint(mobile) {
-        transform: none !important;
-      }
-    }
-
     &__radio-wrapper:not(:last-of-type) .press-filter__label::after {
       display: block;
       margin: 0.3rem 4.4rem 0;

@@ -1118,7 +1118,22 @@
           min-height: 12rem;
         }
       }
+
+      label {
+        top: 1.8rem;
+        left: 1.6rem;
+        transform: none;
+
+        &.active {
+          top: 0;
+        }
+      }
     }
+  }
+
+  .parsley-errors-list {
+    right: 0.7rem;
+    font-size: 1.2rem;
   }
 
   &__input {
@@ -1141,16 +1156,6 @@
   &__textarea {
     padding: 1.8rem 1.6rem;
     border-bottom: 0;
-
-    & + label {
-      top: 1.8rem;
-      left: 1.6rem;
-      transform: none;
-
-      &.active {
-        top: 0;
-      }
-    }
   }
 
   .files {

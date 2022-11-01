@@ -41,6 +41,10 @@
     }
   }
 
+  &__radio-container {
+    opacity: 0;
+  }
+
   &__radio {
     &:checked + label {
       opacity: 1;

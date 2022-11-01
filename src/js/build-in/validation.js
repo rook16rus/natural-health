@@ -55,7 +55,7 @@ window.Parsley.addValidator('date', {
 Parsley.addMessages('ru', {
     defaultMessage: 'Некорректное значение.',
     type: {
-        email: 'В данном поле может быть только E-mail',
+        email: 'Введите E-mail',
         url: 'Адрес сайта введен неверно',
         number: 'Введите число',
         integer: 'Введите целое число',
