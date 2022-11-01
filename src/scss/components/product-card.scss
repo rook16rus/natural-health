@@ -89,12 +89,23 @@
     }
   }
 
-  &__tag {
+  &__tags {
     position: absolute;
     top: 3.2rem;
+    right: 3.2rem;
     left: 3.2rem;
     z-index: 1;
 
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
+
+  &__tag {
     display: flex;
     align-items: center;
     gap: 1.6rem;
@@ -102,10 +113,6 @@
     font: var(--other);
     text-transform: uppercase;
     letter-spacing: 0.2em;
-
-    @include breakpoint(tablet) {
-      display: none;
-    }
 
     svg {
       width: 1.4rem;
