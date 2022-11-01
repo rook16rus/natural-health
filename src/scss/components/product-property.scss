@@ -92,14 +92,9 @@
   }
 
   &__accordion-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
     height: 0;
     margin-left: 5.7rem;
 
-    font: var(--text-t2);
-    line-height: 100%;
     overflow: hidden;
 
     transition: 0.3s margin;
@@ -114,6 +109,74 @@
 
     @include breakpoint(mobile) {
       margin-left: 2rem;
+    }
+
+    & > h3 {
+      margin: 4rem 0 1.6rem;
+
+      font: var(--semibold) 2.4rem/100% var(--main-ff);
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    & > p {
+      margin: 1.6rem 0;
+
+      font: var(--text-t2);
+      line-height: 120%;
+    }
+
+    & > h4 {
+      margin: 2rem 0 1.2rem;
+
+      font: var(--text-t2);
+      line-height: 120%;
+    }
+
+    & > ul {
+      margin-left: 2rem;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+
+        &::before {
+          content: '';
+
+          width: 1rem;
+          height: 1rem;
+          margin-top: 0.7rem;
+
+          background: url("../img/icons/star-icon.svg") no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    & > ol {
+      margin-left: 2rem;
+      counter-reset: ol;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.6rem;
+
+        counter-increment: ol;
+
+        &::before {
+          content: counter(ol) '.';
+
+          margin-top: 0.1rem;
+
+          font: var(--text-t2);
+          font-weight: var(--semibold);
+          line-height: 120%;
+        }
+      }
     }
   }
 

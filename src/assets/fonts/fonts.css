@@ -15,6 +15,14 @@
 }
 
 @font-face {
+	font-family: 'Futura PT';
+	font-weight: 600;
+	font-style: normal;
+	src: url('./FuturaPT-Demi.woff2');
+url('./FuturaPT-Demi.woff')
+}
+
+@font-face {
 	font-family: 'Berlin Type';
 	font-weight: 400;
 	font-style: normal;
