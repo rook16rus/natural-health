@@ -1,6 +1,6 @@
 .catalog-filter {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   display: flex;
   align-items: flex-end;
@@ -73,12 +73,12 @@
     position: relative;
 
     &.active {
-      .catalog__select-dropdown {
+      .catalog-filter__select-dropdown {
         opacity: 1;
         visibility: visible;
       }
 
-      .catalog__select-header svg {
+      .catalog-filter__select-header svg {
         transform: rotate(0deg);
       }
     }
