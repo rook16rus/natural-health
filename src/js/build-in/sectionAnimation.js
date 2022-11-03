@@ -15,14 +15,13 @@ export default function sectionAnimation() {
         })
 
         tl.fromTo(section, {
-            y: "3rem",
+            y: 30,
             opacity: 0,
-            duration: 1,
             delay: section.dataset.delay ? section.dataset.delay : 0
         }, {
             duration: 1,
             opacity: 1,
-            y: "0rem",
+            y: 0,
             clearProps: 'transform'
         })
     })

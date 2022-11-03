@@ -1011,3 +1011,7 @@
     font: var(--title-h1);
     text-transform: uppercase;
 }
+
+.js-section-animate {
+    will-change: transform;
+}
