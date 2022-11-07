@@ -24,7 +24,7 @@ function handleForm() {
                         window.openModal("success");
                         form.reset();
                     } else {
-                        window.openModal("success");
+                        window.openModal("error");
                     }
 
                     return response.json();

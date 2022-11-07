@@ -39,12 +39,18 @@ export default function modals() {
             document.body.classList.add('modal-open');
             window.activeModal = modal;
 
+            const repeatButton = modal.querySelector('.js-repeat-button');
+            if (repeatButton) {
+                repeatButton.href = '#' + window.prevActiveModal.className.match(/js-modal-(\w+)/i)[1]
+            }
+
             window.initModalFix();
 
             const openModalEvent = new CustomEvent('openmodal');
             document.dispatchEvent(openModalEvent);
         };
         if (window.activeModal) {
+            window.prevActiveModal = window.activeModal;
             closeModal(window.activeModal);
 
             setTimeout(() => {
