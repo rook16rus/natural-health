@@ -48,6 +48,7 @@ import hideAddLink from "./build-in/hideAddLink";
 import reviewGallerySlider from "./build-in/reviewGallerySlider";
 import modalFix from "./build-in/modalFix";
 import pressFilter from "./build-in/pressFilter";
+import minimizeWidth from "./custom/minimizeWidth";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list:not(.catalog-list--search)', '.catalog-list__price-block');
     alignWidths('.footer__menu', '.footer__menu-schedule-value');
+    minimizeWidth();
 });
 
 document.addEventListener('lazyloaded', () => {
