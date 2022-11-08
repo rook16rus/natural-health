@@ -573,13 +573,12 @@
             <script>
                 function disableScroll() {
                     lockPadding();
-                    window.scrollY = 0;
+                    history.scrollrestoration = 'manual';
                     document.body.classList.add('disable-scroll');
                 }
 
                 function enableScroll() {
                     unlockPadding();
-                    window.srollY = 'auto';
                     document.body.classList.remove('disable-scroll');
                 }
 
