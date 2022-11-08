@@ -5,12 +5,12 @@ export default function catalogPrice() {
 
     ranges.forEach((range, index) => {
         const nous = nouislider.create(range, {
-            start: [2800, 39999],
+            start: range.dataset.startValue.split(','),
             connect: true,
             step: 1,
             range: {
-                'min': [500],
-                'max': [39999]
+                'min': [range.dataset.min * 1],
+                'max': [range.dataset.max * 1]
             }
         });
         window.priceRanges[index] = nous;

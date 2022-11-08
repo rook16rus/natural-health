@@ -131,6 +131,7 @@
     z-index: 1;
 
     display: flex;
+    min-height: 53.6rem;
 
     background-color: var(--primary-color);
     border-radius: 2rem;
@@ -138,6 +139,7 @@
 
     @include breakpoint(tablet) {
       flex-direction: column;
+      min-height: auto;
     }
 
     @include breakpoint(mobile) {

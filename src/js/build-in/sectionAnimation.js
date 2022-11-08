@@ -10,7 +10,7 @@ export default function sectionAnimation() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: section,
-                start: "top 80%"
+                start: "top 90%"
             }
         })
 

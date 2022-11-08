@@ -10,7 +10,7 @@ export default function titleAnimation() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: title,
-                start: "top 80%"
+                start: "top 90%"
             }
         })
 
