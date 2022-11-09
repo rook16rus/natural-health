@@ -22,6 +22,7 @@ export default function sectionAnimation() {
             duration: 1,
             opacity: 1,
             y: 0,
+            willChange: 'auto',
             clearProps: 'transform'
         })
     })
