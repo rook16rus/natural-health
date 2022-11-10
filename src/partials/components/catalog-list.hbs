@@ -33,7 +33,12 @@
                 <div class="catalog-list__content">
                     <div class="catalog-list__price-block">
                         <h3 class="catalog-list__title">{{this.title}}</h3>
-                        <span class="catalog-list__price">{{this.price}}</span>
+                        <div class="catalog-list__price-wrapper">
+                            <span class="catalog-list__price{{#if discount }} catalog-list__price--discount{{/if}}">{{this.price}}</span>
+                            {{#if discount }}
+                                <span class="catalog-list__old-price">3990 ₽</span>
+                            {{/if}}
+                        </div>
                     </div>
                     <p class="catalog-list__text">{{this.text}}</p>
                     <ul class="catalog-list__advantages">

@@ -158,6 +158,7 @@
       "imgWebp2": "img/catalog-1.webp",
       "title": "Antiparazit 2",
       "price": "2 990 ₽",
+      "discount": true,
       "text": "Для поджелудочной железы"
     },
     {

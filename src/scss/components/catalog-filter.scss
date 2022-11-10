@@ -197,11 +197,37 @@
   }
 
   &__open-button {
+    position: relative;
+
     display: none;
     align-items: center;
     gap: 0.8rem;
 
     font: var(--text-t1);
+
+    &::before {
+      counter-reset: filter-count var(--filter-count);
+      content: counter(filter-count);
+
+      position: absolute;
+      left: 0.8rem;
+      top: -0.4rem;
+
+      display: none;
+      padding: 0.2rem 0.4rem;
+
+      border-radius: 50%;
+      background-color: var(--primary-color);
+
+      font: var(--text-t4);
+      color: #fff;
+    }
+
+    &--show-count {
+      &::before {
+        display: block;
+      }
+    }
 
     svg {
       width: 2rem;
