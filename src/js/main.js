@@ -55,6 +55,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 window.catalogResetButtons = [];
 window.priceRanges = [];
+history.scrollRestoration = 'manual';
 
 document.addEventListener('DOMContentLoaded', function () {
     editableTextContainer();

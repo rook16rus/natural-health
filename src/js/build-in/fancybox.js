@@ -8,12 +8,23 @@ export default function fancybox() {
         },
         on: {
             init() {
+                let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+                const fixBlocks = document.querySelectorAll(".fix-blocks");
+                fixBlocks.forEach((el) => {
+                    el.style.paddingRight = paddingOffset;
+                });
+
                 lockScroll(this, {
                     reserveScrollBarGap: true,
                 });
             },
-            closing() {
+            destroy() {
                 unlockScroll(this);
+
+                const fixBlocks = document.querySelectorAll(".fix-blocks");
+                fixBlocks.forEach((el) => {
+                    el.style.paddingRight = '0px';
+                });
             }
         }
     })
