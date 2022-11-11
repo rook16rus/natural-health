@@ -27,5 +27,5 @@ export default function header() {
         } else {
             header.classList.remove('header--fixed');
         }
-    });
+    }, {passive: true});
 }

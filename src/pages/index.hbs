@@ -29,7 +29,7 @@
                                     </div>
                                 </div>
                                 <div class="intro__content" style="background-color: {{this.bgc}}">
-                                    <img class="intro__round-img lazyload" data-src="img/round-text.png">
+                                    <img class="intro__round-img lazyload" data-src="img/round-text.png" alt="Natural Health">
                                     <h2 class="intro__title">Кремниевый комплекс в подарок при покупке 2-х штук
                                         Biopit</h2>
                                     <div class="intro__text">
@@ -124,7 +124,7 @@
         <section class="about-section js-section-animate">
             <div class="container">
                 <div class="about-section__inner lazyload" data-bg="img/about-section-bg.jpg" style="background-repeat: no-repeat; background-position: center; background-size: cover;">
-                    <div class="about-section__top" style="background: url('img/about-section-mobile-bg.jpg') no-repeat center; background-size: cover;">
+                    <div class="about-section__top lazyload" data-bg="img/about-section-mobile-bg.jpg" style="background-repeat: no-repeat; background-position: center; background-size: cover;">
                         <h2 class="about-section__title">Natural Health</h2>
                         <a class="about-section__video-link" data-src="https://youtu.be/Fcc0VRy19VM" data-fancybox href="#">
                             <div class="about-section__video-img">
@@ -202,12 +202,12 @@
                             {{#each awards }}
                                 <li class="awards__item swiper-slide">
                                     <div class="awards__item-img-block">
-                                        <a class="awards__item-img" data-src="{{this.img}}" data-fancybox="awards">
+                                        <div class="awards__item-img">
                                             <picture>
                                                 <source data-srcset="{{this.imgWebp}}" type="image/webp">
-                                                <img class="lazyload" data-src="{{this.img}}" alt="Фото награды">
+                                                <img class="lazyload" data-fancybox="awards" data-src="{{this.img}}" alt="Фото награды">
                                             </picture>
-                                        </a>
+                                        </div>
                                     </div>
                                     <h3 class="awards__item-title">{{this.title}}</h3>
                                     <time class="awards__item-date">{{this.time}}</time>

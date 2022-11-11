@@ -10,5 +10,5 @@ export default function hideAddLink() {
         } else {
             button.classList.remove('hide');
         }
-    })
+    }, {passive: true})
 }

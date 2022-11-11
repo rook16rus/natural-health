@@ -6,7 +6,7 @@
                     <use xlink:href="#burger-icon"></use>
                 </svg>
             </div>
-            <a class="header__logo link" href="index.html">
+            <a class="header__logo link" aria-label="Логотип" href="index.html">
                 <svg>
                     <use xlink:href="#logo"></use>
                 </svg>
@@ -29,12 +29,12 @@
             </ul>
             <a class="header__phone link" href="tel:8800999348000">8 800 101 59 23</a>
             <div class="header__user-navigation">
-                <button class="header__user-search link js-search-button">
+                <button class="header__user-search link js-search-button" aria-label="Поиск по сайту">
                     <svg>
                         <use xlink:href="#search-icon"></use>
                     </svg>
                 </button>
-                <a class="header__user-basket link" href="backet.html">
+                <a class="header__user-basket link" aria-label="Корзина" href="backet.html">
                     <svg>
                         <use xlink:href="#backet-icon"></use>
                     </svg>
@@ -45,7 +45,7 @@
                 <div class="header__search-wrapper">
                     <form class="header__search-form" action="#">
                         <input class="header__search-input js-search-input" type="text" name="search" id="search" placeholder="Введите запрос">
-                        <button class="header__search-button">
+                        <button class="header__search-button" aria-label="Начать поиск">
                             <svg>
                                 <use xlink:href="#search-icon"></use>
                             </svg>
@@ -82,7 +82,7 @@
         </div>
         <div class="container">
             <div class="header__burger-nav-wrapper">
-                <a class="header__burger-logo link" href="index.html">
+                <a class="header__burger-logo link" aria-label="Бургер" href="index.html">
                     <svg>
                         <use xlink:href="#logo"></use>
                     </svg>
@@ -102,7 +102,7 @@
                     <ul class="header__burger-socials">
                         {{#each socials }}
                             <li class="header__burger-social">
-                                <a class="header__burger-social-link" href="#">
+                                <a class="header__burger-social-link" aria-label="Социальная сеть" href="#">
                                     <svg>
                                         <use xlink:href="#{{this.svg}}"></use>
                                     </svg>
