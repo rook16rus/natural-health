@@ -162,8 +162,6 @@
       background-color: #fff;
     }
 
-
-
     svg {
       width: 4rem;
       transform: rotate(180deg);
@@ -187,6 +185,8 @@
 
         width: 1.2rem;
         fill: var(--black-color);
+
+        color: var(--black-color);
       }
     }
   }
