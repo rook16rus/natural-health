@@ -10,7 +10,7 @@
                                 {{#each products }}
                                     <div class="product-card__img-slide swiper-slide">
                                         <picture>
-                                            <source srcset="{{this.imgWebp}}" type="image/webp">
+                                            <source data-srcset="{{this.imgWebp}}" type="image/webp">
                                             <img class="lazyload" data-src="{{this.img}}" alt="Фото продукта">
                                         </picture>
                                     </div>
@@ -125,7 +125,7 @@
                     <div class="product-property__img-block">
                         <div class="product-property__img">
                             <picture>
-                                <source srcset="img/property-1.webp" type="image/webp">
+                                <source data-srcset="img/property-1.webp" type="image/webp">
                                 <img class="lazyload" data-src="img/property-1.jpg" alt="Фото продукта">
                             </picture>
                         </div>
