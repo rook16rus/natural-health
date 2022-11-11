@@ -290,6 +290,14 @@
 
     transition: 0.3s;
 
+    @include breakpoint(tablet) {
+      height: auto;
+      min-height: 3.6rem;
+      padding: 0.5rem 1.6rem;
+
+      white-space: normal;
+    }
+
     svg {
       width: 2rem;
       height: 2rem;
