@@ -620,7 +620,7 @@
             <div class="header">
                 <div class="container">
                     <nav class="header__nav js-section-animate" data-delay="0.2">
-                        <div class="header__burger" aria-label="Бургер">
+                        <div class="header__burger">
                             <svg>
                                 <use xlink:href="#burger-icon"></use>
                             </svg>
@@ -660,7 +660,7 @@
                         </ul>
                         <a class="header__phone link" href="tel:8800999348000">8 800 101 59 23</a>
                         <div class="header__user-navigation">
-                            <button class="header__user-search link js-search-button">
+                            <button class="header__user-search link js-search-button" aria-label="Поиск по сайту">
                                 <svg>
                                     <use xlink:href="#search-icon"></use>
                                 </svg>
@@ -675,7 +675,7 @@
                             <div class="header__search-wrapper">
                                 <form class="header__search-form" action="#">
                                     <input class="header__search-input js-search-input" type="text" name="search" id="search" placeholder="Введите запрос">
-                                    <button class="header__search-button">
+                                    <button class="header__search-button" aria-label="Начать поиск">
                                         <svg>
                                             <use xlink:href="#search-icon"></use>
                                         </svg>
@@ -728,7 +728,7 @@
                                                             <div class="catalog-list__tags"><span class="catalog-list__tag"><svg><use xlink:href="#hit-icon"></use></svg><span>Хит продаж</span>
                                                                 </span>
                                                             </div>
-                                                            <button class="catalog-list__basket" onclick="event.preventDefault()">
+                                                            <button class="catalog-list__basket" onclick="event.preventDefault()" aria-label="Добавить в корзину">
                                                                 <svg>
                                                                     <use xlink:href="#backet-icon"></use>
                                                                 </svg>
@@ -772,7 +772,7 @@
                                                                 <source data-srcset="img/catalog-1.webp" type="image/webp">
                                                                 <img class="lazyload" data-src="img/catalog-1.jpg" alt="Фото товара">
                                                             </picture>
-                                                            <button class="catalog-list__basket" onclick="event.preventDefault()">
+                                                            <button class="catalog-list__basket" onclick="event.preventDefault()" aria-label="Добавить в корзину">
                                                                 <svg>
                                                                     <use xlink:href="#backet-icon"></use>
                                                                 </svg>
@@ -1134,7 +1134,7 @@
             <div class="modal modal-distributor js-modal js-modal-distributor">
                 <div class="modal__container">
                     <div class="modal__inner">
-                        <button class="modal__close js-close-modal" type="button" title="Закрыть">
+                        <button class="modal__close js-close-modal" type="button" aria-label="Закрыть">
                             <svg>
                                 <use xlink:href="#close-icon"></use>
                             </svg>
@@ -1247,7 +1247,7 @@
                                     <label class="switch__label" for="mobileFilterPresent"><span>Товары с подарками</span><span class="switch__label-switch"></span>
                                     </label>
                                 </div>
-                                <button class="modal-filter__reset js-filter-reset visually-hidden" type="reset">
+                                <button class="modal-filter__reset js-filter-reset visually-hidden" type="reset" aria-label="Закрыть">
                                     <svg>
                                         <use xlink:href="#close-icon"></use>
                                     </svg><span>Сбросить</span>
@@ -1299,12 +1299,12 @@
                                     <div class="modal-review__slider swiper">
                                         <div class="swiper-wrapper"></div>
                                         <div class="slider-navigation js-section-animate js-slider-navigation">
-                                            <button class="slider-navigation__button js-prev-slide">
+                                            <button class="slider-navigation__button js-prev-slide" aria-label="Назад">
                                                 <svg>
                                                     <use xlink:href="#slider-arrow"></use>
                                                 </svg>
                                             </button>
-                                            <button class="slider-navigation__button js-next-slide">
+                                            <button class="slider-navigation__button js-next-slide" aria-label="Вперед">
                                                 <svg>
                                                     <use xlink:href="#slider-arrow"></use>
                                                 </svg>
