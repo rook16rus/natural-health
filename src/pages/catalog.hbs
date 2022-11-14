@@ -65,17 +65,19 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    {{#each moreCategoriesMobile }}
-                                        <div class="catalog__categories-more-button-item">
-                                            <input class="catalog__categories-more-button-radio visually-hidden js-categories-item js-categories-item-mobile" data-desc="testtesttesttest vtesttesttesttest test test testtest test test test test" type="radio" name="categories" id="categories{{this.id}}">
-                                            <label class="catalog__categories-more-button-label tag" for="categories{{this.id}}">
-                                                <svg>
-                                                    <use xlink:href="#{{this.img}}"></use>
-                                                </svg>
-                                                <span>{{this.text}}</span>
-                                            </label>
-                                        </div>
-                                    {{/each}}
+                                    <div class="catalog__categories-more-button-dropdown-content">
+                                        {{#each moreCategoriesMobile }}
+                                            <div class="catalog__categories-more-button-item">
+                                                <input class="catalog__categories-more-button-radio visually-hidden js-categories-item js-categories-item-mobile" data-desc="testtesttesttest vtesttesttesttest test test testtest test test test test" type="radio" name="categories" id="categories{{this.id}}">
+                                                <label class="catalog__categories-more-button-label tag" for="categories{{this.id}}">
+                                                    <svg>
+                                                        <use xlink:href="#{{this.img}}"></use>
+                                                    </svg>
+                                                    <span>{{this.text}}</span>
+                                                </label>
+                                            </div>
+                                        {{/each}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
