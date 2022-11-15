@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list:not(.catalog-list--search)', '.catalog-list__price-block');
     alignWidths('.footer__menu', '.footer__menu-schedule-value');
-    minimizeWidth();
 });
 
 document.addEventListener('lazyloaded', () => {
@@ -111,6 +110,7 @@ document.addEventListener('lazyloaded', () => {
 document.fonts.ready.then((res) => {
     featuresSlider();
     initSliders();
+    minimizeWidth();
 })
 
 window.addEventListener('load', function () {
