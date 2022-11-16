@@ -57,16 +57,23 @@
     flex-direction: column;
     gap: 2.4rem;
 
+    overflow-y: auto;
+    max-height: 46.9rem;
+
     font: var(--text-t2);
     line-height: 130%;
 
+    @include breakpoint(tablet) {
+      max-height: 35rem;
+    }
+
     @include breakpoint(mobile) {
       gap: 1.8rem;
+      max-height: 27rem;
 
       font-size: 1.4rem;
       line-height: 120%;
     }
-
   }
 
   &__img {
