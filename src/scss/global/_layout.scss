@@ -1014,4 +1014,13 @@
 
 .js-section-animate {
     will-change: transform;
+    transform: translateY(3rem);
+    opacity: 0;
+
+    transition: 1s transform, 1s opacity;
+
+    &.animate-element {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -72,10 +72,10 @@
   .js-section-animate, .js-title-animate {
     opacity: 1!important;
     visibility: visible !important;
-    transform: translate(0, 0) !important;
+    transform: none !important;
   }
 
   .intro__title, .intro__text, .intro__link {
-    opacity: 1 !important;
+    opacity: 1;
   }
 }

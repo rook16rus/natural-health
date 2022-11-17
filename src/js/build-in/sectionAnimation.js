@@ -10,11 +10,27 @@ export default function sectionAnimation() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: section,
-                start: "top 90%"
+                start: "top 90%",
+                onEnter: () => {
+                    section.classList.add('animate-element')
+                },
+                onLeave: () => {
+                    section.classList.add('animate-element')
+                },
+                onLeaveBack: () => {
+                    section.classList.add('animate-element')
+                },
+                onEnterBack: () => {
+                    section.classList.add('animate-element')
+                }
             }
         })
 
-        tl.fromTo(section, {
+        tl.to(section, {
+            delay: section.dataset.delay ? section.dataset.delay : 0
+        })
+
+        /*tl.fromTo(section, {
             y: 30,
             opacity: 0,
             delay: section.dataset.delay ? section.dataset.delay : 0
@@ -24,7 +40,7 @@ export default function sectionAnimation() {
             y: 0,
             willChange: 'auto',
             clearProps: 'transform'
-        })
+        })*/
     })
 }
 
