@@ -11,7 +11,7 @@ export default function readMoreButton() {
         const hideElements = [];
 
         [...container.children].forEach((el, index) => {
-            if (el === button) buttonIndex = index;
+            if (el === button || el.querySelector('.js-read-button') === button) buttonIndex = index;
 
             if (buttonIndex && index > buttonIndex) {
                 el.classList.add('hide');
