@@ -76,6 +76,11 @@
 
     disableScroll();
 
+    const timeout = setTimeout(() => {
+        document.body.classList.add('loader-hide');
+        enableScroll()
+    }, document.body.dataset.timer * 1 || 2000)
+
     let loaderHided = false;
 
     const attrObserver = new MutationObserver((mutations) => {
@@ -90,7 +95,7 @@
                     enableScroll();
                     loaderHided = true
                 }, 500);
-
+                clearInterval(timeout);
             }
         });
     });
