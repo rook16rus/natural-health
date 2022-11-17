@@ -7,20 +7,12 @@ export default function readMoreButton() {
         const container = button.closest('.wide-text-container');
         if (!container) return
 
-        let buttonIndex;
         const hideElements = [];
 
-        [...container.children].forEach((el, index) => {
-            if (el === button || el.querySelector('.js-read-button') === button) buttonIndex = index;
+        findNestsCount(container);
 
-            if (buttonIndex && index > buttonIndex) {
-                el.classList.add('hide');
-                hideElements.push(el);
-
-                el.remove();
-                container.insertBefore(el, button);
-            }
-        })
+        button.parentElement.tagName.toLowerCase() === "p" ? button.parentElement.remove() : button.remove();
+        container.appendChild(button);
 
         button.addEventListener('click', () => {
             if (hideElements.find(item => item.classList.contains('hide'))) {
@@ -31,5 +23,23 @@ export default function readMoreButton() {
 
             hideElements.forEach(el => el.classList.toggle('hide'))
         })
+
+        function findNestsCount(wrapper) {
+           let elementIndex;
+
+            [...wrapper.children].forEach((el, index) => {
+                if (el === button) {
+                    elementIndex = index
+                } else if (el.querySelector('.js-read-button')) {
+                    elementIndex = index;
+                    findNestsCount(el)
+                }
+
+                if (index > elementIndex) {
+                    el.classList.add('hide');
+                    hideElements.push(el);
+                }
+            })
+        }
     })
 }

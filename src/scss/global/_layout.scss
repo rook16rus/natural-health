@@ -551,7 +551,7 @@
         padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
     }
 
-    & > .hide {
+    .hide {
         display: none;
     }
 
@@ -1170,7 +1170,21 @@
     transition: 1s transform, 1s opacity;
 
     &.animate-element {
-        transform: translateY(0);
-        opacity: 1;
+        animation-name: animateElement;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animateElement {
+        from {
+            transform: translateY(3rem);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 }

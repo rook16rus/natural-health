@@ -73,6 +73,7 @@
     opacity: 1!important;
     visibility: visible !important;
     transform: none !important;
+    will-change: auto !important;
   }
 
   .intro__title, .intro__text, .intro__link {

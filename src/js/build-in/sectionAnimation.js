@@ -30,6 +30,11 @@ export default function sectionAnimation() {
             delay: section.dataset.delay ? section.dataset.delay : 0
         })
 
+        section.addEventListener('animationend', () => {
+            section.style.willChange = 'auto';
+            section.style.transform = 'none';
+        })
+
         /*tl.fromTo(section, {
             y: 30,
             opacity: 0,
