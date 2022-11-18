@@ -32,9 +32,17 @@ export default function modals() {
         }
 
         const openHandler = () => {
+            let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+            console.log(paddingOffset);
+            const fixBlocks = document.querySelectorAll(".fix-blocks");
+            fixBlocks.forEach((el) => {
+                el.style.paddingRight = paddingOffset;
+            });
+
             lockScroll(modal, {
                 reserveScrollBarGap: true,
             });
+
             modal.classList.add('active');
             document.body.classList.add('modal-open');
             window.activeModal = modal;
@@ -71,6 +79,11 @@ export default function modals() {
 
         document.body.classList.remove('modal-open');
         unlockScroll();
+
+        const fixBlocks = document.querySelectorAll(".fix-blocks");
+        fixBlocks.forEach((el) => {
+            el.style.paddingRight = '0px';
+        });
 
         modal.classList.remove('active');
 
