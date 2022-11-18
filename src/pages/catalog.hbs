@@ -35,17 +35,19 @@
                                         <span>Еще +<span id="categoriesCount">10</span></span>
                                     </div>
                                     <div class="catalog__categories-more-button-dropdown">
-                                        {{#each moreCategories }}
-                                            <div class="catalog__categories-more-button-item">
-                                                <input class="catalog__categories-more-button-radio visually-hidden js-categories-item" data-desc="testtesttesttest vtesttesttesttest test test testtest test test test test" type="radio" name="categories" id="categories{{this.id}}">
-                                                <label class="catalog__categories-more-button-label tag" for="categories{{this.id}}">
-                                                    <svg>
-                                                        <use xlink:href="#{{this.img}}"></use>
-                                                    </svg>
-                                                    <span>{{this.text}}</span>
-                                                </label>
-                                            </div>
-                                        {{/each}}
+                                        <div class="catalog__categories-more-button-dropdown-content">
+                                            {{#each moreCategories }}
+                                                    <div class="catalog__categories-more-button-item">
+                                                        <input class="catalog__categories-more-button-radio visually-hidden js-categories-item" data-desc="testtesttesttest vtesttesttesttest test test testtest test test test test" type="radio" name="categories" id="categories{{this.id}}">
+                                                        <label class="catalog__categories-more-button-label tag" for="categories{{this.id}}">
+                                                            <svg>
+                                                                <use xlink:href="#{{this.img}}"></use>
+                                                            </svg>
+                                                            <span>{{this.text}}</span>
+                                                        </label>
+                                                    </div>
+                                            {{/each}}
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
