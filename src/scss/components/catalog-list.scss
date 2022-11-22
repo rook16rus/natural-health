@@ -126,7 +126,7 @@
     margin-bottom: 1.6rem;
 
     border-radius: 2rem 2rem 3.2rem 0.8rem;
-    background-color: var(--gray-color);
+    background-color: #EAE6E3;
     overflow: hidden;
 
     @include breakpoint(mobile) {
@@ -218,7 +218,7 @@
     height: 5.2rem;
     
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #F7F7F7;
 
     @include breakpoint(small-tablet) {
       right: 1rem;
