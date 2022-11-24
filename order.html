@@ -1053,15 +1053,15 @@
                                     <h2 class="order__client-title">Данные получателя заказа</h2>
                                     <form class="order__client-form" data-need-validation="true" action="#">
                                         <div class="order__client-input-wrapper input-wrapper">
-                                            <input class="order__client-input input input--white" type="text" name="clientSurname" id="clientSurname" required>
+                                            <input class="order__client-input input input--white" type="text" data-parsley-pattern="^[а-яА-ЯA-Za-z- ]+[^\s]+$" data-parsley-whitespace="trim" name="clientSurname" id="clientSurname" required>
                                             <label class="order__client-label" for="clientSurname">Фамилия</label>
                                         </div>
                                         <div class="order__client-input-wrapper input-wrapper">
-                                            <input class="order__client-input input input--white" type="text" name="clientName" id="clientName" required>
+                                            <input class="order__client-input input input--white" type="text" data-parsley-pattern="^[а-яА-ЯA-Za-z- ]+[^\s]+$" data-parsley-whitespace="trim" name="clientName" id="clientName" required>
                                             <label class="order__client-label" for="clientName">Имя</label>
                                         </div>
                                         <div class="order__client-input-wrapper input-wrapper">
-                                            <input class="order__client-input input input--white" type="text" name="clientPatronymic" id="clientPatronymic" required>
+                                            <input class="order__client-input input input--white" type="text" data-parsley-pattern="^[а-яА-ЯA-Za-z- ]+[^\s]+$" data-parsley-whitespace="trim" name="clientPatronymic" id="clientPatronymic" required>
                                             <label class="order__client-label" for="clientPatronymic">Отчество</label>
                                         </div>
                                         <div class="order__client-input-wrapper input-wrapper order__client-input-wrapper--long">
@@ -1069,7 +1069,7 @@
                                             <label class="order__client-label" for="clientPhone">Телефон</label>
                                         </div>
                                         <div class="order__client-input-wrapper input-wrapper order__client-input-wrapper--long">
-                                            <input class="order__client-input input input--white" type="email" name="clientEmail" id="clientEmail" required>
+                                            <input class="order__client-input input input--white" data-parsley-excluded="true" type="email" name="clientEmail" id="clientEmail" required>
                                             <label class="order__client-label" for="clientEmail">Email</label>
                                         </div>
                                     </form>
