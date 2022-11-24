@@ -477,17 +477,14 @@
     gap: 0.8rem;
     max-width: 70.9rem;
 
-    @include breakpoint(tablet) {
-
-    }
-
     @include breakpoint(small-tablet) {
       flex-direction: column;
       max-width: none;
     }
 
-    @include breakpoint(mobile) {
-
+    .parsley-errors-list {
+      font-size: 1.2rem;
+      right: 1rem;
     }
   }
 

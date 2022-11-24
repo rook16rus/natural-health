@@ -50,6 +50,7 @@ import modalFix from "./build-in/modalFix";
 import pressFilter from "./build-in/pressFilter";
 import minimizeWidth from "./custom/minimizeWidth";
 import filterCount from "./build-in/filterCount";
+import validateOrder from "./build-in/validateOrder";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modalFix();
     pressFilter();
     filterCount();
+    validateOrder();
 
     alignHeights('.lines__list', '.lines__item-title');
     alignHeights('.catalog-list:not(.catalog-list--search)', '.catalog-list__price-block');
