@@ -6,12 +6,14 @@ export default function validateOrder() {
 
     if (orderButton) {
         orderButton.addEventListener('click', e => {
-            validateOrder();
+            validateOrder(document.querySelector('.order__client-form'));
         })
     }
 
     function validateOrder(form) {
         $(form).parsley().validate();
+
+        return $(form).parsley().isValid()
     }
 }
 
