@@ -33,7 +33,6 @@ export default function modals() {
 
         const openHandler = () => {
             let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
-            console.log(paddingOffset);
             const fixBlocks = document.querySelectorAll(".fix-blocks");
             fixBlocks.forEach((el) => {
                 el.style.paddingRight = paddingOffset;
