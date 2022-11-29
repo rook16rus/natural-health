@@ -11,6 +11,7 @@ export default function introSlider() {
         speed: 1500,
         effect: "fade",
         autoHeight: true,
+        rewind: true,
         fadeEffect: {
             crossFade: true
         },
