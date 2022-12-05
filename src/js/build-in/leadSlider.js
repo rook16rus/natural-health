@@ -7,14 +7,31 @@ export default function leadSlider() {
     const sliders = document.querySelectorAll('.lead-slider');
 
     sliders.forEach(slider => {
-        const swiper = new Swiper(slider, {
-            effect: "fade",
-            allowTouchMove: false,
-            autoHeight: true,
-            fadeEffect: {
-                crossFade: true
-            }
-        })
+        let swiper;
+
+        if (matchMedia('(max-width:640px)').matches) {
+            swiper = new Swiper(slider, {
+                effect: "fade",
+                allowTouchMove: false,
+                autoHeight: true,
+                fadeEffect: {
+                    crossFade: true
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false
+                }
+            })
+        } else {
+            swiper = new Swiper(slider, {
+                effect: "fade",
+                allowTouchMove: false,
+                autoHeight: true,
+                fadeEffect: {
+                    crossFade: true
+                }
+            })
+        }
 
         const navigationItems = slider.querySelectorAll('.lead-slider__navigation-item');
 
@@ -25,6 +42,11 @@ export default function leadSlider() {
                     e.currentTarget.classList.add('active');
 
                     swiper.slideTo(index);
+                })
+
+                swiper.on('slideChange', () => {
+                    navigationItems.forEach(navItemEl => navItemEl.classList.remove('active'));
+                    navigationItems[swiper.activeIndex].classList.add('active')
                 })
             } else {
                 navItem.addEventListener('mouseenter', e => {
